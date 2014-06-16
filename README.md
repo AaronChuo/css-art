@@ -1,7 +1,7 @@
 #CSS-ART
 
 ###Graphic creation using pure CSS handmade without framework.
-###No image, no photoshop, no javascript, no svg, but DOM + CSS only.
+####No image, no photoshop, no javascript, no svg, but DOM + CSS only.
 
 ## List of works
 * 熊大 (Brown): http://aaronchuo.cc/open-project/cia/line-brown/
