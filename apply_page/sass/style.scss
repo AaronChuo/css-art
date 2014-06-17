@@ -22,3 +22,28 @@
 
 // Media should come last
 @import "partials/media";
+
+/* 主要版面切割 */
+.layout {
+	box-sizing: border-box;
+	float: left;
+	width: 33.33333%;
+}
+
+.for_student {
+background: #111;
+
+}
+
+.for_earlybird{
+
+background: #222;
+
+
+}
+
+.for_almost {
+
+background: #333;
+
+}
