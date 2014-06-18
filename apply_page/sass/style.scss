@@ -28,27 +28,34 @@
 // Media should come last
 @import "partials/media";
 
-/* 主要版面切割 */
-.layout {
 
+html, body {
+	height: 100%;
+} 
+
+/* 主要版面切割 */
+
+#container, #main, .layout {
+
+	height: 100%;
+}
+
+.layout {
 @include span(0.33333);
-	
+ background-size: 100% auto;
+ background-repeat: no-repeat;
 }
 
 .for_student {
-background: #888;
+background-image: url('../assets/slice-01.png') ;
 
 }
 
 .for_earlybird{
-
-background: #999;
-
+background-image: url('../assets/slice-02.png') ;
 
 }
 
 .for_almost {
-
-background: #aaa;
-
+background-image: url('../assets/slice-03.png') ;
 }
