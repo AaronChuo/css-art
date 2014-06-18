@@ -13,6 +13,8 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
 
   facebookApi.initFbApi('329424167209772');
 
+  $scope.fbLogin = facebookApi.fbLogin();
+
   $scope.setTicketType = function(type) {
     if(type >= 0 && type < price.length) {
       $scope.priceSelected = price[type];

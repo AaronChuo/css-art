@@ -12,7 +12,10 @@ angular.module('socialNetworkApi', [])
       XFBML = true,
       VERSION = 'v2.0';
 
+  //Facebook app initialized
   var initialized = false;
+
+  //Facebook login and authorized of app
   var connected = false;
 
   //Facebook asynchronous initial
