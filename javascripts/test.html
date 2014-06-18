@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test FB API</title>
+
+  <script src="javascripts/libs/angular.min.js"></script>
+</head>
+<body>
+  <div id="status"></div>
+  <fb:login-button scope="public_profile,email" onLogin="fbLogin()"></fb:login-button>
+
+  <script src="javascripts/controller.js"></script>
+  <script src="javascripts/facebookApi.js"></script>
+</body>
+</html>
