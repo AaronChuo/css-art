@@ -339,6 +339,20 @@ table {
   border-spacing: 0;
 }
 
+/* Jeet.gs */
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
 /* line 7, ../sass/partials/_page.scss */
 body, select, input, textarea {
   color: #222222;
@@ -487,24 +501,40 @@ body, select, input, textarea {
   /* Style adjustments for print go here */
 }
 /* 主要版面切割 */
-/* line 27, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .layout {
-  box-sizing: border-box;
+  *zoom: 1;
   float: left;
-  width: 33.33333%;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 33.333%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
-
-/* line 33, ../sass/style.scss */
-.for_student {
-  background: #111;
+/* line 188, ../sass/jeet/_grid.scss */
+.layout:before, .layout:after {
+  content: '';
+  display: table;
+}
+/* line 192, ../sass/jeet/_grid.scss */
+.layout:after {
+  clear: both;
 }
 
 /* line 38, ../sass/style.scss */
-.for_earlybird {
-  background: #222;
+.for_student {
+  background: #888;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
+.for_earlybird {
+  background: #999;
+}
+
+/* line 50, ../sass/style.scss */
 .for_almost {
-  background: #333;
+  background: #aaa;
 }
