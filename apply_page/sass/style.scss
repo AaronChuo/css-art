@@ -21,6 +21,8 @@
 // and add more as needed (i.e. forms, tables, nav)
 @import "partials/fonts";
 @import "partials/page";
+@import "compass/css3";
+@import "variables";
 
 // Helpers classes should come second-to-last
 @include h5bp-helpers;
@@ -34,6 +36,11 @@ html, body {
 } 
 
 
+
+body {
+	background: #e97f02;
+
+}
 
 
 
@@ -50,7 +57,7 @@ html, body {
 
 .for_student > div, .for_earlybird > div, .for_almost > div {
 
- margin: 30em auto 0;
+ margin: 156% auto 1em;
  width: 90%;
  height: 5em;
 }
@@ -59,7 +66,9 @@ html, body {
 .for_student {
 background-image: url('../assets/slice-01.jpg') ;
 	div {
-		background: rgba(70, 70, 170, 0.7);
+		border: 3px solid #fff;
+		@include border-radius(5px);
+		background: rgba(170, 70, 70, 0.7);
 	}
 
 }
@@ -67,7 +76,9 @@ background-image: url('../assets/slice-01.jpg') ;
 .for_earlybird{
 background-image: url('../assets/slice-02.jpg') ;
 	div {
-		background: rgba(70, 170, 70, 0.7);
+		border: 3px solid #fff;
+		@include border-radius(5px);
+		background: rgba(170, 70, 70, 0.7);
 	}
 
 }
@@ -75,6 +86,8 @@ background-image: url('../assets/slice-02.jpg') ;
 .for_almost {
 background-image: url('../assets/slice-03.jpg') ;
 	div {
+		border: 3px solid #fff;
+		@include border-radius(5px);
 		background: rgba(170, 70, 70, 0.7);
 	}
 

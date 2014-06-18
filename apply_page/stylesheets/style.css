@@ -500,13 +500,18 @@ body, select, input, textarea {
 
   /* Style adjustments for print go here */
 }
-/* line 32, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 html, body {
   height: 100%;
 }
 
+/* line 40, ../sass/style.scss */
+body {
+  background: #e97f02;
+}
+
 /* 主要版面切割 */
-/* line 44, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .layout {
   *zoom: 1;
   float: left;
@@ -531,41 +536,53 @@ html, body {
   clear: both;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .for_student > div, .for_earlybird > div, .for_almost > div {
-  margin: 30em auto 0;
+  margin: 156% auto 1em;
   width: 90%;
   height: 5em;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .for_student {
   background-image: url("../assets/slice-01.jpg");
 }
-/* line 61, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .for_student div {
-  background: rgba(70, 70, 170, 0.7);
-}
-
-/* line 67, ../sass/style.scss */
-.for_earlybird {
-  background-image: url("../assets/slice-02.jpg");
-}
-/* line 69, ../sass/style.scss */
-.for_earlybird div {
-  background: rgba(70, 170, 70, 0.7);
-}
-
-/* line 75, ../sass/style.scss */
-.for_almost {
-  background-image: url("../assets/slice-03.jpg");
-}
-/* line 77, ../sass/style.scss */
-.for_almost div {
+  border: 3px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   background: rgba(170, 70, 70, 0.7);
 }
 
-/* line 83, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
+.for_earlybird {
+  background-image: url("../assets/slice-02.jpg");
+}
+/* line 78, ../sass/style.scss */
+.for_earlybird div {
+  border: 3px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(170, 70, 70, 0.7);
+}
+
+/* line 86, ../sass/style.scss */
+.for_almost {
+  background-image: url("../assets/slice-03.jpg");
+}
+/* line 88, ../sass/style.scss */
+.for_almost div {
+  border: 3px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(170, 70, 70, 0.7);
+}
+
+/* line 96, ../sass/style.scss */
 footer {
   *zoom: 1;
   float: left;
@@ -590,7 +607,7 @@ footer:after {
 }
 
 /* 元件 */
-/* line 90, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .site_name {
   position: absolute;
   width: 100%;
