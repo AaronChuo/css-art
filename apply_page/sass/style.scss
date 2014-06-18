@@ -33,11 +33,24 @@ html, body {
 	height: 100%;
 } 
 
+
+/* 元件 */
+
+.site_name {
+	@include center(75%);
+	color: white;
+	margin-top: 1em;
+	font-size: 2em;
+	text-align: center;
+}
+
+
 /* 主要版面切割 */
 
 #container, #main, .layout {
 
 	height: 100%;
+
 }
 
 .layout {
@@ -46,16 +59,40 @@ html, body {
  background-repeat: no-repeat;
 }
 
+
+.for_student > div, .for_earlybird > div, .for_almost > div {
+
+ margin: 0 auto;
+ width: 90%;
+ height: 5em;
+}
+
+
 .for_student {
 background-image: url('../assets/slice-01.jpg') ;
+	div {
+		background: rgba(70, 70, 170, 0.7);
+	}
 
 }
 
 .for_earlybird{
 background-image: url('../assets/slice-02.jpg') ;
+	div {
+		background: rgba(70, 170, 70, 0.7);
+	}
 
 }
 
 .for_almost {
 background-image: url('../assets/slice-03.jpg') ;
+	div {
+		background: rgba(170, 70, 70, 0.7);
+	}
+
+}
+
+footer {
+	@include span(1);
+	background: #f8ca00;
 }
