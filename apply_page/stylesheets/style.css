@@ -538,15 +538,15 @@ html, body {
 
 /* line 49, ../sass/style.scss */
 .for_student {
-  background-image: url("../assets/slice-01.png");
+  background-image: url("../assets/slice-01.jpg");
 }
 
 /* line 54, ../sass/style.scss */
 .for_earlybird {
-  background-image: url("../assets/slice-02.png");
+  background-image: url("../assets/slice-02.jpg");
 }
 
 /* line 59, ../sass/style.scss */
 .for_almost {
-  background-image: url("../assets/slice-03.png");
+  background-image: url("../assets/slice-03.jpg");
 }
