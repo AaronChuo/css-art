@@ -507,11 +507,19 @@ html, body {
 
 /* line 40, ../sass/style.scss */
 body {
-  background: #e97f02;
+  color: white;
+  background: #bd1550;
+}
+
+/* 排版 */
+/* line 49, ../sass/style.scss */
+h2 {
+  width: 100%;
+  text-align: center;
 }
 
 /* 主要版面切割 */
-/* line 51, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .layout {
   *zoom: 1;
   float: left;
@@ -523,6 +531,7 @@ body {
   width: 33.333%;
   margin-left: 0%;
   margin-right: 0%;
+  min-width: 213.33333px;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -536,53 +545,41 @@ body {
   clear: both;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .for_student > div, .for_earlybird > div, .for_almost > div {
   margin: 156% auto 1em;
-  width: 90%;
-  height: 5em;
+  box-sizing: border-box;
+  width: 95%;
+  height: 6em;
+  padding-top: 1px;
+  text-align: center;
 }
 
-/* line 66, ../sass/style.scss */
-.for_student {
-  background-image: url("../assets/slice-01.jpg");
+/* line 79, ../sass/style.scss */
+.ac_explain {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background: #bd1550;
 }
-/* line 68, ../sass/style.scss */
-.for_student div {
-  border: 3px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: rgba(170, 70, 70, 0.7);
+/* line 188, ../sass/jeet/_grid.scss */
+.ac_explain:before, .ac_explain:after {
+  content: '';
+  display: table;
 }
-
-/* line 76, ../sass/style.scss */
-.for_earlybird {
-  background-image: url("../assets/slice-02.jpg");
-}
-/* line 78, ../sass/style.scss */
-.for_earlybird div {
-  border: 3px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: rgba(170, 70, 70, 0.7);
+/* line 192, ../sass/jeet/_grid.scss */
+.ac_explain:after {
+  clear: both;
 }
 
-/* line 86, ../sass/style.scss */
-.for_almost {
-  background-image: url("../assets/slice-03.jpg");
-}
-/* line 88, ../sass/style.scss */
-.for_almost div {
-  border: 3px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: rgba(170, 70, 70, 0.7);
-}
-
-/* line 96, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 footer {
   *zoom: 1;
   float: left;
@@ -594,7 +591,7 @@ footer {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  background: #f8ca00;
+  background: #333;
 }
 /* line 188, ../sass/jeet/_grid.scss */
 footer:before, footer:after {
@@ -607,12 +604,39 @@ footer:after {
 }
 
 /* 元件 */
-/* line 103, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .site_name {
   position: absolute;
+  margin-top: 1em;
   width: 100%;
   color: white;
-  margin-top: 1em;
-  font-size: 2em;
   text-align: center;
+  font-size: 2em;
+}
+
+/* line 104, ../sass/style.scss */
+.for_student {
+  background-image: url("../assets/slice-01.jpg");
+}
+/* line 106, ../sass/style.scss */
+.for_student div {
+  background: rgba(73, 10, 61, 0.7);
+}
+
+/* line 113, ../sass/style.scss */
+.for_earlybird {
+  background-image: url("../assets/slice-02.jpg");
+}
+/* line 115, ../sass/style.scss */
+.for_earlybird div {
+  background: rgba(233, 127, 2, 0.7);
+}
+
+/* line 121, ../sass/style.scss */
+.for_almost {
+  background-image: url("../assets/slice-03.jpg");
+}
+/* line 123, ../sass/style.scss */
+.for_almost div {
+  background: rgba(248, 202, 0, 0.7);
 }

@@ -38,37 +38,74 @@ html, body {
 
 
 body {
-	background: #e97f02;
+	color: white;
+	background: #bd1550;
 
 }
 
 
+/* 排版 */
+
+h2 {
+	width: 100%;
+	text-align: center;
+}
+
 
 /* 主要版面切割 */
 
-
-
 .layout {
 @include span(0.33333);
+ min-width: 213.33333px;
  background-size: 100% auto;
  background-repeat: no-repeat;
+
 }
 
 
 .for_student > div, .for_earlybird > div, .for_almost > div {
 
  margin: 156% auto 1em;
- width: 90%;
- height: 5em;
+ box-sizing: border-box;
+ width: 95%;
+ height: 6em;
+ padding-top: 1px;
+ text-align: center;
 }
 
+
+
+
+.ac_explain {
+
+	@include span(1);
+	background: #bd1550;
+
+}
+
+
+footer {
+
+	@include span(1);
+	background: #333;
+}
+
+/* 元件 */
+
+.site_name {
+	position: absolute;
+	margin-top: 1em;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
 
 .for_student {
 background-image: url('../assets/slice-01.jpg') ;
 	div {
-		border: 3px solid #fff;
-		@include border-radius(5px);
-		background: rgba(170, 70, 70, 0.7);
+		background: rgba(73, 10, 61, 0.7);
+
 	}
 
 }
@@ -76,9 +113,7 @@ background-image: url('../assets/slice-01.jpg') ;
 .for_earlybird{
 background-image: url('../assets/slice-02.jpg') ;
 	div {
-		border: 3px solid #fff;
-		@include border-radius(5px);
-		background: rgba(170, 70, 70, 0.7);
+		background: rgba(233, 127, 2, 0.7);
 	}
 
 }
@@ -86,25 +121,7 @@ background-image: url('../assets/slice-02.jpg') ;
 .for_almost {
 background-image: url('../assets/slice-03.jpg') ;
 	div {
-		border: 3px solid #fff;
-		@include border-radius(5px);
-		background: rgba(170, 70, 70, 0.7);
+		background: rgba(248, 202, 0, 0.7);
 	}
 
-}
-
-footer {
-	@include span(1);
-	background: #f8ca00;
-}
-
-/* 元件 */
-
-.site_name {
-	position: absolute;
-	width: 100%;
-	color: white;
-	margin-top: 1em;
-	font-size: 2em;
-	text-align: center;
 }
