@@ -71,8 +71,8 @@ angular.module('socialNetworkApi', [])
     fbLogin: function() {
       if(!initialized) return;
 
-      var status = getLoginStatus();
-      console.log(status);
+      //var status = getLoginStatus();
+      console.log('tt'+status);
       switch(status) {
         case 'connected':
           //TODO: login success
