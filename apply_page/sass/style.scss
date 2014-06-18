@@ -90,6 +90,21 @@ h2 {
 
 }
 
+.time_scale {
+	@include span(1);
+	background: white;
+	img {
+		display: block;
+		width: 80%; 
+		margin: 0.5em auto;
+	}
+	h3 {
+		color: #333;
+		width: 100%;
+		text-align: center;
+	}
+}
+
 footer {
 
 	@include span(1);
