@@ -34,24 +34,12 @@ html, body {
 } 
 
 
-/* 元件 */
 
-.site_name {
-	@include center(75%);
-	color: white;
-	margin-top: 1em;
-	font-size: 2em;
-	text-align: center;
-}
 
 
 /* 主要版面切割 */
 
-#container, #main, .layout {
 
-	height: 100%;
-
-}
 
 .layout {
 @include span(0.33333);
@@ -62,7 +50,7 @@ html, body {
 
 .for_student > div, .for_earlybird > div, .for_almost > div {
 
- margin: 0 auto;
+ margin: 30em auto 0;
  width: 90%;
  height: 5em;
 }
@@ -95,4 +83,15 @@ background-image: url('../assets/slice-03.jpg') ;
 footer {
 	@include span(1);
 	background: #f8ca00;
+}
+
+/* 元件 */
+
+.site_name {
+	position: absolute;
+	width: 100%;
+	color: white;
+	margin-top: 1em;
+	font-size: 2em;
+	text-align: center;
 }

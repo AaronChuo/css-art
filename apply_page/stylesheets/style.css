@@ -505,40 +505,8 @@ html, body {
   height: 100%;
 }
 
-/* 元件 */
-/* line 39, ../sass/style.scss */
-.site_name {
-  *zoom: 1;
-  width: auto;
-  max-width: 75%;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-  color: white;
-  margin-top: 1em;
-  font-size: 2em;
-  text-align: center;
-}
-/* line 188, ../sass/jeet/_grid.scss */
-.site_name:before, .site_name:after {
-  content: '';
-  display: table;
-}
-/* line 192, ../sass/jeet/_grid.scss */
-.site_name:after {
-  clear: both;
-}
-
 /* 主要版面切割 */
-/* line 50, ../sass/style.scss */
-#container, #main, .layout {
-  height: 100%;
-}
-
-/* line 56, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .layout {
   *zoom: 1;
   float: left;
@@ -563,41 +531,41 @@ html, body {
   clear: both;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .for_student > div, .for_earlybird > div, .for_almost > div {
-  margin: 0 auto;
+  margin: 30em auto 0;
   width: 90%;
   height: 5em;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .for_student {
   background-image: url("../assets/slice-01.jpg");
 }
-/* line 73, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .for_student div {
   background: rgba(70, 70, 170, 0.7);
 }
 
-/* line 79, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .for_earlybird {
   background-image: url("../assets/slice-02.jpg");
 }
-/* line 81, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .for_earlybird div {
   background: rgba(70, 170, 70, 0.7);
 }
 
-/* line 87, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .for_almost {
   background-image: url("../assets/slice-03.jpg");
 }
-/* line 89, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .for_almost div {
   background: rgba(170, 70, 70, 0.7);
 }
 
-/* line 95, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 footer {
   *zoom: 1;
   float: left;
@@ -619,4 +587,15 @@ footer:before, footer:after {
 /* line 192, ../sass/jeet/_grid.scss */
 footer:after {
   clear: both;
+}
+
+/* 元件 */
+/* line 90, ../sass/style.scss */
+.site_name {
+  position: absolute;
+  width: 100%;
+  color: white;
+  margin-top: 1em;
+  font-size: 2em;
+  text-align: center;
 }
