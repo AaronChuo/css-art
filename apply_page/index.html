@@ -13,6 +13,7 @@
     <meta content='' name='author'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <link href='stylesheets/style.css' rel='stylesheet'>
+    <link href='stylesheets/adaptive-modal.css' rel='stylesheet' type='text/css'>
     <script src='javascripts/modernizr-2.0.6.min.js'></script>
   </head>
   <body>
@@ -20,16 +21,16 @@
       <div id='main' role='main'>
         <span class="site_name">熊大與喬巴的CSS3 Workshop</span> 
         <div class="layout for_student">
-          <a href="#"><h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
+          <a href="#" data-toggle="adaptive-modal" data-title="<h1>Hey Hey</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>"><h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
         </div> 
 
         <div class="layout for_earlybird">
 
-          <a href="#"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
+          <a href="#" data-toggle="adaptive-modal" data-title="<h1>Hey Hey</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
 
         </div>
         <div class="layout for_almost">
-          <a href="#"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
+          <a href="#" data-toggle="adaptive-modal" data-title="<h1>Hey Hey</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
 
         </div>
 <!--         <form action="process.php" method="post">
@@ -90,6 +91,7 @@
     <script src='javascripts/plugins.js'></script>
     <script src='javascripts/script.js'></script>
     -->
+    <script type="text/javascript" src="javascripts/jquery.adaptive-modal.js"></script>
     <!-- 心電圖 -->
     <script>
       var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];

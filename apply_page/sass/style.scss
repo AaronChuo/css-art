@@ -148,8 +148,8 @@ background-image: url('../assets/slice-01.jpg') ;
 		background: rgba(73, 10, 61, 0.7);
 
 		&:hover {
-			background: rgba(255, 255, 255, 0.8);
-			color: rgba(33, 33, 33, 1);
+			background: rgba(73, 10, 61, 1);
+			color: white;
 		}
 
 	}
@@ -163,8 +163,8 @@ background-image: url('../assets/slice-02.jpg') ;
 		background: rgba(233, 127, 2, 0.7);
 
 		&:hover {
-			background: rgba(255, 255, 255, 0.8);
-			color: rgba(233, 127, 2, 1);
+			background: rgba(233, 127, 2, 1);
+			color: white;
 		}
 	}
 
@@ -196,17 +196,21 @@ background-image: url('../assets/slice-03.jpg') ;
 
 .required {
 	@include center(60%);
-	ul li {
-		@include span(0.5);
+	ul {
+		margin: 0 auto;
+	}
+
+	li {
 		display: inline-block;
 		float: left;
 		text-align: center;
-	li:first-child {
-		@include use-sprite("need_laptop"); 
-	 }
 	}
-
-
+	li:first-child {
+		@include use-sprite("need_laptop");
+	}
+	li:last-child {
+		@include use-sprite("prepared_thought");
+	}
 
 }
 

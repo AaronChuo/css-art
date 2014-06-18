@@ -718,8 +718,8 @@ footer:after {
 }
 /* line 150, ../sass/style.scss */
 .for_student a:hover {
-  background: rgba(255, 255, 255, 0.8);
-  color: #212121;
+  background: #490a3d;
+  color: white;
 }
 
 /* line 159, ../sass/style.scss */
@@ -733,8 +733,8 @@ footer:after {
 }
 /* line 165, ../sass/style.scss */
 .for_earlybird a:hover {
-  background: rgba(255, 255, 255, 0.8);
-  color: #e97f02;
+  background: #e97f02;
+  color: white;
 }
 
 /* line 173, ../sass/style.scss */
@@ -786,32 +786,17 @@ footer:after {
   clear: both;
 }
 /* line 199, ../sass/style.scss */
-.required ul li {
-  *zoom: 1;
-  float: left;
-  display: inline;
-  clear: none;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: inherit;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: 0%;
+.required ul {
+  margin: 0 auto;
+}
+/* line 203, ../sass/style.scss */
+.required li {
   display: inline-block;
   float: left;
   text-align: center;
 }
-/* line 188, ../sass/jeet/_grid.scss */
-.required ul li:before, .required ul li:after {
-  content: '';
-  display: table;
-}
-/* line 192, ../sass/jeet/_grid.scss */
-.required ul li:after {
-  clear: both;
-}
-/* line 204, ../sass/style.scss */
-.required ul li li:first-child {
+/* line 208, ../sass/style.scss */
+.required li:first-child {
   background-image: url('../assets/workshop-s2829bed035.png');
   background-position: 0 -100px;
   background-repeat: no-repeat;
@@ -821,8 +806,8 @@ footer:after {
   width: 150px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 204, ../sass/style.scss */
-  .required ul li li:first-child {
+  /* line 208, ../sass/style.scss */
+  .required li:first-child {
     background-image: url('../assets/workshop-2x-s91d58d4d65.png');
     background-size: 1088px 788px;
     background-position: 0 -100px;
@@ -830,8 +815,28 @@ footer:after {
     width: 150px;
   }
 }
+/* line 211, ../sass/style.scss */
+.required li:last-child {
+  background-image: url('../assets/workshop-s2829bed035.png');
+  background-position: 0 -350px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 211, ../sass/style.scss */
+  .required li:last-child {
+    background-image: url('../assets/workshop-2x-s91d58d4d65.png');
+    background-size: 1088px 788px;
+    background-position: 0 -350px;
+    height: 150px;
+    width: 150px;
+  }
+}
 
-/* line 213, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .resource {
   *zoom: 1;
   width: auto;
@@ -852,7 +857,7 @@ footer:after {
 .resource:after {
   clear: both;
 }
-/* line 215, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .resource ul li {
   *zoom: 1;
   float: left;
