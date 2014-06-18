@@ -38,9 +38,12 @@ html, body {
 
 
 body {
+
+	font-size: 67.5%;
+	font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
+
 	color: white;
 	background: #bd1550;
-
 }
 
 
@@ -48,7 +51,10 @@ body {
 
 h2 {
 	width: 100%;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
 	text-align: center;
+	margin: 0.5em auto 0;
 }
 
 
@@ -73,16 +79,16 @@ h2 {
  text-align: center;
 }
 
-
-
-
 .ac_explain {
-
-	@include span(1);
+	@include center(60%);
 	background: #bd1550;
+	li {
+		font-size: 1.2rem;
+		list-style: square;
+
+	}
 
 }
-
 
 footer {
 
@@ -91,6 +97,8 @@ footer {
 }
 
 /* 元件 */
+
+   /* Sprites */
 
 .site_name {
 	position: absolute;
@@ -121,7 +129,44 @@ background-image: url('../assets/slice-02.jpg') ;
 .for_almost {
 background-image: url('../assets/slice-03.jpg') ;
 	div {
-		background: rgba(248, 202, 0, 0.7);
+	/*	background: rgba(248, 202, 0, 0.7); */		
+		background: rgba(70, 70, 70, 0.7);
+		color: #777;
+	}
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:600);
+.price_tag {
+	font: 600 1.5em/1.8rem 'Dosis';
+}
+
+.time_tag {
+	color: white;
+}
+
+.sale_later {
+	margin-right: 1em;
+} 
+
+.required {
+	@include center(60%);
+	ul li {
+		@include span(0.5);
+		display: inline-block;
+		float: left;
+		text-align: center;
+	}
+
+}
+
+.resource {
+	@include center(60%);
+	ul li {
+		@include span(0.33333);
+		display: inline-block;
+		float: left;
+		text-align: center;
 	}
 
 }
