@@ -354,6 +354,19 @@ table {
   align($direction: both)
   cf()
 */
+/* Sprites */
+/*
+ * Retina Sprites for Compass
+ * by:              Gaya Kessler
+ * last update:     03/11/14
+ *
+ * Usage:
+ * 1. create two folders in your image directory (in this case 'workshop' and 'workshop-2x').
+ * 2. adjust the foldernames defined below if you use different names.
+ * 3. create sprite images for pixel ratio 1 screens and put them in the first folder.
+ * 4. create sprite images for pixel ratio 2 screens and put them in the second folder, use the same filenames.
+ * 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
+ */
 /* line 7, ../sass/partials/_page.scss */
 body, select, input, textarea {
   color: #222222;
@@ -501,12 +514,24 @@ body, select, input, textarea {
 
   /* Style adjustments for print go here */
 }
-/* line 34, ../sass/style.scss */
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 37, ../sass/style.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+}
+
+/* line 38, ../sass/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 41, ../sass/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 body {
   font-size: 67.5%;
   font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
@@ -515,7 +540,7 @@ body {
 }
 
 /* 排版 */
-/* line 52, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 h2 {
   width: 100%;
   font-size: 1.4rem;
@@ -524,8 +549,14 @@ h2 {
   margin: 0.5em auto 0;
 }
 
+/* line 68, ../sass/style.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* 主要版面切割 */
-/* line 63, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .layout {
   *zoom: 1;
   float: left;
@@ -551,8 +582,8 @@ h2 {
   clear: both;
 }
 
-/* line 72, ../sass/style.scss */
-.for_student > div, .for_earlybird > div, .for_almost > div {
+/* line 85, ../sass/style.scss */
+.for_student > a, .for_earlybird > a, .for_almost > a {
   margin: 156% auto 1em;
   box-sizing: border-box;
   width: 95%;
@@ -561,7 +592,7 @@ h2 {
   text-align: center;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .ac_explain {
   *zoom: 1;
   width: auto;
@@ -583,13 +614,13 @@ h2 {
 .ac_explain:after {
   clear: both;
 }
-/* line 85, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .ac_explain li {
   font-size: 1.2rem;
   list-style: square;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .time_scale {
   *zoom: 1;
   float: left;
@@ -612,20 +643,36 @@ h2 {
 .time_scale:after {
   clear: both;
 }
-/* line 96, ../sass/style.scss */
-.time_scale img {
+/* line 111, ../sass/style.scss */
+.time_scale span {
+  background-image: url('../assets/workshop-s2829bed035.png');
+  background-position: 0 -600px;
+  background-repeat: no-repeat;
+  overflow: hidden;
   display: block;
-  width: 80%;
-  margin: 0.5em auto;
+  height: 88px;
+  width: 1088px;
+  margin: 1em auto;
 }
-/* line 101, ../sass/style.scss */
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 111, ../sass/style.scss */
+  .time_scale span {
+    background-image: url('../assets/workshop-2x-s91d58d4d65.png');
+    background-size: 1088px 788px;
+    background-position: 0 -600px;
+    height: 88px;
+    width: 1088px;
+  }
+}
+/* line 117, ../sass/style.scss */
 .time_scale h3 {
   color: #333;
   width: 100%;
+  margin-top: 1em;
   text-align: center;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 footer {
   *zoom: 1;
   float: left;
@@ -650,8 +697,7 @@ footer:after {
 }
 
 /* 元件 */
-/* Sprites */
-/* line 118, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .site_name {
   position: absolute;
   margin-top: 1em;
@@ -661,51 +707,64 @@ footer:after {
   font-size: 2em;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .for_student {
   background-image: url("../assets/slice-01.jpg");
 }
-/* line 129, ../sass/style.scss */
-.for_student div {
+/* line 146, ../sass/style.scss */
+.for_student a {
+  display: block;
   background: rgba(73, 10, 61, 0.7);
 }
+/* line 150, ../sass/style.scss */
+.for_student a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #212121;
+}
 
-/* line 136, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .for_earlybird {
   background-image: url("../assets/slice-02.jpg");
 }
-/* line 138, ../sass/style.scss */
-.for_earlybird div {
+/* line 161, ../sass/style.scss */
+.for_earlybird a {
+  display: block;
   background: rgba(233, 127, 2, 0.7);
 }
+/* line 165, ../sass/style.scss */
+.for_earlybird a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #e97f02;
+}
 
-/* line 144, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .for_almost {
   background-image: url("../assets/slice-03.jpg");
 }
-/* line 146, ../sass/style.scss */
-.for_almost div {
+/* line 175, ../sass/style.scss */
+.for_almost a {
   /*	background: rgba(248, 202, 0, 0.7); */
+  display: block;
   background: rgba(70, 70, 70, 0.7);
   color: #777;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .price_tag {
   font: 600 1.5em/1.8rem 'Dosis';
 }
 
-/* line 159, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .time_tag {
   color: white;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .sale_later {
   margin-right: 1em;
 }
 
-/* line 167, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .required {
   *zoom: 1;
   width: auto;
@@ -726,7 +785,7 @@ footer:after {
 .required:after {
   clear: both;
 }
-/* line 169, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .required ul li {
   *zoom: 1;
   float: left;
@@ -751,8 +810,28 @@ footer:after {
 .required ul li:after {
   clear: both;
 }
+/* line 204, ../sass/style.scss */
+.required ul li li:first-child {
+  background-image: url('../assets/workshop-s2829bed035.png');
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+  /* line 204, ../sass/style.scss */
+  .required ul li li:first-child {
+    background-image: url('../assets/workshop-2x-s91d58d4d65.png');
+    background-size: 1088px 788px;
+    background-position: 0 -100px;
+    height: 150px;
+    width: 150px;
+  }
+}
 
-/* line 178, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .resource {
   *zoom: 1;
   width: auto;
@@ -773,7 +852,7 @@ footer:after {
 .resource:after {
   clear: both;
 }
-/* line 180, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .resource ul li {
   *zoom: 1;
   float: left;

@@ -17,6 +17,9 @@
 @import 'jeet/index';
 
 
+/* Sprites */
+@import 'workshop_sprite';
+
 // Finally, put your own styles in these partials
 // and add more as needed (i.e. forms, tables, nav)
 @import "partials/fonts";
@@ -29,6 +32,10 @@
 
 // Media should come last
 @import "partials/media";
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+.clearfix:after { clear: both; }
 
 
 html, body {
@@ -58,6 +65,12 @@ h2 {
 }
 
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
 /* 主要版面切割 */
 
 .layout {
@@ -69,7 +82,7 @@ h2 {
 }
 
 
-.for_student > div, .for_earlybird > div, .for_almost > div {
+.for_student > a, .for_earlybird > a, .for_almost > a {
 
  margin: 156% auto 1em;
  box-sizing: border-box;
@@ -92,15 +105,19 @@ h2 {
 
 .time_scale {
 	@include span(1);
+
 	background: white;
-	img {
-		display: block;
-		width: 80%; 
-		margin: 0.5em auto;
+
+	span {
+	@include use-sprite("time_scale");
+	margin: 1em auto;
+
 	}
+
 	h3 {
 		color: #333;
 		width: 100%;
+		margin-top: 1em;
 		text-align: center;
 	}
 }
@@ -113,7 +130,7 @@ footer {
 
 /* 元件 */
 
-   /* Sprites */
+
 
 .site_name {
 	position: absolute;
@@ -126,8 +143,14 @@ footer {
 
 .for_student {
 background-image: url('../assets/slice-01.jpg') ;
-	div {
+	a {
+		display: block;
 		background: rgba(73, 10, 61, 0.7);
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.8);
+			color: rgba(33, 33, 33, 1);
+		}
 
 	}
 
@@ -135,16 +158,23 @@ background-image: url('../assets/slice-01.jpg') ;
 
 .for_earlybird{
 background-image: url('../assets/slice-02.jpg') ;
-	div {
+	a {
+		display: block;
 		background: rgba(233, 127, 2, 0.7);
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.8);
+			color: rgba(233, 127, 2, 1);
+		}
 	}
 
 }
 
 .for_almost {
 background-image: url('../assets/slice-03.jpg') ;
-	div {
-	/*	background: rgba(248, 202, 0, 0.7); */		
+	a {
+	/*	background: rgba(248, 202, 0, 0.7); */
+		display: block;
 		background: rgba(70, 70, 70, 0.7);
 		color: #777;
 	}
@@ -157,11 +187,11 @@ background-image: url('../assets/slice-03.jpg') ;
 }
 
 .time_tag {
-	color: white;
+	color: white; 
 }
 
 .sale_later {
-	margin-right: 1em;
+	margin-right: 1em; 
 } 
 
 .required {
@@ -171,7 +201,12 @@ background-image: url('../assets/slice-03.jpg') ;
 		display: inline-block;
 		float: left;
 		text-align: center;
+	li:first-child {
+		@include use-sprite("need_laptop"); 
+	 }
 	}
+
+
 
 }
 
