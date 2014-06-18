@@ -8,7 +8,7 @@
 </head>
 <body ng-controller="paymentCtrl">
   <div id="status"></div>
-  <fb:login-button scope="public_profile,email" onLogin="fbLogin()"></fb:login-button>
+  <fb:login-button scope="public_profile,email" onLogin="$scope.fbLogin"></fb:login-button>
 
   <script src="javascripts/controller.js"></script>
   <script src="javascripts/facebookApi.js"></script>
