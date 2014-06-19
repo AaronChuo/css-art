@@ -45,9 +45,12 @@ angular.module('socialNetworkApi', [])
 
   //Get login status
   var getLoginStatus = function() {
-    return FB.getLoginStatus(function(response) {
-      return response.status;
+    var status;
+    FB.getLoginStatus(function(response) {
+      status = response.status;
     });
+
+    return status;
   };
 
   //
