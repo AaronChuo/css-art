@@ -110,6 +110,7 @@ a {
 
 	span {
 	@include use-sprite("time_scale");
+	max-width: 100%;
 	margin: 1em auto;
 
 	}
@@ -197,13 +198,19 @@ background-image: url('../assets/slice-03.jpg') ;
 .required {
 	@include center(60%);
 	ul {
+		display: block;
 		margin: 0 auto;
 	}
 
 	li {
+		@include span(0.5); 
 		display: inline-block;
 		float: left;
 		text-align: center;
+
+		h3 {
+			margin-top: 10.5em;
+		}
 	}
 	li:first-child {
 		@include use-sprite("need_laptop");
