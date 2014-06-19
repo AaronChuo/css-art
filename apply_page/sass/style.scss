@@ -127,6 +127,15 @@ footer {
 
 	@include span(1);
 	background: #333;
+
+	p, h3 {
+		@include center(50%);
+
+	}
+
+	h3 {
+		text-align: center;
+	}
 }
 
 /* 元件 */
@@ -244,4 +253,13 @@ background-image: url('../assets/slice-03.jpg') ;
 		@include use-sprite("snacks");
 	}
 
+}
+
+.f2e_ty_logo {
+	@include use-sprite("f2e_ty_logo");
+}
+
+.cycu_logo {
+	@include use-sprite("cycu_logo");
+	
 }
