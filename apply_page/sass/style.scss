@@ -129,7 +129,8 @@ footer {
 	background: #333;
 
 	p, h3 {
-		@include center(50%);
+		@include center(70%);
+		text-align: center;
 
 	}
 
@@ -205,18 +206,16 @@ background-image: url('../assets/slice-03.jpg') ;
 } 
 
 .required {
-	@include center(60%);
+	
+	
 	ul {
-		display: block;
-		margin: 0 auto;
+		@include center(60%);
+		text-align: center;
 	}
 
 	li {
 		@include span(0.5); 
-		display: inline-block;
-		float: left;
-		text-align: center;
-
+		
 		h3 {
 			margin-top: 10.5em;
 		}
@@ -255,11 +254,17 @@ background-image: url('../assets/slice-03.jpg') ;
 
 }
 
+.food_mob {
+	@include use-sprite("food_mob");
+	margin-top: 3em;
+
+}
+
 .f2e_ty_logo {
 	@include use-sprite("f2e_ty_logo");
 }
 
 .cycu_logo {
 	@include use-sprite("cycu_logo");
-	
+
 }
