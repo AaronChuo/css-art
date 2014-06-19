@@ -21,7 +21,6 @@ $workshop-2x: sprite-map("workshop-2x/*.png", $layout: vertical);
     background-position: sprite-position($workshop, $sprite);
     background-repeat: no-repeat;
     overflow: hidden;
-    display: block;
     height: image-height(sprite-file($workshop, $sprite));
     width: image-width(sprite-file($workshop, $sprite));
 
