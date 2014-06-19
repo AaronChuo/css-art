@@ -82,7 +82,19 @@ angular.module('socialNetworkApi', [])
 
     fbLogin: function() {
       if(!initialized) return;
-      getLoginStatus();
+      //getLoginStatus();
+      FB.getLoginStatus(function(response) {
+      var status = response.status,
+          auth = response.authResponse;
+
+      if(status === 'connected') {
+        accessToken = auth.accessToken;
+      } else if(status === 'not_authorized') {
+        FB.login();
+      } else {
+        FB.login();
+      }
+    });
     },
 
     getFbProfile: function() {
