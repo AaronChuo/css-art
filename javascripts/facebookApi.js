@@ -44,14 +44,9 @@ angular.module('socialNetworkApi', [])
   };
 
   //Get login status
-  var getLoginStatus = function() {
-    var status;
-    FB.getLoginStatus(function(response) {
-      status = response.status;
+  var getLoginStatus = FB.getLoginStatus(function(response) {
+      return response.status;
     });
-
-    return status;
-  };
 
   //
 
