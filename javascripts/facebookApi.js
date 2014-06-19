@@ -46,13 +46,9 @@ angular.module('socialNetworkApi', [])
   //Get login status
   var getLoginStatus = function() {
     var status;
-    try {
-      FB.getLoginStatus(function(response) {
-        status = response.status;
-      });
-    } catch(err) {
-      console.log(err);
-    }
+    FB.getLoginStatus(function(response) {
+      status = response.status;
+    });
 
     return status;
   };
@@ -77,6 +73,8 @@ angular.module('socialNetworkApi', [])
 
     fbLogin: function() {
       if(!initialized) return;
+
+      console.log(getLoginStatus());
 
       var status = getLoginStatus();
       console.log('tt'+status);
