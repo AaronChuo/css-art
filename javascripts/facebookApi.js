@@ -18,6 +18,9 @@ angular.module('socialNetworkApi', [])
   //Facebook login and authorized of app
   var connected = false;
 
+  //Facebook access token
+  var accessToken = '';
+
   //Facebook asynchronous initial
   var fbAsyncInit = function() {
     incFbSdk();
@@ -44,11 +47,22 @@ angular.module('socialNetworkApi', [])
   };
 
   //Get login status
-  var getLoginStatus = FB.getLoginStatus(function(response) {
-      return response.status;
-    });
+  var getLoginStatus = function() {
+    FB.getLoginStatus(function(res) {
+      var status = response.status,
+          auth = response.authResponse;
 
-  //
+      if(status === 'connected') {
+        accessToken = auth.accessToken;
+      } else if(status === 'not_authorized') {
+        FB.login();
+      } else {
+        FB.login();
+      }
+    });
+  };
+
+  //Facebook login
 
   //Public
   return {
@@ -68,22 +82,7 @@ angular.module('socialNetworkApi', [])
 
     fbLogin: function() {
       if(!initialized) return;
-
-      console.log(getLoginStatus());
-
-      var status = getLoginStatus();
-      console.log('tt'+status);
-      switch(status) {
-        case 'connected':
-          //TODO: login success
-          break;
-        case 'not_authorized':
-          //TODO: login success but need to authorize
-          break;
-        default:
-          //TODO: need to login
-          break;
-      }
+      getLoginStatus();
     },
 
     getFbProfile: function() {
