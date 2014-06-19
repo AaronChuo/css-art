@@ -228,6 +228,20 @@ background-image: url('../assets/slice-03.jpg') ;
 		display: inline-block;
 		float: left;
 		text-align: center;
+		h3 {
+			margin-top: 7.5em;
+		}
+	}
+	li:first-child {
+		@include use-sprite("wifi");
+	}
+
+	li:nth-child(2) {
+		@include use-sprite("plugs");
+	}
+	
+	li:last-child {
+		@include use-sprite("snacks");
 	}
 
 }
