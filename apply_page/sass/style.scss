@@ -110,6 +110,7 @@ a {
 
 	span {
 	@include use-sprite("time_scale");
+	display: block;
 	max-width: 100%;
 	margin: 1em auto;
 
