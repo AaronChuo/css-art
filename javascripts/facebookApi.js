@@ -45,7 +45,7 @@ angular.module('socialNetworkApi', [])
 
   //Get login status
   var getLoginStatus = function() {
-    FB.getLoginStatus(function(response) {
+    return FB.getLoginStatus(function(response) {
       return response.status;
     });
   };
@@ -71,7 +71,7 @@ angular.module('socialNetworkApi', [])
     fbLogin: function() {
       if(!initialized) return;
 
-      //var status = getLoginStatus();
+      var status = getLoginStatus();
       console.log('tt'+status);
       switch(status) {
         case 'connected':
