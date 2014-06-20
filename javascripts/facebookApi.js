@@ -91,7 +91,7 @@ angular.module('socialNetworkApi', [])
     // },
 
     getMe: function() {
-      if(!connected) return;
+      if(!initialized) return;
       getLoginStatus();
       // FB.api('/me', function(response) {
       //   console.log(response);
