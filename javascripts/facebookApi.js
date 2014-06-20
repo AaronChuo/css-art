@@ -60,12 +60,24 @@ angular.module('socialNetworkApi', [])
         });
         console.log(status);
       } else if(status === 'not_authorized') {
-        FB.login();
+        fbLogin(getFbMe);
         console.log(status);
       } else {
-        FB.login();
+        fbLogin(getFbMe);
         console.log(status);
       }
+    });
+  };
+
+  //Facebook Login API
+  var fbLogin = function(fbApi) {
+    FB.login(fbApi);
+  };
+
+  //Facebook Me API
+  var getFbMe = function() {
+    FB.api('/me', function(response) {
+      console.log(response);
     });
   };
 
