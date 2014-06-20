@@ -55,9 +55,7 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        FB.api('/me', function(response) {
-          console.log(response);
-        });
+        getFbMe();
         console.log(status);
       } else if(status === 'not_authorized') {
         fbLogin(getFbMe);
