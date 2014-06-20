@@ -54,10 +54,13 @@ angular.module('socialNetworkApi', [])
 
       if(status === 'connected') {
         accessToken = auth.accessToken;
+        console.log(status);
       } else if(status === 'not_authorized') {
         FB.login();
+        console.log(status);
       } else {
         FB.login();
+        console.log(status);
       }
     });
   };
