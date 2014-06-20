@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('feaPayment.controllers',['socialNetworkApi'])
-.controller('paymentCtrl',['$scope', '$q', 'facebookApi', function($scope, $q, facebookApi) {
+.controller('paymentCtrl',['$scope', 'facebookApi', function($scope, facebookApi) {
 
   //payment API
   $scope.creditCardApi = 'http://fea.tw/credit';
@@ -12,7 +12,6 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
   $scope.price =[600, 900, 1200];
 
   var appId = '329424167209772';
-  var deferred = $q.defer();
 
   facebookApi.initFbApi(appId);
 
