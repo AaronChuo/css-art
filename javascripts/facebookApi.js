@@ -54,6 +54,10 @@ angular.module('socialNetworkApi', [])
 
       if(status === 'connected') {
         accessToken = auth.accessToken;
+
+        FB.api('/me', function(response) {
+          console.log(response);
+        });
         console.log(status);
       } else if(status === 'not_authorized') {
         FB.login();
@@ -81,16 +85,17 @@ angular.module('socialNetworkApi', [])
       }
     },
 
-    fbLogin: function() {
-      if(!initialized) return;
-      getLoginStatus();
-    },
+    // fbLogin: function() {
+    //   if(!initialized) return;
+    //   getLoginStatus();
+    // },
 
     getMe: function() {
       if(!connected) return;
-      FB.api('/me', function(response) {
-        console.log(response);
-      });
+      getLoginStatus();
+      // FB.api('/me', function(response) {
+      //   console.log(response);
+      // });
     }
 
   };

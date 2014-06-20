@@ -17,9 +17,7 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
   facebookApi.initFbApi(appId);
 
   $scope.fbLogin = function() {
-    facebookApi.fbLogin().then(
-      facebookApi.getMe();
-    );
+    facebookApi.getMe();
   };
 
   $scope.setTicketType = function(type) {
