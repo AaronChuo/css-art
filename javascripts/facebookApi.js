@@ -86,7 +86,7 @@ angular.module('socialNetworkApi', [])
       getLoginStatus();
     },
 
-    getMe: function(field) {
+    getMe: function() {
       if(!connected) return;
       FB.api('/me', function(response) {
         console.log(response);
