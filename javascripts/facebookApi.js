@@ -50,26 +50,28 @@ angular.module('socialNetworkApi', [])
   var getLoginStatus = function() {
     FB.getLoginStatus(function(response) {
       var status = response.status,
-          auth = response.authResponse;
+          auth = response.authResponse,
+          scope = 'public_profile, email, user_mobile_phone';
 
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        getFbMe();
+        fbLogin(getFbMe, scope);
         console.log(status);
       } else if(status === 'not_authorized') {
-        fbLogin(getFbMe);
+        fbLogin(getFbMe, scope);
         console.log(status);
       } else {
-        fbLogin(getFbMe);
+        fbLogin(getFbMe, scope);
         console.log(status);
       }
     });
   };
 
   //Facebook Login API
-  var fbLogin = function(fbApi) {
-    FB.login(fbApi);
+  var fbLogin = function(fbApi, scope) {
+    var scope = scope || 'public_profile, email';
+    FB.login(fbApi, {scope: scope});
   };
 
   //Facebook Me API
@@ -95,17 +97,9 @@ angular.module('socialNetworkApi', [])
       }
     },
 
-    // fbLogin: function() {
-    //   if(!initialized) return;
-    //   getLoginStatus();
-    // },
-
     getMe: function() {
       if(!initialized) return;
       getLoginStatus();
-      // FB.api('/me', function(response) {
-      //   console.log(response);
-      // });
     }
 
   };
