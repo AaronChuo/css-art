@@ -111,9 +111,12 @@ a {
 	span {
 	@include use-sprite("time_scale");
 	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
 	max-width: 100%;
 	margin: 1em auto;
-
 	}
 
 	h3 {

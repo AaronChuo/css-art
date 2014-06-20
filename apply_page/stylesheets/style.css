@@ -652,6 +652,9 @@ a {
   height: 88px;
   width: 1088px;
   display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   max-width: 100%;
   margin: 1em auto;
 }
@@ -665,7 +668,7 @@ a {
     width: 1088px;
   }
 }
-/* line 119, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .time_scale h3 {
   color: #333;
   width: 100%;
@@ -673,7 +676,7 @@ a {
   text-align: center;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 footer {
   *zoom: 1;
   float: left;
@@ -696,7 +699,7 @@ footer:before, footer:after {
 footer:after {
   clear: both;
 }
-/* line 132, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 footer p, footer h3 {
   *zoom: 1;
   width: auto;
@@ -718,17 +721,17 @@ footer p:before, footer p:after, footer h3:before, footer h3:after {
 footer p:after, footer h3:after {
   clear: both;
 }
-/* line 138, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 footer p {
-  color: #cccccc;
+  color: #ccc;
 }
-/* line 142, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 footer p:nth-child(2), footer h3 {
   margin-top: 4em;
 }
 
 /* 元件 */
-/* line 152, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .site_name {
   position: absolute;
   margin-top: 1em;
@@ -738,41 +741,41 @@ footer p:nth-child(2), footer h3 {
   font-size: 2em;
 }
 
-/* line 161, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .for_student {
   background-image: url("../assets/slice-01.jpg");
 }
-/* line 163, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .for_student a {
   display: block;
   background: rgba(73, 10, 61, 0.7);
 }
-/* line 167, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .for_student a:hover {
   background: #490a3d;
   color: white;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .for_earlybird {
   background-image: url("../assets/slice-02.jpg");
 }
-/* line 178, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .for_earlybird a {
   display: block;
   background: rgba(233, 127, 2, 0.7);
 }
-/* line 182, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .for_earlybird a:hover {
   background: #e97f02;
   color: white;
 }
 
-/* line 190, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .for_almost {
   background-image: url("../assets/slice-03.jpg");
 }
-/* line 192, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .for_almost a {
   /*	background: rgba(248, 202, 0, 0.7); */
   display: block;
@@ -780,35 +783,35 @@ footer p:nth-child(2), footer h3 {
   color: #777;
 }
 
-/* line 202, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .price_tag {
   font: 600 1.5em/1.8rem 'Dosis';
 }
 
-/* line 206, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .time_tag {
   color: white;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .sale_later {
   margin-right: 1em;
 }
 
-/* line 217, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .required ul {
   text-align: center;
 }
-/* line 222, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .required li {
   display: inline-block;
   margin-right: 1.5em;
 }
-/* line 227, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .required h3 {
   margin-top: 10.5em;
 }
-/* line 231, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .required li:first-child {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -248px;
@@ -818,7 +821,7 @@ footer p:nth-child(2), footer h3 {
   width: 150px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 231, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   .required li:first-child {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -827,7 +830,7 @@ footer p:nth-child(2), footer h3 {
     width: 150px;
   }
 }
-/* line 234, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .required li:last-child {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -588px;
@@ -837,7 +840,7 @@ footer p:nth-child(2), footer h3 {
   width: 150px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 234, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   .required li:last-child {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -847,20 +850,20 @@ footer p:nth-child(2), footer h3 {
   }
 }
 
-/* line 242, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .resource ul {
   text-align: center;
 }
-/* line 247, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .resource li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 252, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .resource h3 {
   margin-top: 7.5em;
 }
-/* line 257, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .resource li:first-child {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -1016px;
@@ -870,7 +873,7 @@ footer p:nth-child(2), footer h3 {
   width: 100px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 257, ../sass/style.scss */
+  /* line 260, ../sass/style.scss */
   .resource li:first-child {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -879,7 +882,7 @@ footer p:nth-child(2), footer h3 {
     width: 100px;
   }
 }
-/* line 261, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .resource li:nth-child(2) {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -448px;
@@ -889,7 +892,7 @@ footer p:nth-child(2), footer h3 {
   width: 100px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 261, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .resource li:nth-child(2) {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -898,7 +901,7 @@ footer p:nth-child(2), footer h3 {
     width: 100px;
   }
 }
-/* line 265, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .resource li:last-child {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -788px;
@@ -908,7 +911,7 @@ footer p:nth-child(2), footer h3 {
   width: 100px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 265, ../sass/style.scss */
+  /* line 268, ../sass/style.scss */
   .resource li:last-child {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -918,7 +921,7 @@ footer p:nth-child(2), footer h3 {
   }
 }
 
-/* line 271, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .food_mob {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -148px;
@@ -933,7 +936,7 @@ footer p:nth-child(2), footer h3 {
   margin: 0 auto;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 271, ../sass/style.scss */
+  /* line 274, ../sass/style.scss */
   .food_mob {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -943,7 +946,7 @@ footer p:nth-child(2), footer h3 {
   }
 }
 
-/* line 282, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .f2e_ty_logo {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 -48px;
@@ -953,7 +956,7 @@ footer p:nth-child(2), footer h3 {
   width: 144px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 282, ../sass/style.scss */
+  /* line 285, ../sass/style.scss */
   .f2e_ty_logo {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -963,7 +966,7 @@ footer p:nth-child(2), footer h3 {
   }
 }
 
-/* line 286, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .cycu_logo {
   background-image: url('../assets/workshop-s7cd1020668.png');
   background-position: 0 0;
@@ -973,7 +976,7 @@ footer p:nth-child(2), footer h3 {
   width: 200px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 286, ../sass/style.scss */
+  /* line 289, ../sass/style.scss */
   .cycu_logo {
     background-image: url('../assets/workshop-2x-s8c0ff6b6a9.png');
     background-size: 1088px 1156px;
@@ -997,4 +1000,80 @@ footer p:nth-child(2), footer h3 {
   margin-top: 0;
   font-family: 'Grand Hotel', cursive;
   color: white;
+}
+
+/* line 17, ../sass/_adaptive_modal_content.scss */
+.am-modal-content {
+  /* -1px initial toggle position */
+  /* final relative toggle position */
+}
+/* line 19, ../sass/_adaptive_modal_content.scss */
+.am-modal-content li {
+  display: inline-block;
+  float: left;
+}
+/* line 22, ../sass/_adaptive_modal_content.scss */
+.am-modal-content ul li:nth-child(3) {
+  margin: 0 1em;
+}
+/* line 26, ../sass/_adaptive_modal_content.scss */
+.am-modal-content .toggle-bg {
+  background: rgba(255, 255, 255, 0.5);
+  /* You'll want to see the area being toggled, but feel free to change the color */
+  display: block;
+  /* ...So that we can set a height and width */
+  float: left;
+  /* ...So that it doesn't take up the full width of the page */
+  height: 1em;
+  /* You can change this later if you want */
+  position: relative;
+  /* Required to allow the switch to move around */
+  width: 26px;
+  /* This can be changed later as well */
+}
+/* line 35, ../sass/_adaptive_modal_content.scss */
+.am-modal-content .toggle-bg input {
+  height: 28px;
+  left: 0;
+  margin: 0;
+  /* Reset the margins and padding */
+  opacity: 0;
+  /* Invisible! */
+  padding: 0;
+  position: absolute;
+  top: -10px;
+  /* -10px Shift vertically */
+  width: 36px;
+  z-index: 2;
+  /* We want the input to be over the span.switch, which we'll give a z-index of 1 */
+  /*IE*/
+  zoom: 1;
+  filter: alpha(opacity=0);
+}
+/* line 50, ../sass/_adaptive_modal_content.scss */
+.am-modal-content .switch {
+  background: #fff;
+  display: block;
+  float: left;
+  height: 1em;
+  left: 0;
+  /*  -1px This is the starting point. When adding a border radius, a small bit of the background is shown if we use left: 0;, so -1px is best.*/
+  position: relative;
+  top: 0;
+  /* -4px ...To keep it centered vertically */
+  width: 13px;
+  z-index: 1;
+  /* Remember, it must be below the invisible inputs */
+}
+/* line 62, ../sass/_adaptive_modal_content.scss */
+.am-modal-content .toggle-bg input:checked ~ .switch {
+  left: 0;
+}
+/* line 64, ../sass/_adaptive_modal_content.scss */
+.am-modal-content .toggle-bg input ~ :checked ~ .switch {
+  left: 13px;
+}
+/* line 66, ../sass/_adaptive_modal_content.scss */
+.am-modal-content .toggle-bg input:checked {
+  z-index: 0;
 }

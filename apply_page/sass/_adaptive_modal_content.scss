@@ -12,3 +12,57 @@
     font-family: 'Grand Hotel', cursive;
     color: white;
   }
+
+.am-modal-content
+{
+
+li { display: inline-block;
+    float: left;}
+
+ul li:nth-child(3) {
+    margin: 0 1em;
+}
+
+.toggle-bg{
+    background: rgba(255,255,255, 0.5); /* You'll want to see the area being toggled, but feel free to change the color */
+    display: block; /* ...So that we can set a height and width */
+    float: left; /* ...So that it doesn't take up the full width of the page */
+    height: 1em; /* You can change this later if you want */
+    position: relative; /* Required to allow the switch to move around */
+    width: 26px; /* This can be changed later as well */
+}
+
+.toggle-bg input{
+    height: 28px;
+    left: 0;
+    margin: 0; /* Reset the margins and padding */
+    opacity: 0; /* Invisible! */
+    padding: 0;
+    position: absolute;
+    top:  -10px; /* -10px Shift vertically */
+    width: 36px;
+    z-index: 2; /* We want the input to be over the span.switch, which we'll give a z-index of 1 */
+        /*IE*/
+        zoom: 1;
+        filter: alpha(opacity=0);
+}
+
+.switch{
+    background: #fff;
+    display: block;
+    float: left;
+    height: 1em;
+    left: 0; /*  -1px This is the starting point. When adding a border radius, a small bit of the background is shown if we use left: 0;, so -1px is best.*/
+    position: relative;
+    top: 0; /* -4px ...To keep it centered vertically */
+    width: 13px;
+    z-index: 1; /* Remember, it must be below the invisible inputs */
+}
+
+.toggle-bg input:checked~.switch{left: 0;} /* -1px initial toggle position */
+
+.toggle-bg input~:checked~.switch{left: 13px;} /* final relative toggle position */
+
+.toggle-bg input:checked{z-index: 0;}
+
+}
