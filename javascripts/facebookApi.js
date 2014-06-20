@@ -50,8 +50,7 @@ angular.module('socialNetworkApi', [])
   var getLoginStatus = function() {
     FB.getLoginStatus(function(response) {
       var status = response.status,
-          auth = response.authResponse,
-          scope = 'public_profile, email, user_mobile_phone';
+          auth = response.authResponse;
 
       if(status === 'connected') {
         accessToken = auth.accessToken;
