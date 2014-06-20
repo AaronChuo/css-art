@@ -11,7 +11,9 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
   $scope.bankCode = ['TAISHIN', 'HUANAN', 'ESUN', 'FUBON', 'BOT', 'CHINATRUST', 'FIRST'];
   $scope.price =[600, 900, 1200];
 
-  facebookApi.initFbApi('329424167209772');
+  var appId = '329424167209772';
+
+  facebookApi.initFbApi(appId);
 
   $scope.fbLogin = function() {
     facebookApi.fbLogin();
