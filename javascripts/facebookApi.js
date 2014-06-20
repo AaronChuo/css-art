@@ -55,13 +55,13 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        fbLogin(getFbMe, scope);
+        fbLogin(getFbMe);
         console.log(status);
       } else if(status === 'not_authorized') {
-        fbLogin(getFbMe, scope);
+        fbLogin(getFbMe);
         console.log(status);
       } else {
-        fbLogin(getFbMe, scope);
+        fbLogin(getFbMe);
         console.log(status);
       }
     });
