@@ -65,8 +65,6 @@ angular.module('socialNetworkApi', [])
     });
   };
 
-  //Facebook login
-
   //Public
   return {
 
@@ -88,9 +86,11 @@ angular.module('socialNetworkApi', [])
       getLoginStatus();
     },
 
-    getFbProfile: function() {
+    getMe: function(field) {
       if(!connected) return;
-
+      FB.api('/me', function(response) {
+        console.log(response);
+      });
     }
 
   };
