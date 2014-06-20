@@ -1,0 +1,34 @@
+/*
+ * Retina Sprites for Compass
+ * by:              Gaya Kessler
+ * last update:     03/11/14
+ *
+ * Usage:
+ * 1. create two folders in your image directory (in this case 'workshop' and 'workshop-2x').
+ * 2. adjust the foldernames defined below if you use different names.
+ * 3. create sprite images for pixel ratio 1 screens and put them in the first folder.
+ * 4. create sprite images for pixel ratio 2 screens and put them in the second folder, use the same filenames.
+ * 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
+ */
+
+//first we'll define the folders where the sprites are and their layouts
+$workshop: sprite-map("workshop/*.png", $layout: vertical);
+$workshop-2x: sprite-map("workshop-2x/*.png", $layout: vertical);
+
+//Sprite mixin, works perfectly with standard defines
+@mixin use-sprite($sprite) {
+    background-image: sprite-url($workshop);
+    background-position: sprite-position($workshop, $sprite);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: image-height(sprite-file($workshop, $sprite));
+    width: image-width(sprite-file($workshop, $sprite));
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+        background-image: sprite-url($workshop-2x);
+        background-size: (image-width(sprite-path($workshop-2x)) / 2) (image-height(sprite-path($workshop-2x)) / 2);
+        background-position: round(nth(sprite-position($workshop-2x, $sprite), 1) / 2) round(nth(sprite-position($workshop-2x, $sprite), 2) / 2);
+        height: image-height(sprite-file($workshop-2x, $sprite)) / 2;
+        width: image-width(sprite-file($workshop-2x, $sprite)) / 2;
+    }
+}
