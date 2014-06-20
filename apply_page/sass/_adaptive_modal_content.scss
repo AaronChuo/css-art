@@ -1,26 +1,38 @@
 /* Modal Style */
 
+
 .am-modal-content {
+
   box-sizing: border-box;
   padding: 1em;
-
+  font-size: 1.2rem;
+  
+  div {
+  	float: left;
   }
 
-  .am-modal-content h1 {
-    font-size: 64px;
-    margin-top: 0;
-    font-family: 'Grand Hotel', cursive;
-    color: white;
+  div:first-child {
+  	display: block;
+	font-size: 1.6rem;
+  	margin-top: -1em;
   }
 
-.am-modal-content
-{
+/*   *****2nd is clearfix****** */
+
+
+
+}
+
+
+
+.am-modal-content { 
 
 li { display: inline-block;
     float: left;}
 
 ul li:nth-child(3) {
     margin: 0 1em;
+   }
 }
 
 .toggle-bg{
@@ -33,7 +45,7 @@ ul li:nth-child(3) {
 }
 
 .toggle-bg input{
-    height: 28px;
+    height: 2em;
     left: 0;
     margin: 0; /* Reset the margins and padding */
     opacity: 0; /* Invisible! */
@@ -61,8 +73,6 @@ ul li:nth-child(3) {
 
 .toggle-bg input:checked~.switch{left: 0;} /* -1px initial toggle position */
 
-.toggle-bg input~:checked~.switch{left: 13px;} /* final relative toggle position */
+.toggle-bg input~:checked~.switch{left: 1em;} /* final relative toggle position */
 
 .toggle-bg input:checked{z-index: 0;}
-
-}

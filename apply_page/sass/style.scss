@@ -38,6 +38,11 @@
 .clearfix:after { clear: both; }
 
 
+html {
+
+	font-size: 62.5%;
+}
+
 html, body {
 	height: 100%;
 } 
@@ -45,10 +50,8 @@ html, body {
 
 
 body {
-
-	font-size: 67.5%;
+	font-size: 1.2rem;
 	font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
-
 	color: white;
 	background: #bd1550;
 }
@@ -58,8 +61,8 @@ body {
 
 h2 {
 	width: 100%;
-	font-size: 1.4rem;
-	line-height: 1.4rem;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
 	text-align: center;
 	margin: 0.5em auto 0;
 }
@@ -158,7 +161,7 @@ footer {
 	width: 100%;
 	color: white;
 	text-align: center;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 .for_student {
@@ -228,7 +231,7 @@ background-image: url('../assets/slice-03.jpg') ;
 	}
 
 	h3 {
-		margin-top: 10.5em;
+		margin-top: 10em;
 		
 	}
 	li:first-child {
