@@ -16,16 +16,21 @@
     <link href='stylesheets/adaptive-modal.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/animate.css">
     <script src='javascripts/modernizr-2.0.6.min.js'></script>
+    <script src="javascripts/libs/angular.min.js"></script>
   </head>
-  <body>
-    <div id='container'>
+  <body ng-app="feaPayment.controllers">
+    <div id='container' ng-controller="paymentCtrl">
       <div id='main' role='main'>
-        <span class="site_name">熊大與喬巴的CSS3 Workshop</span> 
+        <span class="site_name">
+          <h1>熊大與喬巴的CSS3 Workshop</h1>
+          <button ng-click="fbLogin()">FB login</button>
+        </span>
+
         <div class="layout for_student">
           <a href="#" data-toggle="adaptive-modal" data-title="<ul><li>我使用</li><li>ATM</li><li><span class='toggle-bg'>
   <input type='radio' name='toggle' value='atm'>
   <input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li>信用卡</li><li>付款</li></ul>"><h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
-        </div> 
+        </div>
 
         <div class="layout for_earlybird">
 
@@ -45,7 +50,7 @@
 
       <div class="time_scale">
         <span>123</span>
-        <h3>中原大學資管樓104教室(桃園縣中壢市中北路200號)</h3> 
+        <h3>中原大學資管樓104教室(桃園縣中壢市中北路200號)</h3>
     </div>
       <div class="ac_explain">
 <ul>
@@ -68,15 +73,15 @@
           <li><h3>Wifi</h3></li>
           <li><h3>插座和延長線</h3></li>
           <li><h3>點心、糖果零嘴、各類茶水</h3></li>
-        </ul> 
+        </ul>
 
-      </div>  
+      </div>
 
 <footer>
   <p>本活動所採用之人物角色與圖像屬於原作者（公司）所有之資產，在本次活動中僅供教學範例使用，不直接以其版權所有之人物角色與圖像販售，<br>任何版權相關的問題請洽 ymcheung.tw@gmail.com</p>
-  
+
   <p>感謝活躍於 <a href="https://www.flickr.com/photos/ugod/" target="_blank">Flickr的攝影師 Martin</a>以創用CC授權（保留部分權利）方式提供本活動網頁的照片。</p>
-  
+
   <a class="food_mob" href="https://www.flickr.com/photos/ugod/4820240355/in/photostream/" target="_blank">Martin's Pic</a>
   <h3>主辦單位</h3>
   <p class="f2e_ty_logo"></p>
@@ -86,10 +91,13 @@
     <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
 <!--    <script>
       window.jQuery || document.write("<script src='js/jquery-1.6.2.min.js'>\x3C/script>")
-    </script> 
+    </script>
     <script src='javascripts/plugins.js'></script>-->
     <script src='javascripts/script.js'></script>
-    
+
+    <script src="javascripts/controller.js"></script>
+    <script src="javascripts/facebookApi.js"></script>
+
     <script type="text/javascript" src="javascripts/jquery.adaptive-modal.js"></script>
     <!-- 心電圖 -->
     <script>
