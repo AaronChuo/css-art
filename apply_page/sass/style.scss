@@ -153,6 +153,10 @@ footer {
 
 /* 元件 */
 
+hr {
+	margin-top: 1em;
+	border: 1px solid #fff;
+}
 
 
 .site_name {
@@ -206,6 +210,7 @@ background-image: url('../assets/slice-03.jpg') ;
 
 @import url(http://fonts.googleapis.com/css?family=Dosis:600);
 .price_tag {
+	margin-top: 2em; 
 	font: 600 1.5em/1.8rem 'Dosis';
 }
 
@@ -274,6 +279,30 @@ background-image: url('../assets/slice-03.jpg') ;
 
 }
 
+.fb_button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 3em;
+  padding: 0;
+  font-size: 1.4rem;
+  color: rgba(20, 20, 20, 1);
+  text-align: center;
+  background: #fff;
+  border: 0;
+  border-bottom: 2px solid #eee;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #ddd;
+  box-shadow: inset 0 -2px #ddd;
+}
+.fb_button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
 .food_mob {	
 	@include use-sprite("food_mob");
 	display: block;
@@ -293,6 +322,15 @@ background-image: url('../assets/slice-03.jpg') ;
 	@include use-sprite("cycu_logo");
 
 }
+
+
+/* 特效 */
+
+.add_opacity {
+
+	color: rgba (255, 255, 255, 0.6)
+}
+
 
 /* Adaptive Modal Content */
 @import 'adaptive_modal_content';
