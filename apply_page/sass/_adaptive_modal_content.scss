@@ -1,27 +1,42 @@
 /* Modal Style */
 
+
 .am-modal-content {
+
   box-sizing: border-box;
-  padding: 1em;
-
+  padding: 2em;
+  font-size: 1.2rem;
+  
+  div:first-child {
+	font-size: 1.6rem;
+  	margin: -1.5em 0 0;
   }
 
-  .am-modal-content h1 {
-    font-size: 64px;
-    margin-top: 0;
-    font-family: 'Grand Hotel', cursive;
-    color: white;
+  ul {
+  	padding: 0;
   }
 
-.am-modal-content
-{
+  li { 
+  	display: inline-block;
+    float: left;
+	}
 
-li { display: inline-block;
-    float: left;}
-
-ul li:nth-child(3) {
+	ul li:nth-child(3) {
     margin: 0 1em;
+   }
+
+
+  div:nth-child(2) {
+  	margin-top: 1em;
+
+  }
+
+
+
 }
+
+
+/* 切換選擇器 */
 
 .toggle-bg{
     background: rgba(255,255,255, 0.5); /* You'll want to see the area being toggled, but feel free to change the color */
@@ -33,7 +48,7 @@ ul li:nth-child(3) {
 }
 
 .toggle-bg input{
-    height: 28px;
+    height: 2em;
     left: 0;
     margin: 0; /* Reset the margins and padding */
     opacity: 0; /* Invisible! */
@@ -61,8 +76,96 @@ ul li:nth-child(3) {
 
 .toggle-bg input:checked~.switch{left: 0;} /* -1px initial toggle position */
 
-.toggle-bg input~:checked~.switch{left: 13px;} /* final relative toggle position */
+.toggle-bg input~:checked~.switch{left: 1em;} /* final relative toggle position */
 
 .toggle-bg input:checked{z-index: 0;}
 
+
+/* 下拉選單 */
+
+.dropcontainer {
+position: relative;
+font-size: 16px;
+color: #777;
+}
+
+.trigger {
+color: #777;
+padding: 10px;
+font-size: 16px;
+width: 50%;
+background: #fff url(../images/select-arrow-open.png) 98% center no-repeat;
+display: block;
+border: 1px solid #ccc;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.trigger:hover {
+color: #777;
+background: #f5f5f5 url(../images/select-arrow-open.png) 98% center no-repeat;
+}
+
+.activetrigger {
+color: #777;
+padding: 10px;
+font-size: 16px;
+width: 50%;
+background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
+display: block;
+border: 1px solid #ccc;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.activetrigger:hover {
+background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
+color: #777;
+}
+
+.activetrigger:active {
+background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
+color: #777;
+}
+
+.dropcontainer ul {
+font-size: 16px;
+border: 1px solid #ccc;
+border-top: none;
+background: #fff;
+list-style-type: none;
+padding: 10px;
+margin: 0;
+width: 50%;
+z-index: 100;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.dropcontainer ul li {
+padding: 5px;
+}
+
+.dropcontainer ul li:hover {
+background: #f5f5f5;
+outline: none;
+}
+
+.dropcontainer ul li:first-child {
+display: none;
+}
+
+.dropcontainer ul li:last-child {
+border-bottom: none;
+}
+
+.dropdownhidden {
+display: none;
+}
+
+.dropdownvisible {
+height: auto;
 }

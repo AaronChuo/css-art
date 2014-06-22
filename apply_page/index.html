@@ -12,37 +12,53 @@
     <meta content='' name='description'>
     <meta content='' name='author'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <link href='stylesheets/style.css' rel='stylesheet'>
-    <link href='stylesheets/adaptive-modal.css' rel='stylesheet' type='text/css'>
+
+    <link rel='stylesheet' href='stylesheets/style.css'>
+    <link rel='stylesheet' href='stylesheets/adaptive-modal.css'>
     <link rel="stylesheet" href="stylesheets/animate.css">
+
     <script src='javascripts/modernizr-2.0.6.min.js'></script>
     <script src="javascripts/libs/angular.min.js"></script>
+
   </head>
   <body ng-app="feaPayment.controllers">
     <div id='container' ng-controller="paymentCtrl">
       <div id='main' role='main'>
         <span class="site_name">
           <h1>熊大與喬巴的CSS3 Workshop</h1>
-          <button ng-click="fbLogin()">FB login</button>
         </span>
 
-        <div class="layout for_student">
-          <a href="#" data-toggle="adaptive-modal" data-title="<ul><li>我使用</li><li>ATM</li><li><span class='toggle-bg'>
-  <input type='radio' name='toggle' value='atm'>
-  <input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li>信用卡</li><li>付款</li></ul>"><h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
+        <!--Navigation-->
+        <nav>
+          <ul>
+            <li><a href="">首頁</a></li>
+            <li><a href="">活動資訊</a></li>
+            <li><a href="">時間地點</a></li>
+            <li><a href="">我要報名</a></li>
+          </ul>
+        </nav>
+
+        <div class="layout for_student"> <!-- 學生限定票 -->
+          <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
+  <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
+
+  <div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button><div class='fb_success'>Hi, User_Full_Name</div>">
+<h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
         </div>
 
-        <div class="layout for_earlybird">
+        <div class="layout for_earlybird"> <!-- 早鳥優惠票 -->
 
-          <a href="#" data-toggle="adaptive-modal" data-title="<ul><li>我使用</li><li>ATM</li><li><span class='toggle-bg'>
-  <input type='radio' name='toggle' value='atm'>
-  <input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li>信用卡</li><li>付款</li></ul>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
+          <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
+  <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
+
+  <div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
 
         </div>
-        <div class="layout for_almost">
-          <a href="#" data-toggle="adaptive-modal" data-title="<ul><li>我使用</li><li>ATM</li><li><span class='toggle-bg'>
-  <input type='radio' name='toggle' value='atm'>
-  <input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li>信用卡</li><li>付款</li></ul>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
+        <div class="layout for_almost"> <!-- 最後卡位票 -->
+          <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
+  <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
+
+  <div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
 
         </div>
 

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 // Here's where we define some default constants
 @import "partials/base";
 
@@ -12,13 +14,11 @@
 // you want more control over individual mixins
 //@import "partials/overrides";
 
-
 /* Jeet.gs */
-@import 'jeet/index';
-
+@import "jeet/index";
 
 /* Sprites */
-@import 'workshop_sprite';
+@import "workshop_sprite";
 
 // Finally, put your own styles in these partials
 // and add more as needed (i.e. forms, tables, nav)
@@ -34,262 +34,267 @@
 @import "partials/media";
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { display: table; content: " "; }
-.clearfix:after { clear: both; }
-
-
-html, body {
-	height: 100%;
-} 
-
-
-
-body {
-
-	font-size: 67.5%;
-	font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
-
-	color: white;
-	background: #bd1550;
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: " ";
 }
 
+.clearfix:after {
+    clear: both;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
+    color: white;
+    background: #bd1550;
+}
 
 /* 排版 */
 
 h2 {
-	width: 100%;
-	font-size: 1.4rem;
-	line-height: 1.4rem;
-	text-align: center;
-	margin: 0.5em auto 0;
+    width: 60%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 0.5em auto 0;
 }
-
 
 a {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
-
 
 /* 主要版面切割 */
 
 .layout {
-@include span(0.33333);
- min-width: 213.33333px;
- background-size: 100% auto;
- background-repeat: no-repeat;
-
+    @include span(0.33333);
+    min-width: 213.33333px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
-
 .for_student > a, .for_earlybird > a, .for_almost > a {
-
- margin: 156% auto 1em;
- box-sizing: border-box;
- width: 95%;
- height: 6em;
- padding-top: 1px;
- text-align: center;
+    margin: 156% auto 1em;
+    box-sizing: border-box;
+    width: 95%;
+    height: 6em;
+    padding-top: 1px;
+    text-align: center;
 }
 
 .ac_explain {
-	@include center(60%);
-	background: #bd1550;
-	li {
-		font-size: 1.2rem;
-		list-style: square;
-
-	}
-
+    @include center(60%);
+    background: #bd1550;
+    li {
+        font-size: 1.2rem;
+        list-style: square;
+    }
 }
 
 .time_scale {
-	@include span(1);
-
-	background: white;
-
-	span {
-	@include use-sprite("time_scale");
-	display: block;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-
-	max-width: 100%;
-	margin: 1em auto;
-	}
-
-	h3 {
-		color: #333;
-		width: 100%;
-		margin-top: 1em;
-		text-align: center;
-	}
+    @include span(1);
+    background: white;
+    span {
+        @include use-sprite("time_scale");
+        display: block;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+        margin: 1em auto;
+    }
+    h3 {
+        color: #333;
+        width: 100%;
+        margin-top: 1em;
+        text-align: center;
+    }
 }
 
 footer {
-
-	@include span(1);
-	background: #333;
-
-	p, h3 {
-		@include center(70%);
-		text-align: center;
-
-	}
-
-	p {
-		color: #ccc;
-	}
-
-	p:nth-child(2), h3 {
-		margin-top: 4em;
-	}
-
+    @include span(1);
+    background: #333;
+    p, h3 {
+        @include center(70%);
+        text-align: center;
+    }
+    p {
+        color: #ccc;
+    }
+    p:nth-child(2), h3 {
+        margin-top: 4em;
+    }
 }
 
 /* 元件 */
 
-
+hr {
+    margin-top: 1em;
+    border: 1px solid #fff;
+}
 
 .site_name {
-	position: absolute;
-	margin-top: 1em;
-	width: 100%;
-	color: white;
-	text-align: center;
-	font-size: 2em;
+    position: absolute;
+    margin-top: 1em;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .for_student {
-background-image: url('../assets/slice-01.jpg') ;
-	a {
-		display: block;
-		background: rgba(73, 10, 61, 0.7);
-
-		&:hover {
-			background: rgba(73, 10, 61, 1);
-			color: white;
-		}
-
-	}
-
+    background-image: url("../assets/slice-01.jpg");
+    a {
+        display: block;
+        background: rgba(73, 10, 61, 0.7);
+        &:hover {
+            background: rgba(73, 10, 61, 1);
+            color: white;
+        }
+    }
 }
 
-.for_earlybird{
-background-image: url('../assets/slice-02.jpg') ;
-	a {
-		display: block;
-		background: rgba(233, 127, 2, 0.7);
-
-		&:hover {
-			background: rgba(233, 127, 2, 1);
-			color: white;
-		}
-	}
-
+.for_earlybird {
+    background-image: url("../assets/slice-02.jpg");
+    a {
+        display: block;
+        background: rgba(233, 127, 2, 0.7);
+        &:hover {
+            background: rgba(233, 127, 2, 1);
+            color: white;
+        }
+    }
 }
 
 .for_almost {
-background-image: url('../assets/slice-03.jpg') ;
-	a {
-	/*	background: rgba(248, 202, 0, 0.7); */
-		display: block;
-		background: rgba(70, 70, 70, 0.7);
-		color: #777;
-	}
-
+    background-image: url("../assets/slice-03.jpg");
+    a {
+        /*	background: rgba(248, 202, 0, 0.7); */
+        display: block;
+        background: rgba(70, 70, 70, 0.7);
+        color: #777;
+    }
 }
 
 @import url(http://fonts.googleapis.com/css?family=Dosis:600);
+
 .price_tag {
-	font: 600 1.5em/1.8rem 'Dosis';
+    margin-top: 2em;
+    font: 600 1.5em/1.8rem 'Dosis';
 }
 
 .time_tag {
-	color: white; 
+    color: white;
 }
 
 .sale_later {
-	margin-right: 1em; 
-} 
+    margin-right: 1em;
+}
 
 .required {
-	
-	
-	ul {
-		text-align: center;
-
-	}
-
-	li {
-		display: inline-block;
-		margin-right: 1.5em;
-	}
-
-	h3 {
-		margin-top: 10.5em;
-		
-	}
-	li:first-child {
-		@include use-sprite("need_laptop");
-	}
-	li:last-child {
-		@include use-sprite("prepared_thought");
-	}
-
+    ul {
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        margin-right: 1.5em;
+    }
+    h3 {
+        margin-top: 10em;
+    }
+    li:first-child {
+        @include use-sprite("need_laptop");
+    }
+    li:last-child {
+        @include use-sprite("prepared_thought");
+    }
 }
 
 .resource {
+    ul {
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    h3 {
+        margin-top: 7.5em;
+    }
+    li:first-child {
+        @include use-sprite("wifi");
+    }
+    li:nth-child(2) {
+        @include use-sprite("plugs");
+    }
+    li:last-child {
+        @include use-sprite("snacks");
+    }
+}
 
-	ul {
-		text-align: center;
+.fb_button {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 3em;
+    padding: 0;
+    font-size: 1.4rem;
+    color: rgba(20, 20, 20, 1);
+    text-align: center;
+    background: #fff;
+    border: 0;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #ddd;
+    box-shadow: inset 0 -2px #ddd;
+}
 
-	}
+.fb_button:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
-	li {
-		display: inline-block;
-		margin-right: 1em;
-	}
 
-	h3 {
-		margin-top: 7.5em;
-		
-	}
+.fb_success {
 
-	li:first-child {
-		@include use-sprite("wifi");
-	}
-
-	li:nth-child(2) {
-		@include use-sprite("plugs");
-	}
-	
-	li:last-child {
-		@include use-sprite("snacks");
-	}
+	width: 100%;
+	font-size: 1.6rem;
 
 }
 
-.food_mob {	
-	@include use-sprite("food_mob");
-	display: block;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-
-	margin: 0 auto ;
-
+.food_mob {
+    @include use-sprite("food_mob");
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .f2e_ty_logo {
-	@include use-sprite("f2e_ty_logo");
+    @include use-sprite("f2e_ty_logo");
 }
 
 .cycu_logo {
-	@include use-sprite("cycu_logo");
+    @include use-sprite("cycu_logo");
+}
 
+/* 特效 */
+
+.add_opacity {
+    color: rgba (255, 255, 255, 0.6);
 }
 
 /* Adaptive Modal Content */
-@import 'adaptive_modal_content';
+@import "adaptive_modal_content";

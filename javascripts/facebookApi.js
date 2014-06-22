@@ -1,8 +1,15 @@
 'use strict';
+<<<<<<< HEAD
 /*-------------------------------
   Module: Social Network API
   Service: Facebook API
 --------------------------------*/
+=======
+//-------------------------------
+//  Module: Social Network API
+//  Service: Facebook API
+//-------------------------------
+>>>>>>> apply_page
 angular.module('socialNetworkApi', [])
 .factory('facebookApi', ['$window', function($window) {
 
@@ -21,6 +28,12 @@ angular.module('socialNetworkApi', [])
   //Facebook access token
   var accessToken = '';
 
+<<<<<<< HEAD
+=======
+  //Facebook personal data
+  var personalData = {};
+
+>>>>>>> apply_page
   //Facebook asynchronous initial
   var fbAsyncInit = function() {
     incFbSdk();
@@ -54,6 +67,7 @@ angular.module('socialNetworkApi', [])
 
       if(status === 'connected') {
         accessToken = auth.accessToken;
+<<<<<<< HEAD
 
         fbLogin(getFbMe);
         console.log(status);
@@ -63,6 +77,13 @@ angular.module('socialNetworkApi', [])
       } else {
         fbLogin(getFbMe);
         console.log(status);
+=======
+        fbLogin(getFbMe);
+      } else if(status === 'not_authorized') {
+        fbLogin(getFbMe);
+      } else {
+        fbLogin(getFbMe);
+>>>>>>> apply_page
       }
     });
   };
@@ -76,7 +97,12 @@ angular.module('socialNetworkApi', [])
   //Facebook Me API
   var getFbMe = function() {
     FB.api('/me', function(response) {
+<<<<<<< HEAD
       console.log(response);
+=======
+      personalData = response;
+      //console.log(response);
+>>>>>>> apply_page
     });
   };
 
@@ -96,9 +122,16 @@ angular.module('socialNetworkApi', [])
       }
     },
 
+<<<<<<< HEAD
     getMe: function() {
       if(!initialized) return;
       getLoginStatus();
+=======
+    getPerson: function() {
+      if(!initialized) return;
+      getLoginStatus();
+      return personalData;
+>>>>>>> apply_page
     }
 
   };
