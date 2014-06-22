@@ -3,6 +3,10 @@
 angular.module('feaPayment.controllers',['socialNetworkApi'])
 .controller('paymentCtrl',['$scope', '$q', 'facebookApi', function($scope, $q, facebookApi) {
 
+  //private
+  var appId = '329424167209772';
+  var personalData = {};
+
   //payment API
   $scope.creditCardApi = 'http://fea.tw/credit';
   $scope.atmApi = 'http://fea.tw/atm';
@@ -11,13 +15,10 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
   $scope.bankCode = ['TAISHIN', 'HUANAN', 'ESUN', 'FUBON', 'BOT', 'CHINATRUST', 'FIRST'];
   $scope.price =[600, 900, 1200];
 
-  var appId = '329424167209772';
-  var deferred = $q.defer();
-
   facebookApi.initFbApi(appId);
 
   $scope.fbLogin = function() {
-    facebookApi.getMe();
+    personalData = facebookApi.getMe();
   };
 
   $scope.setTicketType = function(type) {
