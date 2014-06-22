@@ -18,7 +18,7 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
   facebookApi.initFbApi(appId);
 
   $scope.fbLogin = function() {
-    personalData = facebookApi.getMe();
+    personalData = facebookApi.getPerson();
     console.log(personalData);
   };
 
