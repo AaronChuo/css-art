@@ -73,6 +73,12 @@ a {
     text-decoration: none;
 }
 
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2em;
+
+}
 /* 主要版面切割 */
 
 .layout {
@@ -95,7 +101,7 @@ a {
     @include center(60%);
     background: #bd1550;
     li {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         list-style: square;
     }
 }
@@ -163,7 +169,7 @@ hr {
     }
 }
 
-.for_earlybird {
+.for_earlybird { 
     background-image: url("../assets/slice-02.jpg");
     a {
         display: block;
