@@ -6,6 +6,7 @@
 // Then we'll import the compass extension
 @import "h5bp";
 
+
 // Now, you can simply include everything
 // (except print and helpers) by uncommeting this line
 @include h5bp-normalize;
@@ -33,22 +34,14 @@
 // Media should come last
 @import "partials/media";
 
-//public style
-$cherryColor: rgb(189, 21, 80);
-$cherryColorAlpha: rgba(189, 21, 80, .8);
-$leafColor: rgb(29, 133, 66);
-$leafColorAlpha: rgba(29, 133, 66, .8);
-$orangeColor: rgb(236, 128, 10);
-$orangeColorAlpha: rgba(236, 128, 10, .8);
-$skyColor: rgb(106, 50, 177);
-$skyColorAlpha: rgba(106, 50, 177, .8);
-
+//public style  >> moved to _variables.scss
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
     display: table;
     content: " ";
 }
+
 
 .clearfix:after {
     clear: both;
@@ -66,7 +59,7 @@ body {
     font-size: 1.2rem;
     font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
     color: white;
-    background: #bd1550;
+    background: #333;
 }
 
 h2 {
@@ -74,8 +67,8 @@ h2 {
     font-size: 1.6rem;
     line-height: 1.8rem;
     text-align: center;
-    margin: 0.5em auto 2em;
-    font-size: 2.6rem;
+    margin: 0.5em auto 0;
+    font-size: 2rem;
 }
 
 ul, ol {
@@ -95,7 +88,7 @@ a {
 p {
     padding: 0 5%;
     font-size: 1.8rem;
-    letter-spacing: 3px;
+   // letter-spacing: 3px;
     text-align: justify;
 }
 
@@ -108,10 +101,11 @@ p {
     }
 
     .navi {
-        @include span(1);
+//        @include span(0);
+        width: 100%;
+        margin: 0 auto;
         position: fixed;
-        margin: 0;
-        background: $cherryColorAlpha;
+        background: $coalColorAlpha;
         box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
         font-size: 1.8rem;
         z-index: 2;
@@ -130,9 +124,15 @@ p {
                     display: block;
                     height: 100%;
                     padding: 20px 0;
+                 &:hover {
+                    color: #333;
+        
+                }
+
                 }
                 &:hover {
-                    background: $orangeColorAlpha;
+                    background: rgb(255, 255, 255);
+
                 }
             }
         }
@@ -140,19 +140,18 @@ p {
 
     .main {
         @include span(1);
-        width: 100%;
         height: 100%;
         padding-top: 30px;
         background: url(../assets/cover-bg.png) top center no-repeat;
-        background-size: auto 120%;
+        background-size: auto 100%;
         .continue-read {
             display: block;
             position: relative;
-            top: 80%;
+            top: 75%;
             width: 200px;
             height: 80px;
             margin: 0 auto;
-            background: $cherryColorAlpha;
+            background: $coalColorAlpha;
             text-align: center;
             font-size: 2.2rem;
             line-height: 80px;
@@ -161,7 +160,7 @@ p {
             content: '';
             display: block;
             width: 0;
-            border-top: 50px solid $cherryColorAlpha;
+            border-top: 50px solid $coalColorAlpha;
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
         }
@@ -192,7 +191,7 @@ p {
 
     .ac_explain {
         @include span(1);
-        margin: 20px auto 50px;
+        margin: 0 auto;
         background: #bd1550;
         > * {
             max-width: 700px;
@@ -208,7 +207,7 @@ p {
             li {
                 padding: 10px;
                 font-size: 1.8rem;
-                text-align: justify;
+               // text-align: justify;
                 letter-spacing: 3px;
                 list-style: square;
             }
@@ -217,6 +216,8 @@ p {
 
     .required {
         @include span(1);
+        background: $cherryColor;
+        padding-top: 2em;
         > * {
             max-width: 1200px;
         }
@@ -230,7 +231,7 @@ p {
             position: relative;
             display: inline-block;
             overflow: none;
-            @include span(0.5);
+            width: 30%;
             height: 280px;
         }
         h3 {
@@ -238,14 +239,14 @@ p {
             width: 100%;
             margin: 0;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
         p {
             top: 180px;
             width: 80%;
             margin: 0 10%;
             padding: 0;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             text-align: center;
         }
         p, h3 {
@@ -264,6 +265,7 @@ p {
 
     .resource {
         @include span(1);
+        background: $cherryColor;
         > * {
             max-width: 1200px;
         }
@@ -276,7 +278,7 @@ p {
             position: relative;
             display: inline-block;
             overflow: none;
-            width: 25%;
+            width: 20%;
             height: 180px;
         }
         h3 {
@@ -284,7 +286,7 @@ p {
             top: 100px;
             width: 100%;
             margin: 0;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             text-align: center;
         }
         .icon {
@@ -353,7 +355,7 @@ p {
                 padding-left: 20px;
                 height: 100px;
                 line-height: 100px;
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
             ul {
                 display: inline;
@@ -382,7 +384,7 @@ p {
                 padding-left: 20px;
                 height: 100px;
                 line-height: 100px;
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
             p {
                 margin: 0;
@@ -394,7 +396,7 @@ p {
             .food_mob {
                 @include use-sprite("food_mob");
                 float: left;
-                overflow: hidden;
+                text-indent: -9999px;
                 margin-left: 225px;
             }
         }
@@ -416,7 +418,7 @@ p {
             }
             small {
                 display: block;
-                width: 85%;
+                width: 50%;
                 min-width: 600px;
                 max-width: 1200px;
                 margin: 0 auto;

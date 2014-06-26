@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 33, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 33, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 article,
 aside,
 details,
@@ -15,7 +15,7 @@ summary {
   display: block;
 }
 
-/* line 40, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 40, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 audio,
 canvas,
 video {
@@ -24,25 +24,25 @@ video {
   *zoom: 1;
 }
 
-/* line 48, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 48, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 55, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 55, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 [hidden] {
   display: none;
 }
 
-/* line 69, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 69, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 82, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 82, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 html,
 button,
 input,
@@ -51,99 +51,99 @@ textarea {
   font-family: sans-serif;
 }
 
-/* line 88, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 88, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 body {
   margin: 0;
 }
 
-/* line 103, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 103, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 109, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 109, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 122, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 122, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 127, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 127, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 132, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 132, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 137, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 137, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 142, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 142, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 147, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 147, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 h6 {
   font-size: 0.67em;
   margin: 2.33em 0;
 }
 
-/* line 153, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 153, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 159, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 159, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 163, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 163, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 168, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 168, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 174, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 174, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 181, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 181, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 188, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 188, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
 }
 
-/* line 196, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 196, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 code,
 kbd,
 pre,
@@ -153,31 +153,31 @@ samp {
   font-size: 1em;
 }
 
-/* line 203, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 203, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 210, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 210, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 q {
   quotes: none;
 }
 
-/* line 216, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 216, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 222, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 222, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 228, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 228, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -186,17 +186,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 235, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 235, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 239, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 239, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 253, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 253, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 dl,
 menu,
 ol,
@@ -204,54 +204,54 @@ ul {
   margin: 1em 0;
 }
 
-/* line 257, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 257, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 264, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 264, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 menu,
 ol,
 ul {
   padding: 0 0 0 40px;
 }
 
-/* line 270, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 270, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
 }
 
-/* line 283, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 283, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 289, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 289, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 300, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 300, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 311, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 311, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 form {
   margin: 0;
 }
 
-/* line 316, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 316, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 325, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 325, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
@@ -259,7 +259,7 @@ legend {
   *margin-left: -7px;
 }
 
-/* line 339, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 339, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 button,
 input,
 select,
@@ -270,19 +270,19 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 349, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 349, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 358, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 358, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 372, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 372, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -292,13 +292,13 @@ input[type="submit"] {
   *overflow: visible;
 }
 
-/* line 380, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 380, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 389, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 389, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -307,7 +307,7 @@ input[type="radio"] {
   *width: 13px;
 }
 
-/* line 399, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 399, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -315,26 +315,26 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 409, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 409, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 415, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 415, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 422, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 422, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 434, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
+/* line 434, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -372,14 +372,14 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 7, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 7, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   *text-indent: -9999px;
 }
-/* line 27, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 27, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .ir:before {
   content: "";
   display: block;
@@ -387,13 +387,13 @@ body, select, input, textarea {
   height: 150%;
 }
 
-/* line 9, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 9, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 11, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 11, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -404,7 +404,7 @@ body, select, input, textarea {
   position: absolute;
   width: 1px;
 }
-/* line 67, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 67, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -414,21 +414,21 @@ body, select, input, textarea {
   width: auto;
 }
 
-/* line 13, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 13, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 93, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 93, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 98, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 98, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .clearfix:after {
   clear: both;
 }
-/* line 104, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
+/* line 104, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -440,7 +440,7 @@ body, select, input, textarea {
   /* Style adjustments for viewports 768px and over go here */
 }
 @media print {
-  /* line 11, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 11, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -448,48 +448,48 @@ body, select, input, textarea {
     text-shadow: none !important;
   }
 
-  /* line 19, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 19, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 23, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 23, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 27, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 27, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 37, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 37, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 42, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 42, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 47, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 47, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 52, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 52, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 56, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 56, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   img {
     max-width: 100% !important;
   }
@@ -498,7 +498,7 @@ body, select, input, textarea {
     margin: 0.5cm;
 }
 
-  /* line 66, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 66, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   p,
   h2,
   h3 {
@@ -506,7 +506,7 @@ body, select, input, textarea {
     widows: 3;
   }
 
-  /* line 72, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
+  /* line 72, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -515,116 +515,97 @@ body, select, input, textarea {
   /* Style adjustments for print go here */
 }
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 48, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 53, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 body {
   font-size: 1.2rem;
   font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
   color: white;
-  background: #bd1550;
+  background: #333;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 h2 {
   width: 60%;
   font-size: 1.6rem;
   line-height: 1.8rem;
   text-align: center;
-  margin: 0.5em auto 2em;
-  font-size: 2.6rem;
+  margin: 0.5em auto 0;
+  font-size: 2rem;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 a {
   color: #DDD;
   text-decoration: none;
   transition: all ease .3s;
 }
-/* line 90, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 a:hover {
   color: #FFF;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 p {
   padding: 0 5%;
   font-size: 1.8rem;
-  letter-spacing: 3px;
   text-align: justify;
 }
 
 /* 主要版面切割 - 桌機版 */
 @media only screen and (min-width: 768px) {
-  /* line 105, ../sass/style.scss */
+  /* line 98, ../sass/style.scss */
   #container {
     width: 100%;
     height: 100%;
   }
 
-  /* line 110, ../sass/style.scss */
+  /* line 103, ../sass/style.scss */
   .navi {
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: inherit;
     width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin: 0 auto;
     position: fixed;
-    margin: 0;
-    background: rgba(189, 21, 80, 0.8);
+    background: rgba(36, 36, 36, 0.8);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     font-size: 1.8rem;
     z-index: 2;
   }
-  /* line 188, ../sass/jeet/_grid.scss */
-  .navi:before, .navi:after {
-    content: '';
-    display: table;
-  }
-  /* line 192, ../sass/jeet/_grid.scss */
-  .navi:after {
-    clear: both;
-  }
-  /* line 118, ../sass/style.scss */
+  /* line 112, ../sass/style.scss */
   .navi h3 {
     font-size: 2em;
   }
-  /* line 121, ../sass/style.scss */
+  /* line 115, ../sass/style.scss */
   .navi ul {
     width: 60%;
     margin: 0 auto;
   }
-  /* line 124, ../sass/style.scss */
+  /* line 118, ../sass/style.scss */
   .navi ul li {
     *zoom: 1;
     float: left;
@@ -649,15 +630,19 @@ p {
   .navi ul li:after {
     clear: both;
   }
-  /* line 129, ../sass/style.scss */
+  /* line 123, ../sass/style.scss */
   .navi ul li a {
     display: block;
     height: 100%;
     padding: 20px 0;
   }
-  /* line 134, ../sass/style.scss */
+  /* line 127, ../sass/style.scss */
+  .navi ul li a:hover {
+    color: #333;
+  }
+  /* line 133, ../sass/style.scss */
   .navi ul li:hover {
-    background: rgba(236, 128, 10, 0.8);
+    background: white;
   }
 
   /* line 141, ../sass/style.scss */
@@ -672,11 +657,10 @@ p {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    width: 100%;
     height: 100%;
     padding-top: 30px;
     background: url(../assets/cover-bg.png) top center no-repeat;
-    background-size: auto 120%;
+    background-size: auto 100%;
   }
   /* line 188, ../sass/jeet/_grid.scss */
   .main:before, .main:after {
@@ -687,30 +671,30 @@ p {
   .main:after {
     clear: both;
   }
-  /* line 148, ../sass/style.scss */
+  /* line 147, ../sass/style.scss */
   .main .continue-read {
     display: block;
     position: relative;
-    top: 80%;
+    top: 75%;
     width: 200px;
     height: 80px;
     margin: 0 auto;
-    background: rgba(189, 21, 80, 0.8);
+    background: rgba(36, 36, 36, 0.8);
     text-align: center;
     font-size: 2.2rem;
     line-height: 80px;
   }
-  /* line 160, ../sass/style.scss */
+  /* line 159, ../sass/style.scss */
   .main .continue-read:after {
     content: '';
     display: block;
     width: 0;
-    border-top: 50px solid rgba(189, 21, 80, 0.8);
+    border-top: 50px solid rgba(36, 36, 36, 0.8);
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
   }
 
-  /* line 170, ../sass/style.scss */
+  /* line 169, ../sass/style.scss */
   .time_scale {
     *zoom: 1;
     float: left;
@@ -735,7 +719,7 @@ p {
   .time_scale:after {
     clear: both;
   }
-  /* line 175, ../sass/style.scss */
+  /* line 174, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -100px;
@@ -750,7 +734,7 @@ p {
     overflow: hidden;
     margin: 1em auto;
   }
-  /* line 184, ../sass/style.scss */
+  /* line 183, ../sass/style.scss */
   .time_scale h3 {
     color: #333;
     width: 100%;
@@ -759,7 +743,7 @@ p {
     text-align: center;
   }
 
-  /* line 193, ../sass/style.scss */
+  /* line 192, ../sass/style.scss */
   .ac_explain {
     *zoom: 1;
     float: left;
@@ -771,7 +755,7 @@ p {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    margin: 20px auto 50px;
+    margin: 0 auto;
     background: #bd1550;
   }
   /* line 188, ../sass/jeet/_grid.scss */
@@ -783,31 +767,30 @@ p {
   .ac_explain:after {
     clear: both;
   }
-  /* line 197, ../sass/style.scss */
+  /* line 196, ../sass/style.scss */
   .ac_explain > * {
     max-width: 700px;
   }
-  /* line 200, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .ac_explain p {
     width: 60%;
     margin: 20px auto;
   }
-  /* line 204, ../sass/style.scss */
+  /* line 203, ../sass/style.scss */
   .ac_explain ul {
     width: 60%;
     margin: 20px auto;
     padding-left: 40px;
   }
-  /* line 208, ../sass/style.scss */
+  /* line 207, ../sass/style.scss */
   .ac_explain ul li {
     padding: 10px;
     font-size: 1.8rem;
-    text-align: justify;
     letter-spacing: 3px;
     list-style: square;
   }
 
-  /* line 218, ../sass/style.scss */
+  /* line 217, ../sass/style.scss */
   .required {
     *zoom: 1;
     float: left;
@@ -819,6 +802,8 @@ p {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
+    background: #bd1550;
+    padding-top: 2em;
   }
   /* line 188, ../sass/jeet/_grid.scss */
   .required:before, .required:after {
@@ -829,69 +814,51 @@ p {
   .required:after {
     clear: both;
   }
-  /* line 220, ../sass/style.scss */
+  /* line 221, ../sass/style.scss */
   .required > * {
     max-width: 1200px;
   }
-  /* line 223, ../sass/style.scss */
+  /* line 224, ../sass/style.scss */
   .required ul {
     width: 100%;
     margin: auto;
     padding: 0;
     text-align: center;
   }
-  /* line 229, ../sass/style.scss */
+  /* line 230, ../sass/style.scss */
   .required li {
     position: relative;
     display: inline-block;
     overflow: none;
-    *zoom: 1;
-    float: left;
-    display: inline;
-    clear: none;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: inherit;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: 0%;
+    width: 30%;
     height: 280px;
   }
-  /* line 188, ../sass/jeet/_grid.scss */
-  .required li:before, .required li:after {
-    content: '';
-    display: table;
-  }
-  /* line 192, ../sass/jeet/_grid.scss */
-  .required li:after {
-    clear: both;
-  }
-  /* line 236, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   .required h3 {
     top: 140px;
     width: 100%;
     margin: 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  /* line 243, ../sass/style.scss */
+  /* line 244, ../sass/style.scss */
   .required p {
     top: 180px;
     width: 80%;
     margin: 0 10%;
     padding: 0;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-align: center;
   }
-  /* line 251, ../sass/style.scss */
+  /* line 252, ../sass/style.scss */
   .required p, .required h3 {
     position: absolute;
   }
-  /* line 254, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   .required .icon {
     margin: 0 auto;
   }
-  /* line 257, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   .required li:first-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -816px;
@@ -900,7 +867,7 @@ p {
     height: 200px;
     width: 135px;
   }
-  /* line 260, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   .required li:last-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -336px;
@@ -909,7 +876,7 @@ p {
     height: 200px;
     width: 135px;
   }
-  /* line 265, ../sass/style.scss */
+  /* line 266, ../sass/style.scss */
   .resource {
     *zoom: 1;
     float: left;
@@ -921,6 +888,7 @@ p {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
+    background: #bd1550;
   }
   /* line 188, ../sass/jeet/_grid.scss */
   .resource:before, .resource:after {
@@ -931,38 +899,38 @@ p {
   .resource:after {
     clear: both;
   }
-  /* line 267, ../sass/style.scss */
+  /* line 269, ../sass/style.scss */
   .resource > * {
     max-width: 1200px;
   }
-  /* line 270, ../sass/style.scss */
+  /* line 272, ../sass/style.scss */
   .resource ul {
     margin: 0 auto;
     padding: 0;
     text-align: center;
   }
-  /* line 275, ../sass/style.scss */
+  /* line 277, ../sass/style.scss */
   .resource li {
     position: relative;
     display: inline-block;
     overflow: none;
-    width: 25%;
+    width: 20%;
     height: 180px;
   }
-  /* line 282, ../sass/style.scss */
+  /* line 284, ../sass/style.scss */
   .resource h3 {
     position: absolute;
     top: 100px;
     width: 100%;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: center;
   }
-  /* line 290, ../sass/style.scss */
+  /* line 292, ../sass/style.scss */
   .resource .icon {
     margin: 0 auto;
   }
-  /* line 293, ../sass/style.scss */
+  /* line 295, ../sass/style.scss */
   .resource li:first-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -536px;
@@ -971,7 +939,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 296, ../sass/style.scss */
+  /* line 298, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -1016px;
@@ -980,7 +948,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 299, ../sass/style.scss */
+  /* line 301, ../sass/style.scss */
   .resource li:last-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -676px;
@@ -989,7 +957,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 304, ../sass/style.scss */
+  /* line 306, ../sass/style.scss */
   .ticket-list {
     *zoom: 1;
     float: left;
@@ -1012,7 +980,7 @@ p {
   .ticket-list:after {
     clear: both;
   }
-  /* line 307, ../sass/style.scss */
+  /* line 309, ../sass/style.scss */
   .ticket-list > div {
     *zoom: 1;
     float: left;
@@ -1036,12 +1004,12 @@ p {
   .ticket-list > div:after {
     clear: both;
   }
-  /* line 312, ../sass/style.scss */
+  /* line 314, ../sass/style.scss */
   .ticket-list h2 {
     margin: 20px auto;
   }
 
-  /* line 317, ../sass/style.scss */
+  /* line 319, ../sass/style.scss */
   .for_student > a, .for_earlybird > a, .for_almost > a {
     margin: 1% auto 1em;
     box-sizing: border-box;
@@ -1051,7 +1019,7 @@ p {
     text-align: center;
   }
 
-  /* line 326, ../sass/style.scss */
+  /* line 328, ../sass/style.scss */
   footer {
     *zoom: 1;
     float: left;
@@ -1077,29 +1045,29 @@ p {
   footer:after {
     clear: both;
   }
-  /* line 332, ../sass/style.scss */
+  /* line 334, ../sass/style.scss */
   footer > * {
     min-width: 400px;
     max-width: 800px;
   }
-  /* line 336, ../sass/style.scss */
+  /* line 338, ../sass/style.scss */
   footer a {
     display: block;
     opacity: .8;
     filter: alpha(opacity=80);
     transition: all ease .3s;
   }
-  /* line 341, ../sass/style.scss */
+  /* line 343, ../sass/style.scss */
   footer a:hover {
     opacity: 1;
     filter: alpha(opacity=100);
   }
-  /* line 346, ../sass/style.scss */
+  /* line 348, ../sass/style.scss */
   footer .about-curator {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 349, ../sass/style.scss */
+  /* line 351, ../sass/style.scss */
   footer .about-curator h3 {
     position: absolute;
     display: block;
@@ -1107,19 +1075,19 @@ p {
     padding-left: 20px;
     height: 100px;
     line-height: 100px;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  /* line 358, ../sass/style.scss */
+  /* line 360, ../sass/style.scss */
   footer .about-curator ul {
     display: inline;
     list-style: none;
   }
-  /* line 362, ../sass/style.scss */
+  /* line 364, ../sass/style.scss */
   footer .about-curator li {
     display: inline-block;
     padding: 0 0 0 50px;
   }
-  /* line 366, ../sass/style.scss */
+  /* line 368, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -188px;
@@ -1128,7 +1096,7 @@ p {
     height: 100px;
     width: 144px;
   }
-  /* line 370, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   footer .about-curator .cycu_logo {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -288px;
@@ -1138,12 +1106,12 @@ p {
     width: 200px;
     margin-bottom: 25px;
   }
-  /* line 375, ../sass/style.scss */
+  /* line 377, ../sass/style.scss */
   footer .about-photo {
     margin: 30px auto;
     text-align: center;
   }
-  /* line 378, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   footer .about-photo h3 {
     position: absolute;
     display: block;
@@ -1151,18 +1119,18 @@ p {
     padding-left: 20px;
     height: 100px;
     line-height: 100px;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  /* line 387, ../sass/style.scss */
+  /* line 389, ../sass/style.scss */
   footer .about-photo p {
     margin: 0;
     margin-left: 360px;
   }
-  /* line 391, ../sass/style.scss */
+  /* line 393, ../sass/style.scss */
   footer .about-photo a {
     display: inline;
   }
-  /* line 394, ../sass/style.scss */
+  /* line 396, ../sass/style.scss */
   footer .about-photo .food_mob {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 0;
@@ -1171,10 +1139,10 @@ p {
     height: 100px;
     width: 150px;
     float: left;
-    overflow: hidden;
+    text-indent: -9999px;
     margin-left: 225px;
   }
-  /* line 401, ../sass/style.scss */
+  /* line 403, ../sass/style.scss */
   footer .copyright {
     *zoom: 1;
     float: left;
@@ -1202,20 +1170,20 @@ p {
   footer .copyright:after {
     clear: both;
   }
-  /* line 409, ../sass/style.scss */
+  /* line 411, ../sass/style.scss */
   footer .copyright p {
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-align: center;
   }
-  /* line 414, ../sass/style.scss */
+  /* line 416, ../sass/style.scss */
   footer .copyright a {
     display: inline;
   }
-  /* line 417, ../sass/style.scss */
+  /* line 419, ../sass/style.scss */
   footer .copyright small {
     display: block;
-    width: 85%;
+    width: 50%;
     min-width: 600px;
     max-width: 1200px;
     margin: 0 auto;
@@ -1223,13 +1191,13 @@ p {
   }
 
   /* 元件 */
-  /* line 430, ../sass/style.scss */
+  /* line 432, ../sass/style.scss */
   hr {
     margin-top: 1em;
     border: 1px solid #fff;
   }
 
-  /* line 435, ../sass/style.scss */
+  /* line 437, ../sass/style.scss */
   .site_name {
     position: absolute;
     margin-top: 1em;
@@ -1239,57 +1207,57 @@ p {
     font-size: 2rem;
   }
 
-  /* line 446, ../sass/style.scss */
+  /* line 448, ../sass/style.scss */
   .for_student a {
     display: block;
     background: rgba(29, 133, 66, 0.8);
   }
-  /* line 449, ../sass/style.scss */
+  /* line 451, ../sass/style.scss */
   .for_student a:hover {
     background: #1d8542;
     color: white;
   }
 
-  /* line 458, ../sass/style.scss */
+  /* line 460, ../sass/style.scss */
   .for_earlybird a {
     display: block;
     background: rgba(236, 128, 10, 0.8);
   }
-  /* line 461, ../sass/style.scss */
+  /* line 463, ../sass/style.scss */
   .for_earlybird a:hover {
     background: #ec800a;
     color: white;
   }
 
-  /* line 470, ../sass/style.scss */
+  /* line 472, ../sass/style.scss */
   .for_almost a {
     /*	background: rgba(248, 202, 0, 0.7); */
     display: block;
     background: rgba(106, 50, 177, 0.8);
   }
-  /* line 474, ../sass/style.scss */
+  /* line 476, ../sass/style.scss */
   .for_almost a:hover {
     background: #6a32b1;
     color: white;
   }
 
   @import url(http://fonts.googleapis.com/css?family=Dosis:600);
-  /* line 483, ../sass/style.scss */
+  /* line 485, ../sass/style.scss */
   .price_tag {
     font: 600 1.5em/1.8rem 'Dosis', sans-serif;
   }
 
-  /* line 487, ../sass/style.scss */
+  /* line 489, ../sass/style.scss */
   .time_tag {
     color: white;
   }
 
-  /* line 491, ../sass/style.scss */
+  /* line 493, ../sass/style.scss */
   .sale_later {
     margin-right: 1em;
   }
 
-  /* line 495, ../sass/style.scss */
+  /* line 497, ../sass/style.scss */
   .fb_button {
     position: relative;
     vertical-align: top;
@@ -1307,7 +1275,7 @@ p {
     box-shadow: inset 0 -2px #ddd;
   }
 
-  /* line 512, ../sass/style.scss */
+  /* line 514, ../sass/style.scss */
   .fb_button:active {
     top: 1px;
     outline: none;
@@ -1315,14 +1283,14 @@ p {
     box-shadow: none;
   }
 
-  /* line 519, ../sass/style.scss */
+  /* line 521, ../sass/style.scss */
   .fb_success {
     width: 100%;
     font-size: 1.6rem;
   }
 
   /* 特效 */
-  /* line 528, ../sass/style.scss */
+  /* line 530, ../sass/style.scss */
   .add_opacity {
     color: rgba 255, 255, 255, 0.6;
   }
@@ -1530,7 +1498,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 175, ../sass/style.scss */
+  /* line 174, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1540,7 +1508,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 257, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   .required li:first-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1550,7 +1518,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 260, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   .required li:last-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1561,7 +1529,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 293, ../sass/style.scss */
+  /* line 295, ../sass/style.scss */
   .resource li:first-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1571,7 +1539,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 296, ../sass/style.scss */
+  /* line 298, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1581,7 +1549,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 299, ../sass/style.scss */
+  /* line 301, ../sass/style.scss */
   .resource li:last-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1592,7 +1560,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 366, ../sass/style.scss */
+  /* line 368, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1602,7 +1570,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 370, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   footer .about-curator .cycu_logo {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1612,7 +1580,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 394, ../sass/style.scss */
+  /* line 396, ../sass/style.scss */
   footer .about-photo .food_mob {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
