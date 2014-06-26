@@ -55,6 +55,7 @@
           <li>透過使用 CSS繪製圖形來熟悉 CSS進階用法及 CSS3的屬性。</li>
           <li>手把手教學，於實作時針對每個學員的素材提供即時教學服務。</li>
           <li>了解跨瀏覽器相容問題的處理、前綴詞用法。</li>
+          <li>參加本活動可獲得社群結業證明，可在日後隨著本社團的發展，換發協會證明書。</li>
         </ul>
       </div>
 
@@ -108,14 +109,14 @@
         <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
 <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
 
-<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
+<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：</div><select name='BankName' id='year'> <!-- START BLOCK : BANK_LIST --><option value='hide'>請選擇銀行代號</option><option value='{BANK_CODE}'>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
 
       </div>
       <div class="for_almost"> <!-- 最後卡位票 -->
         <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
 <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
 
-<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
+<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
 
       </div>
     </div>
@@ -147,6 +148,7 @@
           任何版權相關的問題請洽 <a href="mailto:ymcheung.tw@gmail.com">ymcheung.tw@gmail.com</a>
         </small>
       </div>
+    <select name="BankName"> <!-- START BLOCK : BANK_LIST --><option value="hide">請選擇銀行代號</option><option value="{BANK_CODE}">{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select>
     </footer>
 
     <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
