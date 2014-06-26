@@ -737,7 +737,7 @@ p {
   }
   /* line 175, ../sass/style.scss */
   .time_scale span {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -100px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -893,21 +893,21 @@ p {
   }
   /* line 257, ../sass/style.scss */
   .required li:first-child .icon {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -816px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 200px;
-    width: 150px;
+    width: 135px;
   }
   /* line 260, ../sass/style.scss */
   .required li:last-child .icon {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -336px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 200px;
-    width: 150px;
+    width: 135px;
   }
   /* line 265, ../sass/style.scss */
   .resource {
@@ -964,30 +964,30 @@ p {
   }
   /* line 293, ../sass/style.scss */
   .resource li:first-child .icon {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -536px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 140px;
-    width: 100px;
+    width: 64px;
   }
   /* line 296, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -1016px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 140px;
-    width: 100px;
+    width: 64px;
   }
   /* line 299, ../sass/style.scss */
   .resource li:last-child .icon {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -676px;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 140px;
-    width: 100px;
+    width: 64px;
   }
   /* line 304, ../sass/style.scss */
   .ticket-list {
@@ -1121,7 +1121,7 @@ p {
   }
   /* line 366, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -188px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1130,7 +1130,7 @@ p {
   }
   /* line 370, ../sass/style.scss */
   footer .about-curator .cycu_logo {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -288px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1164,7 +1164,7 @@ p {
   }
   /* line 394, ../sass/style.scss */
   footer .about-photo .food_mob {
-    background-image: url('../assets/workshop-s865124e0a7.png');
+    background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1532,7 +1532,7 @@ p {
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 175, ../sass/style.scss */
   .time_scale span {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -100px;
     height: 88px;
@@ -1542,59 +1542,59 @@ p {
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 257, ../sass/style.scss */
   .required li:first-child .icon {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -816px;
     height: 200px;
-    width: 150px;
+    width: 135px;
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 260, ../sass/style.scss */
   .required li:last-child .icon {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -336px;
     height: 200px;
-    width: 150px;
+    width: 135px;
   }
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 293, ../sass/style.scss */
   .resource li:first-child .icon {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -536px;
     height: 140px;
-    width: 100px;
+    width: 61px;
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 296, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -1016px;
     height: 140px;
-    width: 100px;
+    width: 64px;
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 299, ../sass/style.scss */
   .resource li:last-child .icon {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -676px;
     height: 140px;
-    width: 100px;
+    width: 64px;
   }
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 366, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -188px;
     height: 100px;
@@ -1604,7 +1604,7 @@ p {
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 370, ../sass/style.scss */
   footer .about-curator .cycu_logo {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 -288px;
     height: 48px;
@@ -1614,7 +1614,7 @@ p {
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
   /* line 394, ../sass/style.scss */
   footer .about-photo .food_mob {
-    background-image: url('../assets/workshop-2x-s8b915e829d.png');
+    background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
     background-position: 0 0;
     height: 100px;
