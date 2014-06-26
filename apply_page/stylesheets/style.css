@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Dosis:600);
 /* line 33, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
 article,
 aside,
@@ -514,29 +515,30 @@ body, select, input, textarea {
 
   /* Style adjustments for print go here */
 }
+/* font for price_tag */
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 40, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 46, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 54, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 body {
   font-size: 1.2rem;
   font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
@@ -544,7 +546,7 @@ body {
   background: #333;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 h2 {
   width: 60%;
   font-size: 1.6rem;
@@ -554,24 +556,24 @@ h2 {
   font-size: 2rem;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 a {
   color: #DDD;
   text-decoration: none;
   transition: all ease .3s;
 }
-/* line 83, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 a:hover {
   color: #FFF;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 p {
   padding: 0 5%;
   font-size: 1.8rem;
@@ -580,13 +582,13 @@ p {
 
 /* 主要版面切割 - 桌機版 */
 @media only screen and (min-width: 768px) {
-  /* line 98, ../sass/style.scss */
+  /* line 101, ../sass/style.scss */
   #container {
     width: 100%;
     height: 100%;
   }
 
-  /* line 103, ../sass/style.scss */
+  /* line 106, ../sass/style.scss */
   .navi {
     width: 100%;
     margin: 0 auto;
@@ -596,16 +598,16 @@ p {
     font-size: 1.8rem;
     z-index: 2;
   }
-  /* line 112, ../sass/style.scss */
+  /* line 115, ../sass/style.scss */
   .navi h3 {
     font-size: 2em;
   }
-  /* line 115, ../sass/style.scss */
+  /* line 118, ../sass/style.scss */
   .navi ul {
     width: 60%;
     margin: 0 auto;
   }
-  /* line 118, ../sass/style.scss */
+  /* line 121, ../sass/style.scss */
   .navi ul li {
     *zoom: 1;
     float: left;
@@ -630,22 +632,22 @@ p {
   .navi ul li:after {
     clear: both;
   }
-  /* line 123, ../sass/style.scss */
+  /* line 126, ../sass/style.scss */
   .navi ul li a {
     display: block;
     height: 100%;
     padding: 20px 0;
   }
-  /* line 127, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   .navi ul li a:hover {
     color: #333;
   }
-  /* line 133, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   .navi ul li:hover {
     background: white;
   }
 
-  /* line 141, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   .main {
     *zoom: 1;
     float: left;
@@ -671,7 +673,7 @@ p {
   .main:after {
     clear: both;
   }
-  /* line 147, ../sass/style.scss */
+  /* line 150, ../sass/style.scss */
   .main .continue-read {
     display: block;
     position: relative;
@@ -684,7 +686,7 @@ p {
     font-size: 2.2rem;
     line-height: 80px;
   }
-  /* line 159, ../sass/style.scss */
+  /* line 162, ../sass/style.scss */
   .main .continue-read:after {
     content: '';
     display: block;
@@ -694,7 +696,7 @@ p {
     border-right: 100px solid transparent;
   }
 
-  /* line 169, ../sass/style.scss */
+  /* line 172, ../sass/style.scss */
   .time_scale {
     *zoom: 1;
     float: left;
@@ -719,7 +721,7 @@ p {
   .time_scale:after {
     clear: both;
   }
-  /* line 174, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -100px;
@@ -734,7 +736,7 @@ p {
     overflow: hidden;
     margin: 1em auto;
   }
-  /* line 183, ../sass/style.scss */
+  /* line 186, ../sass/style.scss */
   .time_scale h3 {
     color: #333;
     width: 100%;
@@ -743,7 +745,7 @@ p {
     text-align: center;
   }
 
-  /* line 192, ../sass/style.scss */
+  /* line 195, ../sass/style.scss */
   .ac_explain {
     *zoom: 1;
     float: left;
@@ -767,22 +769,22 @@ p {
   .ac_explain:after {
     clear: both;
   }
-  /* line 196, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .ac_explain > * {
     max-width: 700px;
   }
-  /* line 199, ../sass/style.scss */
+  /* line 202, ../sass/style.scss */
   .ac_explain p {
     width: 60%;
     margin: 20px auto;
   }
-  /* line 203, ../sass/style.scss */
+  /* line 206, ../sass/style.scss */
   .ac_explain ul {
     width: 60%;
     margin: 20px auto;
     padding-left: 40px;
   }
-  /* line 207, ../sass/style.scss */
+  /* line 210, ../sass/style.scss */
   .ac_explain ul li {
     padding: 10px;
     font-size: 1.8rem;
@@ -790,7 +792,7 @@ p {
     list-style: square;
   }
 
-  /* line 217, ../sass/style.scss */
+  /* line 220, ../sass/style.scss */
   .required {
     *zoom: 1;
     float: left;
@@ -814,26 +816,26 @@ p {
   .required:after {
     clear: both;
   }
-  /* line 221, ../sass/style.scss */
+  /* line 224, ../sass/style.scss */
   .required > * {
     max-width: 1200px;
   }
-  /* line 224, ../sass/style.scss */
+  /* line 227, ../sass/style.scss */
   .required ul {
     width: 100%;
     margin: auto;
     padding: 0;
     text-align: center;
   }
-  /* line 230, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   .required li {
     position: relative;
     display: inline-block;
     overflow: none;
-    width: 30%;
+    width: 31%;
     height: 280px;
   }
-  /* line 237, ../sass/style.scss */
+  /* line 240, ../sass/style.scss */
   .required h3 {
     top: 140px;
     width: 100%;
@@ -841,7 +843,7 @@ p {
     text-align: center;
     font-size: 1.6rem;
   }
-  /* line 244, ../sass/style.scss */
+  /* line 247, ../sass/style.scss */
   .required p {
     top: 180px;
     width: 80%;
@@ -850,15 +852,15 @@ p {
     font-size: 1.2rem;
     text-align: center;
   }
-  /* line 252, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   .required p, .required h3 {
     position: absolute;
   }
-  /* line 255, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   .required .icon {
     margin: 0 auto;
   }
-  /* line 258, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   .required li:first-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -816px;
@@ -867,7 +869,7 @@ p {
     height: 200px;
     width: 135px;
   }
-  /* line 261, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .required li:last-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -336px;
@@ -876,7 +878,7 @@ p {
     height: 200px;
     width: 135px;
   }
-  /* line 266, ../sass/style.scss */
+  /* line 269, ../sass/style.scss */
   .resource {
     *zoom: 1;
     float: left;
@@ -899,17 +901,17 @@ p {
   .resource:after {
     clear: both;
   }
-  /* line 269, ../sass/style.scss */
+  /* line 272, ../sass/style.scss */
   .resource > * {
     max-width: 1200px;
   }
-  /* line 272, ../sass/style.scss */
+  /* line 275, ../sass/style.scss */
   .resource ul {
     margin: 0 auto;
     padding: 0;
     text-align: center;
   }
-  /* line 277, ../sass/style.scss */
+  /* line 280, ../sass/style.scss */
   .resource li {
     position: relative;
     display: inline-block;
@@ -917,7 +919,7 @@ p {
     width: 20%;
     height: 180px;
   }
-  /* line 284, ../sass/style.scss */
+  /* line 287, ../sass/style.scss */
   .resource h3 {
     position: absolute;
     top: 100px;
@@ -926,11 +928,11 @@ p {
     font-size: 1.4rem;
     text-align: center;
   }
-  /* line 292, ../sass/style.scss */
+  /* line 295, ../sass/style.scss */
   .resource .icon {
     margin: 0 auto;
   }
-  /* line 295, ../sass/style.scss */
+  /* line 298, ../sass/style.scss */
   .resource li:first-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -536px;
@@ -939,7 +941,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 298, ../sass/style.scss */
+  /* line 301, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -1016px;
@@ -948,7 +950,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 301, ../sass/style.scss */
+  /* line 304, ../sass/style.scss */
   .resource li:last-child .icon {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -676px;
@@ -957,7 +959,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 306, ../sass/style.scss */
+  /* line 309, ../sass/style.scss */
   .ticket-list {
     *zoom: 1;
     float: left;
@@ -980,7 +982,7 @@ p {
   .ticket-list:after {
     clear: both;
   }
-  /* line 309, ../sass/style.scss */
+  /* line 312, ../sass/style.scss */
   .ticket-list > div {
     *zoom: 1;
     float: left;
@@ -1004,12 +1006,12 @@ p {
   .ticket-list > div:after {
     clear: both;
   }
-  /* line 314, ../sass/style.scss */
+  /* line 317, ../sass/style.scss */
   .ticket-list h2 {
     margin: 20px auto;
   }
 
-  /* line 319, ../sass/style.scss */
+  /* line 322, ../sass/style.scss */
   .for_student > a, .for_earlybird > a, .for_almost > a {
     margin: 1% auto 1em;
     box-sizing: border-box;
@@ -1019,7 +1021,7 @@ p {
     text-align: center;
   }
 
-  /* line 328, ../sass/style.scss */
+  /* line 331, ../sass/style.scss */
   footer {
     *zoom: 1;
     float: left;
@@ -1045,29 +1047,29 @@ p {
   footer:after {
     clear: both;
   }
-  /* line 334, ../sass/style.scss */
+  /* line 337, ../sass/style.scss */
   footer > * {
     min-width: 400px;
     max-width: 800px;
   }
-  /* line 338, ../sass/style.scss */
+  /* line 341, ../sass/style.scss */
   footer a {
     display: block;
     opacity: .8;
     filter: alpha(opacity=80);
     transition: all ease .3s;
   }
-  /* line 343, ../sass/style.scss */
+  /* line 346, ../sass/style.scss */
   footer a:hover {
     opacity: 1;
     filter: alpha(opacity=100);
   }
-  /* line 348, ../sass/style.scss */
+  /* line 351, ../sass/style.scss */
   footer .about-curator {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 351, ../sass/style.scss */
+  /* line 354, ../sass/style.scss */
   footer .about-curator h3 {
     position: absolute;
     display: block;
@@ -1077,17 +1079,17 @@ p {
     line-height: 100px;
     font-size: 1.6rem;
   }
-  /* line 360, ../sass/style.scss */
+  /* line 363, ../sass/style.scss */
   footer .about-curator ul {
     display: inline;
     list-style: none;
   }
-  /* line 364, ../sass/style.scss */
+  /* line 367, ../sass/style.scss */
   footer .about-curator li {
     display: inline-block;
     padding: 0 0 0 50px;
   }
-  /* line 368, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -188px;
@@ -1096,7 +1098,7 @@ p {
     height: 100px;
     width: 144px;
   }
-  /* line 372, ../sass/style.scss */
+  /* line 375, ../sass/style.scss */
   footer .about-curator .cycu_logo {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 -288px;
@@ -1106,12 +1108,12 @@ p {
     width: 200px;
     margin-bottom: 25px;
   }
-  /* line 377, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   footer .about-photo {
     margin: 30px auto;
     text-align: center;
   }
-  /* line 380, ../sass/style.scss */
+  /* line 383, ../sass/style.scss */
   footer .about-photo h3 {
     position: absolute;
     display: block;
@@ -1121,16 +1123,16 @@ p {
     line-height: 100px;
     font-size: 1.6rem;
   }
-  /* line 389, ../sass/style.scss */
+  /* line 392, ../sass/style.scss */
   footer .about-photo p {
     margin: 0;
     margin-left: 360px;
   }
-  /* line 393, ../sass/style.scss */
+  /* line 396, ../sass/style.scss */
   footer .about-photo a {
     display: inline;
   }
-  /* line 396, ../sass/style.scss */
+  /* line 399, ../sass/style.scss */
   footer .about-photo .food_mob {
     background-image: url('../assets/workshop-se13652b4d2.png');
     background-position: 0 0;
@@ -1142,7 +1144,7 @@ p {
     text-indent: -9999px;
     margin-left: 225px;
   }
-  /* line 403, ../sass/style.scss */
+  /* line 406, ../sass/style.scss */
   footer .copyright {
     *zoom: 1;
     float: left;
@@ -1170,17 +1172,17 @@ p {
   footer .copyright:after {
     clear: both;
   }
-  /* line 411, ../sass/style.scss */
+  /* line 414, ../sass/style.scss */
   footer .copyright p {
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-align: center;
   }
-  /* line 416, ../sass/style.scss */
+  /* line 419, ../sass/style.scss */
   footer .copyright a {
     display: inline;
   }
-  /* line 419, ../sass/style.scss */
+  /* line 422, ../sass/style.scss */
   footer .copyright small {
     display: block;
     width: 50%;
@@ -1191,13 +1193,13 @@ p {
   }
 
   /* 元件 */
-  /* line 432, ../sass/style.scss */
+  /* line 435, ../sass/style.scss */
   hr {
     margin-top: 1em;
     border: 1px solid #fff;
   }
 
-  /* line 437, ../sass/style.scss */
+  /* line 440, ../sass/style.scss */
   .site_name {
     position: absolute;
     margin-top: 1em;
@@ -1207,57 +1209,56 @@ p {
     font-size: 2rem;
   }
 
-  /* line 448, ../sass/style.scss */
+  /* line 451, ../sass/style.scss */
   .for_student a {
     display: block;
     background: rgba(29, 133, 66, 0.8);
   }
-  /* line 451, ../sass/style.scss */
+  /* line 454, ../sass/style.scss */
   .for_student a:hover {
     background: #1d8542;
     color: white;
   }
 
-  /* line 460, ../sass/style.scss */
+  /* line 463, ../sass/style.scss */
   .for_earlybird a {
     display: block;
     background: rgba(236, 128, 10, 0.8);
   }
-  /* line 463, ../sass/style.scss */
+  /* line 466, ../sass/style.scss */
   .for_earlybird a:hover {
     background: #ec800a;
     color: white;
   }
 
-  /* line 472, ../sass/style.scss */
+  /* line 475, ../sass/style.scss */
   .for_almost a {
     /*	background: rgba(248, 202, 0, 0.7); */
     display: block;
     background: rgba(106, 50, 177, 0.8);
   }
-  /* line 476, ../sass/style.scss */
+  /* line 479, ../sass/style.scss */
   .for_almost a:hover {
     background: #6a32b1;
     color: white;
   }
 
-  @import url(http://fonts.googleapis.com/css?family=Dosis:600);
-  /* line 485, ../sass/style.scss */
+  /* line 488, ../sass/style.scss */
   .price_tag {
     font: 600 1.5em/1.8rem 'Dosis', sans-serif;
   }
 
-  /* line 489, ../sass/style.scss */
+  /* line 492, ../sass/style.scss */
   .time_tag {
     color: white;
   }
 
-  /* line 493, ../sass/style.scss */
+  /* line 496, ../sass/style.scss */
   .sale_later {
     margin-right: 1em;
   }
 
-  /* line 497, ../sass/style.scss */
+  /* line 500, ../sass/style.scss */
   .fb_button {
     position: relative;
     vertical-align: top;
@@ -1275,7 +1276,7 @@ p {
     box-shadow: inset 0 -2px #ddd;
   }
 
-  /* line 514, ../sass/style.scss */
+  /* line 517, ../sass/style.scss */
   .fb_button:active {
     top: 1px;
     outline: none;
@@ -1283,14 +1284,14 @@ p {
     box-shadow: none;
   }
 
-  /* line 521, ../sass/style.scss */
+  /* line 524, ../sass/style.scss */
   .fb_success {
     width: 100%;
     font-size: 1.6rem;
   }
 
   /* 特效 */
-  /* line 530, ../sass/style.scss */
+  /* line 533, ../sass/style.scss */
   .add_opacity {
     color: rgba 255, 255, 255, 0.6;
   }
@@ -1306,7 +1307,7 @@ p {
   /* line 10, ../sass/_adaptive_modal_content.scss */
   .am-modal-content div:first-child {
     font-size: 1.6rem;
-    margin: -1.5em 0 0;
+    margin: -0.75em 0 0;
   }
   /* line 15, ../sass/_adaptive_modal_content.scss */
   .am-modal-content ul {
@@ -1498,7 +1499,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 174, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1508,7 +1509,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 258, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   .required li:first-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1518,7 +1519,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 261, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .required li:last-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1529,7 +1530,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 295, ../sass/style.scss */
+  /* line 298, ../sass/style.scss */
   .resource li:first-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1539,7 +1540,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 298, ../sass/style.scss */
+  /* line 301, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1549,7 +1550,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 301, ../sass/style.scss */
+  /* line 304, ../sass/style.scss */
   .resource li:last-child .icon {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1560,7 +1561,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 368, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1570,7 +1571,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 372, ../sass/style.scss */
+  /* line 375, ../sass/style.scss */
   footer .about-curator .cycu_logo {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;
@@ -1580,7 +1581,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 396, ../sass/style.scss */
+  /* line 399, ../sass/style.scss */
   footer .about-photo .food_mob {
     background-image: url('../assets/workshop-2x-sbe953eec0d.png');
     background-size: 1088px 1156px;

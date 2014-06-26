@@ -36,6 +36,9 @@
 
 //public style  >> moved to _variables.scss
 
+/* font for price_tag */
+@import url(http://fonts.googleapis.com/css?family=Dosis:600);
+
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
     display: table;
@@ -231,7 +234,7 @@ p {
             position: relative;
             display: inline-block;
             overflow: none;
-            width: 30%;
+            width: 31%;
             height: 280px;
         }
         h3 {
@@ -480,7 +483,7 @@ p {
         }
     }
 
-    @import url(http://fonts.googleapis.com/css?family=Dosis:600);
+
 
     .price_tag {
         font: 600 1.5em/1.8rem 'Dosis', sans-serif;
