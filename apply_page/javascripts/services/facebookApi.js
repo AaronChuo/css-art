@@ -1,8 +1,8 @@
 'use strict';
-/*-------------------------------
-  Module: Social Network API
-  Service: Facebook API
---------------------------------*/
+//--------------------------------
+// Module: Social Network API
+// Service: Facebook API
+//--------------------------------
 angular.module('socialNetworkApi', [])
 .factory('facebookApi', ['$window', function($window) {
 

@@ -23,96 +23,138 @@
   </head>
   <body ng-app="feaPayment.controllers">
     <div id='container' ng-controller="paymentCtrl">
-      <div id='main' role='main'>
+
+      <!-- Navigation -->
+      <nav class="navi">
+        <ul>
+          <li><a href="">活動封面</a></li>
+          <li><a href="">時間地點</a></li>
+          <li><a href="">詳細資訊</a></li>
+          <li><a href="">我要報名</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cover Page -->
+      <div id="main" class="main" role='main'>
         <span class="site_name">
           <h1>熊大與喬巴的CSS3 Workshop</h1>
         </span>
-
-        <!--Navigation-->
-        <nav>
-          <ul>
-            <li><a href="">首頁</a></li>
-            <li><a href="">活動資訊</a></li>
-            <li><a href="">時間地點</a></li>
-            <li><a href="">我要報名</a></li>
-          </ul>
-        </nav>
-
-        <div class="layout for_student"> <!-- 學生限定票 -->
-          <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
-  <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
-
-  <div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button><div class='fb_success'>Hi, User_Full_Name</div>">
-<h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
-        </div>
-
-        <div class="layout for_earlybird"> <!-- 早鳥優惠票 -->
-
-          <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
-  <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
-
-  <div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
-
-        </div>
-        <div class="layout for_almost"> <!-- 最後卡位票 -->
-          <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
-  <input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
-
-  <div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
-
-        </div>
-
+        <a class="continue-read" href="#time">繼續了解</a>
       </div>
 
-      <div class="time_scale">
+      <!-- Time & Location -->
+      <div id="time" class="time_scale">
         <span>123</span>
         <h3>中原大學資管樓104教室(桃園縣中壢市中北路200號)</h3>
-    </div>
-      <div class="ac_explain">
-<ul>
-<li>透過使用 CSS繪製圖形來熟悉 CSS進階用法及 CSS3的屬性。</li>
-<li>手把手教學，於實作時針對每個學員的素材提供即時教學服務。</li>
-<li>了解跨瀏覽器相容問題的處理、前綴詞用法。</li>
-<li>CSS是一項非常重要的前端技術之一，主要用來處理內容呈現的形式、排版、美工，由於近年來 CSS3的普及，許多複雜驚豔的效果與設計已更容易實現，讓許多人見識到 CSS的強大之處。</li>
-</ul>
       </div>
-      <div class="required">
+
+      <!-- Information - Keypoint -->
+      <div id="keypoint" class="ac_explain">
+        <p>CSS是一項非常重要的前端技術之一，主要用來處理內容呈現的形式、排版、美工，由於近年來 CSS3的普及，許多複雜驚豔的效果與設計已更容易實現，讓許多人見識到 CSS的強大之處。</p>
+        <ul>
+          <li>透過使用 CSS繪製圖形來熟悉 CSS進階用法及 CSS3的屬性。</li>
+          <li>手把手教學，於實作時針對每個學員的素材提供即時教學服務。</li>
+          <li>了解跨瀏覽器相容問題的處理、前綴詞用法。</li>
+        </ul>
+      </div>
+
+      <!-- Information - Prepare -->
+      <div id="prepare" class="required">
         <h2>參加須知</h2>
         <ul>
-          <li><h3>自備筆記型電腦</h3>可以直接把作品帶回家</li>
-          <li><h3>先準備好想製作的題材</h3>圖片不要過於複雜，可以是人物角色、幾何圖形或Logo</li>
+          <li>
+            <div class="icon"></div>
+            <h3>自備筆記型電腦</h3>
+            <p>使用自己習慣的開發工具，實作後直接把作品帶回家。</p>
+          </li>
+          <li>
+            <div class="icon"></div>
+            <h3>準備想製作的題材</h3>
+            <p>圖片不要過於複雜，可以是人物角色或幾何圖形。</p>
+          </li>
         </ul>
-        </div>
-        <div class="resource">
-        <h2>現場資源</h2>
-        <ul>
-          <li><h3>Wifi</h3></li>
-          <li><h3>插座和延長線</h3></li>
-          <li><h3>點心、糖果零嘴、各類茶水</h3></li>
-        </ul>
-
       </div>
 
-<footer>
-  <p>本活動所採用之人物角色與圖像屬於原作者（公司）所有之資產，在本次活動中僅供教學範例使用，不直接以其版權所有之人物角色與圖像販售，<br>任何版權相關的問題請洽 ymcheung.tw@gmail.com</p>
+      <!-- Information - Resources -->
+      <div id="resource" class="resource">
+        <h2>現場資源</h2>
+        <ul>
+          <li>
+            <div class="icon"></div>
+            <h3>Wifi</h3>
+          </li>
+          <li>
+            <div class="icon"></div>
+            <h3>插座和延長線</h3>
+          </li>
+          <li>
+            <div class="icon"></div>
+            <h3>點心、零嘴、茶水</h3>
+          </li>
+        </ul>
+      </div>
 
-  <p>感謝活躍於 <a href="https://www.flickr.com/photos/ugod/" target="_blank">Flickr的攝影師 Martin</a>以創用CC授權（保留部分權利）方式提供本活動網頁的照片。</p>
-
-  <a class="food_mob" href="https://www.flickr.com/photos/ugod/4820240355/in/photostream/" target="_blank">Martin's Pic</a>
-  <h3>主辦單位</h3>
-  <p class="f2e_ty_logo"></p>
-  <p class="cycu_logo"></p>
-</footer>
     </div>
+
+    <!-- Tickets -->
+    <div id="ticket" class="ticket-list">
+    <div class="for_student"> <!-- 學生限定票 -->
+      <a href="#" data-toggle="adaptive-modal" data-title="ticketModal()">
+      <h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
+    </div>
+
+      <div class="for_earlybird"> <!-- 早鳥優惠票 -->
+
+        <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
+<input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
+
+<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
+
+      </div>
+      <div class="for_almost"> <!-- 最後卡位票 -->
+        <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
+<input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
+
+<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName' class='turnintodropdown_demo2'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
+
+      </div>
+    </div>
+
+    <awesome-modal title="選擇付款" show="0"></awesome-modal>
+
+    <!-- Footer -->
+    <footer>
+      <div class="about-curator">
+        <h3>主辦單位</h3>
+        <ul>
+          <li>
+            <a class="f2e_ty_logo" href="http://fea.tw/group" title="桃園前端開發者社群" target="_blank"></a>
+          </li>
+          <li>
+            <a class="cycu_logo" href="http://www.im.cycu.edu.tw/" title="中原大學資訊管理學系" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="about-photo">
+        <h3>素材來源</h3>
+        <a class="food_mob" href="https://www.flickr.com/photos/ugod/4820240355/in/photostream/" target="_blank">Martin's Pic</a>
+        <p><small>感謝活躍於 <a href="https://www.flickr.com/photos/ugod/" target="_blank">Flickr的攝影師 Martin</a>以創用CC授權（保留部分權利）方式提供本活動網頁的照片。</small></p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2014 Front-End Developers Taoyuan</p>
+        <small>
+          本活動所採用之人物角色與圖像屬於原作者（公司）所有之資產，在本次活動中僅供教學範例使用，不直接以其版權所有之人物角色與圖像販售，
+          任何版權相關的問題請洽 <a href="mailto:ymcheung.tw@gmail.com">ymcheung.tw@gmail.com</a>
+        </small>
+      </div>
+    </footer>
+
     <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
-<!--    <script>
-      window.jQuery || document.write("<script src='js/jquery-1.6.2.min.js'>\x3C/script>")
-    </script>
-    <script src='javascripts/plugins.js'></script>-->
     <script src='javascripts/script.js'></script>
 
     <script src="javascripts/controller.js"></script>
-    <script src="javascripts/facebookApi.js"></script>
+    <script src="javascripts/services/facebookApi.js"></script>
+    <script src="javascripts/directives/commonDirective.js"></script>
 
     <script type="text/javascript" src="javascripts/jquery.adaptive-modal.js"></script>
     <!-- 心電圖 -->

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('feaPayment.controllers',['socialNetworkApi'])
-.controller('paymentCtrl',['$scope', '$q', 'facebookApi', function($scope, $q, facebookApi) {
+.controller('paymentCtrl',['$scope', 'facebookApi', function($scope, facebookApi) {
 
   //private
   var appId = '329424167209772';
@@ -28,4 +28,12 @@ angular.module('feaPayment.controllers',['socialNetworkApi'])
     }
   };
 
-}]);
+}])
+.directive('awesomeModal', function() {
+
+  return {
+    restrict: 'E',
+    template: '<h2>good</h2>'
+  };
+
+});
