@@ -129,7 +129,7 @@ p {
                     padding: 20px 0;
                  &:hover {
                     color: #333;
-        
+
                 }
 
                 }
@@ -516,7 +516,7 @@ p {
 
     .fb_button:active {
         top: 1px;
-        outline: none;
+        outline: 0 none;
         -webkit-box-shadow: none;
         box-shadow: none;
     }
@@ -541,39 +541,72 @@ p {
 @import "adaptive_modal_content";
 
 /* 下拉選單 */
+select {
+    @include appearance(none);
+    @include box-shadow(none);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0 10px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+    + em {
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-color: $select-color transparent transparent transparent;
+        text-indent: 100%;
+    }
+    &:focus {
+        @include box-shadow(none);
+        outline: 0 none;
+        border: 0;
+    }
+    &:hover {
+        color: #666;
+        + em {
+            border-top-color: #999;
+        }
+    }
+}
 
 .select-hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 10px;
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
 }
 .select {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  color: $select-color;
-  width: $select-width;
-  height: $select-height;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: #FFF;
+    color: $select-color;
+    width: $select-width;
+    height: $select-height;
+    ~ p {
+        margin: 0;
+        padding: 3px 0 0;
+        font-size: 1rem;
+    }
 }
 .select-styled {
-  position: absolute; 
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: $select-background;
-  padding: 8px 15px;
   @include transition(all 0.2s ease-in);
   &:after {
-    content:"";
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-color: $select-color transparent transparent transparent;
-    position: absolute;
-    top: 16px;
-    right: 10px;
+    // content:"";
+    // width: 0;
+    // height: 0;
+    // border: 7px solid transparent;
+    // border-color: $select-color transparent transparent transparent;
+    // position: absolute;
+    // top: 16px;
+    // right: 10px;
   }
   &:hover {
     background-color: darken($select-background, 2);
@@ -588,7 +621,7 @@ p {
 }
 
 .select-options {
-  display: none; 
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -612,4 +645,212 @@ p {
       display: none;
     }
   }
+}
+
+/* Form */
+form {
+    padding: 0 10px;
+    font-size: 1.6rem;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: 0 none;
+}
+
+form > label {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.field-title {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+/* Form: Text Input */
+.textInput {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    input {
+        @include appearance(none);
+        height: 40px;
+        padding: 0 10px;
+        border: 0;
+        background: $deactivate-color;
+        &:hover, &:active, &:focus {
+            @include box-shadow(inset 1px 1px 3px #666);
+            background: $active-color;
+        }
+    }
+}
+
+/* Form: Radio */
+.radioGroup {
+    display: block;
+    height: 40px;
+    .radio {
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        input[type=radio] {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            ~ label {
+                display: block;
+                position: relative;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 25px;
+                color: $deactivate-color;
+                text-align: center;
+                cursor: pointer;
+                &:before {
+                    @include border-radius(50%);
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $deactivate-color;
+                    background: none;
+                }
+            }
+            &:checked ~ label {
+                color: #FFF;
+                &:before {
+                    @include box-shadow(inset 0 0 0 2px #333);
+                    border: 1px solid $active-color;
+                    background: $active-color;
+                }
+            }
+        }
+    }
+}
+
+/* Form: Switcher */
+.switcher {
+    margin: 0;
+    padding: 0;
+    .switch-button {
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        input[type=radio] {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            ~ label {
+                display: block;
+                position: relative;
+                width: 100%;
+                padding: 50% 0 0;
+                color: #CCC;
+                text-align: center;
+                cursor: pointer;
+                em {
+                    overflow: hidden;
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    width: 30px;
+                    height: 20px;
+                    border: solid 1px #FFF;
+                    text-indent: 100%;
+                    &:after {
+                        @include box-shadow(inset 0 0 0 2px #333);
+                        @include transition(all ease .5s);
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        background: #FFF;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        &:first-child {
+            input[type=radio] ~ label em {
+                right: 0;
+                border-right: 0;
+                &:after {
+                    left: 100%;
+                }
+            }
+            input[type=radio]:checked ~ label {
+                color: #FFF;
+                em:after {
+                    left: 0;
+                }
+            }
+        }
+        &:last-child {
+            margin-left: -4px;
+            input[type=radio] ~ label em {
+                left: 0;
+                border-left: 0;
+                &:after {
+                    left: -100%;
+                }
+            }
+            input[type=radio]:checked ~ label {
+                color: #FFF;
+                em:after {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Form: Button */
+.button-wrapper {
+    display: block;
+    width: 100%;
+    button {
+        @include border-radius(3px);
+        @include box-shadow(inset 1px 1px 2px rgba(255,255,255,.5), inset 1px -1px 1px rgba(0,0,0,.7), 0 0 2px rgba(0,0,0,.5));
+        width: 60%;
+        margin: 0 auto;
+        padding: 15px;
+        border: 0;
+        background: #EEE;
+        color: #333;
+        font-size: 1.6rem;
+        &:hover {
+            background: #FFF;
+        }
+        &.fb-button {
+            color: rgba(255,255,255,.8);
+            background: rgba(42,102,228,.8);
+            &:hover {
+                color: rgba(255,255,255,1);
+                background: rgba(42,102,228,1);
+            }
+        }
+    }
 }

@@ -1,15 +1,21 @@
 'use strict';
 
-angular.module('feaPayment.controllers',['socialNetworkApi', 'commonDirective'])
-.controller('paymentCtrl',['$scope', 'facebookApi', function($scope, facebookApi) {
+angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'])
+.controller('paymentCtrl',['$scope', 'facebookApi', 'CONST', function($scope, facebookApi, CONST) {
 
   //payment API
   $scope.creditCardApi = 'http://fea.tw/credit';
   $scope.atmApi = 'http://fea.tw/atm';
 
-  //payment default
-  $scope.bankCode = ['TAISHIN', 'HUANAN', 'ESUN', 'FUBON', 'BOT', 'CHINATRUST', 'FIRST'];
-  $scope.price =[600, 900, 1200];
+  $scope.bankList = CONST.bankList;
+
+  $scope.paymentMethod = 'credit';
+  $scope.bank = '';
+  $scope.name = '';
+  $scope.email = '';
+  $scope.cellphone = '';
+  $scope.uniNumber = '';
+  $scope.vegetarian = 0;
 
   var appId = '329424167209772';
 

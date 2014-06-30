@@ -4,23 +4,24 @@
 // Directive List:
 //  - awesomeModal
 //--------------------------------
-angular.module('commonDirective', [])
-.directive('awesomeModal', function() {
-
-  var BASE_DIR = 'javascripts/directives/';
+angular.module('commonDirective', ['commonData'])
+.directive('awesomeModal', ['CONST', function(CONST) {
 
   return {
     restrict: 'EA',
-    templateUrl: BASE_DIR + 'awesomeModal.tpl.html',
-    link: function(scope, element, attr) {
+    transclude: true,
+    templateUrl: CONST.baseDir + 'awesomeModal.tpl.html',
+    link: function($scope, element, attr) {
 
-      //attributes binding
-      scope.title = attr.title;
-      scope.show = attr.show;
+      // attributes binding
+      // type: default | alert | confirm | media
+      $scope.amType = attr.type || 'default';
+      // title: heading text
+      $scope.amTitle = attr.title;
+      // show: display or not
+      $scope.amShow = attr.show;
 
-      console.log(attr);
-      console.log(element);
     }
   };
 
-});
+}]);
