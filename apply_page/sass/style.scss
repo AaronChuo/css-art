@@ -473,6 +473,9 @@ p {
                 color: white;
             }
         }
+        &.disabled {
+            @include opacity(0.5);
+        }
     }
 
 
@@ -627,11 +630,7 @@ select {
     color: $select-color;
     width: $select-width;
     height: $select-height;
-    ~ p {
-        margin: 0;
-        padding: 3px 0 0;
-        font-size: 1rem;
-    }
+    margin-bottom: 40px;
 }
 .select-styled {
   background-color: $select-background;
@@ -714,7 +713,7 @@ form > label {
     width: 30%;
 
     p {
-     @include font-rem(12); 
+     @include font-rem(12);
     }
 }
 
@@ -804,7 +803,7 @@ form > label {
         display: inline-block;
         position: relative;
         width: 150px;
-        height: 120px; 
+        height: 120px;
         padding: 0;
         margin: 0;
         white-space: nowrap;
@@ -882,7 +881,7 @@ form > label {
     width: 100%;
     text-align: center;
 
-    .fb_button { 
+    .fb_button {
         vertical-align: top;
         margin: 0;
         display: inline-block;
@@ -934,7 +933,7 @@ form > label {
     //     padding: 15px;
     //     border: 0;
     //    background: #EEE;
-    //     color: #333; 
+    //     color: #333;
     //     font-size: 1.6rem;
     //     &:hover {
     //         background: #FFF;
@@ -944,7 +943,7 @@ form > label {
     //         background: rgba(42,102,228,.8);
     //         &:hover {
     //             color: rgba(255,255,255,1);
-    //             background: rgba(42,102,228,1); 
+    //             background: rgba(42,102,228,1);
     //         }
     //     }
     // }

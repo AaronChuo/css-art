@@ -16,6 +16,22 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   $scope.cellphone = '';
   $scope.vegetarian = 0;
 
+  $scope.earlyBird = '';
+  $scope.lastRush = 'disabled';
+
+  var calcTime = function() {
+    var now = new Date();
+    now = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var earlyBirdEndDate = new Date('7/8/2014');
+    if(now >= earlyBirdEndDate) {
+      $scope.earlyBird = 'disabled';
+      $scope.lastRush = '';
+    } else {
+      $scope.earlyBird = '';
+      $scope.lastRush = 'disabled';
+    }
+  };
+
   $scope.showModal = 0;
 
   $scope.modalToggle = function(wrapperClass, headingText) {
@@ -23,6 +39,13 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
     $scope.wrapperColor = wrapperClass || 'lastRushStyle';
     $scope.amTitle = headingText || '最後卡位票';
     $scope.showModal = ($scope.showModal) ? 0 : 1;
+    if($scope.wrapperColor === 'studentStyle') {
+      $scope.price = CONST.priceList[0];
+    } else if($scope.wrapperColor === 'earlyBirdStyle') {
+      $scope.price = CONST.priceList[1];
+    } else {
+      $scope.price = CONST.priceList[2];
+    }
   };
 
   var deferred = $q.defer();
@@ -33,12 +56,6 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   $scope.fbLogin = function() {
     facebookApi.getMe();
-  };
-
-  $scope.setTicketType = function(type) {
-    if(type >= 0 && type < price.length) {
-      $scope.priceSelected = price[type];
-    }
   };
 
   $scope.$watch(facebookApi.getFbData(), function(newValue, oldValue) {
