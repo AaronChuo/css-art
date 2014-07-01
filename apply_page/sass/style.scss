@@ -540,6 +540,59 @@ p {
 /* Adaptive Modal Content */
 @import "adaptive_modal_content";
 
+/* Awesome Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 3;
+    .modal-wrapper {
+        @include border-radius(5px);
+        position: relative;
+        width: 40%;
+        min-width: 500px;
+        max-width: 800px;
+        margin: 10% auto;
+        padding: 10px 30px 30px;
+        background: #333;
+        h1 {
+            text-align: center;
+        }
+        i {
+            @include border-radius(50%);
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            background: #E84E40;
+            color: $deactivateColor;
+            font-size: 2.8em;
+            font-style: normal;
+            text-align: center;
+            cursor: pointer;
+            &:hover, &:active {
+                background: #f36c60;
+                color: $activeColor;
+            }
+        }
+        &.studentStyle {
+            background: rgba(29, 133, 66, .8);
+        }
+        &.earlyBirdStyle {
+            background: #ec800a;
+        }
+        &.lastRushStyle {
+            background: #6a32b1;
+        }
+    }
+}
+
 /* 下拉選單 */
 select {
     @include appearance(none);
@@ -658,6 +711,7 @@ textarea,
 select,
 button {
     outline: 0 none;
+    width: 80%;
 }
 
 form > label {
@@ -673,7 +727,7 @@ form > label {
 .field-title {
     display: block;
     float: left;
-    width: 80px;
+    width: 10%;
     height: 40px;
     line-height: 40px;
     padding-right: 15px;
@@ -690,10 +744,10 @@ form > label {
         height: 40px;
         padding: 0 10px;
         border: 0;
-        background: $deactivate-color;
+        background: rgba(255, 255, 255, .9);
         &:hover, &:active, &:focus {
             @include box-shadow(inset 1px 1px 3px #666);
-            background: $active-color;
+            background: $activeColor;
         }
     }
 }
@@ -719,7 +773,7 @@ form > label {
                 height: 40px;
                 line-height: 40px;
                 padding: 0 25px;
-                color: $deactivate-color;
+                color: $deactivateColor;
                 text-align: center;
                 cursor: pointer;
                 &:before {
@@ -730,16 +784,15 @@ form > label {
                     left: 0;
                     width: 16px;
                     height: 16px;
-                    border: 1px solid $deactivate-color;
+                    border: 1px solid $deactivateColor;
                     background: none;
                 }
             }
             &:checked ~ label {
                 color: #FFF;
                 &:before {
-                    @include box-shadow(inset 0 0 0 2px #333);
-                    border: 1px solid $active-color;
-                    background: $active-color;
+                    margin: 1px;
+                    background: $activeColor;
                 }
             }
         }
@@ -768,7 +821,7 @@ form > label {
                 position: relative;
                 width: 100%;
                 padding: 50% 0 0;
-                color: #CCC;
+                color: $deactivateColor;
                 text-align: center;
                 cursor: pointer;
                 em {
@@ -778,17 +831,17 @@ form > label {
                     bottom: 0;
                     width: 30px;
                     height: 20px;
-                    border: solid 1px #FFF;
+                    border: solid 1px $activeColor;
                     text-indent: 100%;
                     &:after {
-                        @include box-shadow(inset 0 0 0 2px #333);
                         @include transition(all ease .5s);
                         content: '';
                         position: absolute;
                         top: 0;
-                        background: #FFF;
-                        width: 100%;
-                        height: 100%;
+                        background: $activeColor;
+                        width: calc(100% - 2px);
+                        height: calc(100% - 2px);
+                        margin: 1px;
                     }
                 }
             }
@@ -802,7 +855,7 @@ form > label {
                 }
             }
             input[type=radio]:checked ~ label {
-                color: #FFF;
+                color: $activeColor;
                 em:after {
                     left: 0;
                 }
@@ -818,7 +871,7 @@ form > label {
                 }
             }
             input[type=radio]:checked ~ label {
-                color: #FFF;
+                color: $activeColor;
                 em:after {
                     left: 0;
                 }
@@ -831,10 +884,11 @@ form > label {
 .button-wrapper {
     display: block;
     width: 100%;
+    text-align: center;
     button {
         @include border-radius(3px);
         @include box-shadow(inset 1px 1px 2px rgba(255,255,255,.5), inset 1px -1px 1px rgba(0,0,0,.7), 0 0 2px rgba(0,0,0,.5));
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
         padding: 15px;
         border: 0;

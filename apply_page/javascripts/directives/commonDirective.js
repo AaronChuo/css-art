@@ -18,8 +18,6 @@ angular.module('commonDirective', ['commonData'])
       $scope.amType = attr.type || 'default';
       // title: heading text
       $scope.amTitle = attr.title;
-      // show: display or not
-      $scope.amShow = attr.show;
 
     }
   };

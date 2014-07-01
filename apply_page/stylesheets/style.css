@@ -1488,8 +1488,77 @@ p {
   z-index: 0;
 }
 
-/* 下拉選單 */
+/* Awesome Modal */
 /* line 544, ../sass/style.scss */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+/* line 552, ../sass/style.scss */
+.modal-overlay .modal-wrapper {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  width: 40%;
+  min-width: 500px;
+  max-width: 800px;
+  margin: 10% auto;
+  padding: 10px 30px 30px;
+  background: #333;
+}
+/* line 561, ../sass/style.scss */
+.modal-overlay .modal-wrapper h1 {
+  text-align: center;
+}
+/* line 564, ../sass/style.scss */
+.modal-overlay .modal-wrapper i {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #E84E40;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2.8em;
+  font-style: normal;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 579, ../sass/style.scss */
+.modal-overlay .modal-wrapper i:hover, .modal-overlay .modal-wrapper i:active {
+  background: #f36c60;
+  color: white;
+}
+/* line 584, ../sass/style.scss */
+.modal-overlay .modal-wrapper.studentStyle {
+  background: rgba(29, 133, 66, 0.8);
+}
+/* line 587, ../sass/style.scss */
+.modal-overlay .modal-wrapper.earlyBirdStyle {
+  background: #ec800a;
+}
+/* line 590, ../sass/style.scss */
+.modal-overlay .modal-wrapper.lastRushStyle {
+  background: #6a32b1;
+}
+
+/* 下拉選單 */
+/* line 597, ../sass/style.scss */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1506,7 +1575,7 @@ select {
   cursor: pointer;
   z-index: 1;
 }
-/* line 555, ../sass/style.scss */
+/* line 608, ../sass/style.scss */
 select + em {
   position: absolute;
   top: 40%;
@@ -1517,7 +1586,7 @@ select + em {
   border-color: #555555 transparent transparent transparent;
   text-indent: 100%;
 }
-/* line 565, ../sass/style.scss */
+/* line 618, ../sass/style.scss */
 select:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1525,23 +1594,23 @@ select:focus {
   outline: 0 none;
   border: 0;
 }
-/* line 570, ../sass/style.scss */
+/* line 623, ../sass/style.scss */
 select:hover {
   color: #666;
 }
-/* line 572, ../sass/style.scss */
+/* line 625, ../sass/style.scss */
 select:hover + em {
   border-top-color: #999;
 }
 
-/* line 578, ../sass/style.scss */
+/* line 631, ../sass/style.scss */
 .select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
 
-/* line 583, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 .select {
   overflow: hidden;
   cursor: pointer;
@@ -1552,14 +1621,14 @@ select:hover + em {
   width: 220px;
   height: 40px;
 }
-/* line 592, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 .select ~ p {
   margin: 0;
   padding: 3px 0 0;
   font-size: 1rem;
 }
 
-/* line 598, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
 .select-styled {
   background-color: white;
   -webkit-transition: all 0.2s ease-in;
@@ -1567,21 +1636,21 @@ select:hover + em {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 611, ../sass/style.scss */
+/* line 664, ../sass/style.scss */
 .select-styled:hover {
   background-color: #fafafa;
 }
-/* line 614, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 .select-styled:active, .select-styled.active {
   background-color: #f2f2f2;
 }
-/* line 616, ../sass/style.scss */
+/* line 669, ../sass/style.scss */
 .select-styled:active:after, .select-styled.active:after {
   top: 9px;
   border-color: transparent transparent #555555 transparent;
 }
 
-/* line 623, ../sass/style.scss */
+/* line 676, ../sass/style.scss */
 .select-options {
   display: none;
   position: absolute;
@@ -1594,7 +1663,7 @@ select:hover + em {
   list-style: none;
   background-color: #f2f2f2;
 }
-/* line 634, ../sass/style.scss */
+/* line 687, ../sass/style.scss */
 .select-options li {
   margin: 0;
   padding: 12px 0;
@@ -1605,48 +1674,49 @@ select:hover + em {
   -o-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
 }
-/* line 640, ../sass/style.scss */
+/* line 693, ../sass/style.scss */
 .select-options li:hover {
   color: white;
   background: #555555;
 }
-/* line 644, ../sass/style.scss */
+/* line 697, ../sass/style.scss */
 .select-options li[rel="hide"] {
   display: none;
 }
 
 /* Form */
-/* line 651, ../sass/style.scss */
+/* line 704, ../sass/style.scss */
 form {
   padding: 0 10px;
   font-size: 1.6rem;
 }
 
-/* line 659, ../sass/style.scss */
+/* line 712, ../sass/style.scss */
 input,
 textarea,
 select,
 button {
   outline: 0 none;
+  width: 80%;
 }
 
-/* line 663, ../sass/style.scss */
+/* line 717, ../sass/style.scss */
 form > label {
   width: 100%;
   height: 40px;
   margin: 10px 0;
 }
 
-/* line 669, ../sass/style.scss */
+/* line 723, ../sass/style.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 673, ../sass/style.scss */
+/* line 727, ../sass/style.scss */
 .field-title {
   display: block;
   float: left;
-  width: 80px;
+  width: 10%;
   height: 40px;
   line-height: 40px;
   padding-right: 15px;
@@ -1654,13 +1724,13 @@ form > label {
 }
 
 /* Form: Text Input */
-/* line 684, ../sass/style.scss */
+/* line 738, ../sass/style.scss */
 .textInput {
   overflow: hidden;
   display: block;
   width: 100%;
 }
-/* line 688, ../sass/style.scss */
+/* line 742, ../sass/style.scss */
 .textInput input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1668,9 +1738,9 @@ form > label {
   height: 40px;
   padding: 0 10px;
   border: 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
 }
-/* line 694, ../sass/style.scss */
+/* line 748, ../sass/style.scss */
 .textInput input:hover, .textInput input:active, .textInput input:focus {
   -webkit-box-shadow: inset 1px 1px 3px #666666;
   -moz-box-shadow: inset 1px 1px 3px #666666;
@@ -1679,12 +1749,12 @@ form > label {
 }
 
 /* Form: Radio */
-/* line 702, ../sass/style.scss */
+/* line 756, ../sass/style.scss */
 .radioGroup {
   display: block;
   height: 40px;
 }
-/* line 705, ../sass/style.scss */
+/* line 759, ../sass/style.scss */
 .radioGroup .radio {
   overflow: hidden;
   display: inline-block;
@@ -1693,24 +1763,24 @@ form > label {
   margin: 0;
   white-space: nowrap;
 }
-/* line 712, ../sass/style.scss */
+/* line 766, ../sass/style.scss */
 .radioGroup .radio input[type=radio] {
   position: absolute;
   top: -100%;
   left: 0;
 }
-/* line 716, ../sass/style.scss */
+/* line 770, ../sass/style.scss */
 .radioGroup .radio input[type=radio] ~ label {
   display: block;
   position: relative;
   height: 40px;
   line-height: 40px;
   padding: 0 25px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   cursor: pointer;
 }
-/* line 725, ../sass/style.scss */
+/* line 779, ../sass/style.scss */
 .radioGroup .radio input[type=radio] ~ label:before {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1723,29 +1793,26 @@ form > label {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   background: none;
 }
-/* line 737, ../sass/style.scss */
+/* line 791, ../sass/style.scss */
 .radioGroup .radio input[type=radio]:checked ~ label {
   color: #FFF;
 }
-/* line 739, ../sass/style.scss */
+/* line 793, ../sass/style.scss */
 .radioGroup .radio input[type=radio]:checked ~ label:before {
-  -webkit-box-shadow: inset 0 0 0 2px #333333;
-  -moz-box-shadow: inset 0 0 0 2px #333333;
-  box-shadow: inset 0 0 0 2px #333333;
-  border: 1px solid white;
+  margin: 1px;
   background: white;
 }
 
 /* Form: Switcher */
-/* line 750, ../sass/style.scss */
+/* line 803, ../sass/style.scss */
 .switcher {
   margin: 0;
   padding: 0;
 }
-/* line 753, ../sass/style.scss */
+/* line 806, ../sass/style.scss */
 .switcher .switch-button {
   overflow: hidden;
   display: inline-block;
@@ -1756,23 +1823,23 @@ form > label {
   margin: 0;
   white-space: nowrap;
 }
-/* line 762, ../sass/style.scss */
+/* line 815, ../sass/style.scss */
 .switcher .switch-button input[type=radio] {
   position: absolute;
   top: -100%;
   left: 0;
 }
-/* line 766, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label {
   display: block;
   position: relative;
   width: 100%;
   padding: 50% 0 0;
-  color: #CCC;
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   cursor: pointer;
 }
-/* line 774, ../sass/style.scss */
+/* line 827, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label em {
   overflow: hidden;
   display: block;
@@ -1780,14 +1847,11 @@ form > label {
   bottom: 0;
   width: 30px;
   height: 20px;
-  border: solid 1px #FFF;
+  border: solid 1px white;
   text-indent: 100%;
 }
-/* line 783, ../sass/style.scss */
+/* line 836, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label em:after {
-  -webkit-box-shadow: inset 0 0 0 2px #333333;
-  -moz-box-shadow: inset 0 0 0 2px #333333;
-  box-shadow: inset 0 0 0 2px #333333;
   -webkit-transition: all ease;
   -webkit-transition-delay: 0.5s;
   -moz-transition: all ease 0.5s;
@@ -1796,56 +1860,58 @@ form > label {
   content: '';
   position: absolute;
   top: 0;
-  background: #FFF;
-  width: 100%;
-  height: 100%;
+  background: white;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  margin: 1px;
 }
-/* line 797, ../sass/style.scss */
+/* line 850, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label em {
   right: 0;
   border-right: 0;
 }
-/* line 800, ../sass/style.scss */
+/* line 853, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label em:after {
   left: 100%;
 }
-/* line 804, ../sass/style.scss */
+/* line 857, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio]:checked ~ label {
-  color: #FFF;
+  color: white;
 }
-/* line 806, ../sass/style.scss */
+/* line 859, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio]:checked ~ label em:after {
   left: 0;
 }
-/* line 811, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 .switcher .switch-button:last-child {
   margin-left: -4px;
 }
-/* line 813, ../sass/style.scss */
+/* line 866, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label em {
   left: 0;
   border-left: 0;
 }
-/* line 816, ../sass/style.scss */
+/* line 869, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label em:after {
   left: -100%;
 }
-/* line 820, ../sass/style.scss */
+/* line 873, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio]:checked ~ label {
-  color: #FFF;
+  color: white;
 }
-/* line 822, ../sass/style.scss */
+/* line 875, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio]:checked ~ label em:after {
   left: 0;
 }
 
 /* Form: Button */
-/* line 831, ../sass/style.scss */
+/* line 884, ../sass/style.scss */
 .button-wrapper {
   display: block;
   width: 100%;
+  text-align: center;
 }
-/* line 834, ../sass/style.scss */
+/* line 888, ../sass/style.scss */
 .button-wrapper button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1855,7 +1921,7 @@ form > label {
   -webkit-box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 1px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 1px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5), inset 1px -1px 1px rgba(0, 0, 0, 0.7), 0 0 2px rgba(0, 0, 0, 0.5);
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 15px;
   border: 0;
@@ -1863,16 +1929,16 @@ form > label {
   color: #333;
   font-size: 1.6rem;
 }
-/* line 844, ../sass/style.scss */
+/* line 898, ../sass/style.scss */
 .button-wrapper button:hover {
   background: #FFF;
 }
-/* line 847, ../sass/style.scss */
+/* line 901, ../sass/style.scss */
 .button-wrapper button.fb-button {
   color: rgba(255, 255, 255, 0.8);
   background: rgba(42, 102, 228, 0.8);
 }
-/* line 850, ../sass/style.scss */
+/* line 904, ../sass/style.scss */
 .button-wrapper button.fb-button:hover {
   color: white;
   background: #2a66e4;

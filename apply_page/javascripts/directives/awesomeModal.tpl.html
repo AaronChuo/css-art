@@ -1,4 +1,7 @@
-<div ng-show="amShow">
-  <h1 ng-bind="amTitle"></h1>
-  <div ng-transclude></div>
+<div class="modal-overlay" ng-show="showModal">
+  <div class="modal-wrapper" ng-class="wrapperColor">
+    <h1 ng-bind="amTitle"></h1>
+    <a ng-click="modalToggle()" href="?"><i>×</i></a>
+    <div ng-transclude></div>
+  </div>
 </div>

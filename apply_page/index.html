@@ -27,10 +27,10 @@
       <!-- Navigation -->
       <nav class="navi">
         <ul>
-          <li><a href="">活動封面</a></li>
-          <li><a href="">時間地點</a></li>
-          <li><a href="">詳細資訊</a></li>
-          <li><a href="">我要報名</a></li>
+          <li><a href="#main">活動封面</a></li>
+          <li><a href="#time">時間地點</a></li>
+          <li><a href="#keypoint">詳細資訊</a></li>
+          <li><a href="#ticket">我要報名</a></li>
         </ul>
       </nav>
 
@@ -99,30 +99,31 @@
 
     <!-- Tickets -->
     <div id="ticket" class="ticket-list">
+
     <div class="for_student"> <!-- 學生限定票 -->
-      <a href="#" data-toggle="adaptive-modal" data-title="ticketModal()">
-      <h2>學生限定票</h2><span class="price_tag">NT$ 600</span></a>
+      <a href="?" ng-click="modalToggle('studentStyle', '學生限學票')">
+        <h2>學生限定票</h2>
+        <span class="price_tag">NT$ 600</span>
+      </a>
     </div>
 
-      <div class="for_earlybird"> <!-- 早鳥優惠票 -->
+    <div class="for_earlybird"> <!-- 早鳥優惠票 -->
+      <a href="?" ng-click="modalToggle('earlyBirdStyle', '早鳥搶先票')">
+        <h2>早鳥搶先票</h2>
+        <span class="price_tag">NT$ 900</span>
+      </a>
+    </div>
 
-        <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
-<input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
-
-<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：</div><select name='BankName' id='year'> <!-- START BLOCK : BANK_LIST --><option value='hide'>請選擇銀行代號</option><option value='{BANK_CODE}'>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>早鳥搶先票</h2><span class="price_tag">NT$ 900</span></a>
-
-      </div>
-      <div class="for_almost"> <!-- 最後卡位票 -->
-        <a href="#" data-toggle="adaptive-modal" data-title="<div class='clearfix'><ul><li>我的付款方式：</li><li>ATM</li><li><span class='toggle-bg'>
-<input type='radio' name='toggle' value='atm'><input type='radio' name='toggle' value='credit_card'><span class='switch'></span></span></li><li class='add_opacity'>信用卡</li></ul></div>
-
-<div class='clearfix'>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：<select name='BankName'> <!-- START BLOCK : BANK_LIST --><option>請選擇銀行代號</option><option value='{BANK_CODE}''>{BANK_NAME}</option><!-- END BLOCK : BANK_LIST --></select></div><hr> <button ng-click='fbLogin()' class='fb_button'>使用 Facebook帳號登記報名資料</button>"><h2>最後卡位票</h2><span class="price_tag sale_later">NT$ 1,200</span><span class="time_tag">6/25 00:00開賣！</span></a>
-
-      </div>
+    <div class="for_almost"> <!-- 最後卡位票 -->
+      <a href="?" ng-click="modalToggle('lastRushStyle', '最後卡位票')">
+        <h2>最後卡位票</h2>
+        <span class="price_tag">NT$ 1,200</span>
+      </a>
     </div>
 
     <!-- Payment Modal -->
-    <div awesome-modal title="選擇付款" show="1">
+    <div awesome-modal title="填寫報名資料"\
+    >
       <form>
 
         <!-- payment method -->
@@ -154,20 +155,16 @@
           <button type="button" class="fb-button" ng-click="fbLogin()">使用Facebook登記報名資料</button>
         </div>
         <label for="name" class="textInput">
-          <span class="field-title">姓名</span>
-          <input type="text" id="name" maxlength="20" placeholder="例：王小明">
+          <span class="field-title">*姓名</span>
+          <input type="text" id="name" maxlength="20" placeholder="例：王小明" required>
         </label>
         <label for="email" class="textInput">
-          <span class="field-title">Email</span>
+          <span class="field-title">*Email</span>
           <input type="email" id="email" placeholder="例：cssgeek@fea.tw">
         </label>
         <label for="cellphone" class="textInput">
-          <span class="field-title">手機</span>
+          <span class="field-title">*手機</span>
           <input type="text" id="cellphone" placeholder="例：0912-345678">
-        </label>
-        <label for="uni-number" class="textInput">
-          <span class="field-title">統一編號</span>
-          <input type="text" id="uni-number" placeholder="非必填">
         </label>
         <div class="radioGroup">
           <span class="field-title">午餐</span>
@@ -183,6 +180,7 @@
         <div class="button-wrapper">
           <button type="button" ng-click="paymentSubmit()">確認報名</button>
         </div>
+
       </form>
     </div>
 
@@ -214,7 +212,7 @@
     </footer>
 
     <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
-    <!--<script src='javascripts/script.js'></script>-->
+    <script src='javascripts/script.js'></script>
 
     <script src="javascripts/controller.js"></script>
     <script src="javascripts/services/facebookApi.js"></script>

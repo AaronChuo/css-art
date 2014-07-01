@@ -1,4 +1,4 @@
-$('select').each(function(){
+/*$('select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
 
     $this.addClass('select-hidden');
@@ -42,4 +42,13 @@ $('select').each(function(){
         $list.hide();
     });
 
+});*/
+
+$(document).ready(function() {
+    $('.navi a').on('click', function(e) {
+        e.preventDefault;
+        $('body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 800);
+    });
 });
