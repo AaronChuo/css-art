@@ -110,7 +110,7 @@ angular.module('socialNetworkApi', [])
 
     getFbData: function() {
       if(!initialized) return;
-      console.log('from public function: '+this.fbData.id);
+      console.log('from public function: '+this.fbData);
     }
 
   };
