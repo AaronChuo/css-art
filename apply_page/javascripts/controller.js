@@ -36,7 +36,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   };
 
   $scope.fbLogin = function() {
-    promise.then(facebookApi.initFbApi(appId)).then(facebookApi.getMe()).then(facebookApi.getFbData());
+    promise.then(facebookApi.getMe()).then(facebookApi.getFbData());
   };
 
   $scope.setTicketType = function(type) {
