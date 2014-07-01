@@ -29,6 +29,10 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   facebookApi.initFbApi(appId);
 
+  var autoFillin = function(data) {
+
+  };
+
   $scope.fbLogin = function() {
     facebookApi.getMe();
   };

@@ -21,6 +21,9 @@ angular.module('socialNetworkApi', [])
   //Facebook access token
   var accessToken = '';
 
+  //Facebook data
+  var fbData = {};
+
   //Facebook asynchronous initial
   var fbAsyncInit = function() {
     incFbSdk();
@@ -76,7 +79,8 @@ angular.module('socialNetworkApi', [])
   //Facebook Me API
   var getFbMe = function() {
     FB.api('/me', function(response) {
-      console.log(response);
+      fbData = response;
+      //console.log(response);
     });
   };
 
@@ -99,6 +103,8 @@ angular.module('socialNetworkApi', [])
     getMe: function() {
       if(!initialized) return;
       getLoginStatus();
+
+      console.log(fbData);
     }
 
   };
