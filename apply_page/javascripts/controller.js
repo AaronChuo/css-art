@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'])
-.controller('paymentCtrl',['$scope', '$http', '$q', 'facebookApi', 'CONST', function($scope, $http, $q, facebookApi, CONST) {
+.controller('paymentCtrl',['$scope', '$q', 'facebookApi', 'CONST', function($scope, $q, facebookApi, CONST) {
 
   //payment API
   $scope.creditCardApi = 'http://fea.tw/credit';
@@ -29,7 +29,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   var promise = deferred.promise;
   var appId = '329424167209772';
 
-  //facebookApi.initFbApi(appId);
+  facebookApi.initFbApi(appId);
 
   var autoFillin = function(data) {
 
@@ -43,10 +43,6 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
     if(type >= 0 && type < price.length) {
       $scope.priceSelected = price[type];
     }
-  };
-
-  $scope.paymentSubmit = function() {
-
   };
 
 }]);
