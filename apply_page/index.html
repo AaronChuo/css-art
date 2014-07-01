@@ -130,30 +130,30 @@
         <div class="switcher inline">
           <div class="switch-button">
             <input type="radio" id="credit" ng-model="paymentMethod" value="credit">
-            <label for="credit">信用卡<em>switcher</em></label>
+        <!--   <span class="crdt_icon">信用卡</span> -->
+            <label for="credit"><span class="crdt_icon">信用卡</span><em>switcher</em></label>
           </div>
           <div class="switch-button">
             <input type="radio" id="atm" ng-model="paymentMethod" value="atm">
-            <label for="atm">ATM<em>switcher</em></label>
+            <label for="atm"><span class="atm_icon">ATM</span><em>switcher</em></label>
+          <!--    <span class="atm_icon">ATM</span> -->
           </div>
         </div>
 
         <!-- bank selector -->
-        <div class="inline" ng-show="paymentMethod == 'atm'">
+        <div class="bank_selection" ng-show="paymentMethod == 'atm'">
+        <p>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：</p>
           <div class="select">
             <select id="bankList" name="bankCode">
               <option selected disabled>請選擇銀行</option>
               <option ng-repeat="bank in bankList" value="bank.code" ng-bind="bank.name"></option>
             </select>
             <em>Arrow</em>
-          </div>
-          <p><small>（本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別）</small></p>
+          </div> 
+    
         </div>
 
         <!-- personal -->
-        <div class="button-wrapper">
-          <button type="button" class="fb-button" ng-click="fbLogin()">使用Facebook登記報名資料</button>
-        </div>
         <label for="name" class="textInput">
           <span class="field-title">*姓名</span>
           <input type="text" id="name" maxlength="20" placeholder="例：王小明" required>
@@ -178,7 +178,8 @@
           </div>
         </div>
         <div class="button-wrapper">
-          <button type="button" ng-click="paymentSubmit()">確認報名</button>
+          <button type="button" class="fb_button" ng-click="fbLogin()">使用Facebook登記報名資料</button>
+          <button type="button" ng-click="paymentSubmit()" class="submit_button">確認報名</button>
         </div>
 
       </form>

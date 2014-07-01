@@ -11,3 +11,16 @@
        -o-border-radius: $radius;
           border-radius: $radius;
 }
+
+
+@mixin border-radius-wc($rwildcard) {
+
+-webkit-border-top-left-radius: $rwildcard;
+-webkit-border-top-right-radius: $rwildcard;
+-moz-border-radius-topleft: $rwildcard;
+-moz-border-radius-topright: $rwildcard;
+border-top-left-radius: $rwildcard;
+border-top-right-radius: $rwildcard;
+
+}
+

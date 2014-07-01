@@ -1,0 +1,31 @@
+@mixin transform($string){
+  -webkit-transform: $string;
+     -moz-transform: $string;
+      -ms-transform: $string;
+       -o-transform: $string;
+          transform: $string;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin border-radius-wc($rwildcard) {
+
+-webkit-border-top-left-radius: $rwildcard;
+-webkit-border-top-right-radius: $rwildcard;
+-moz-border-radius-topleft: $rwildcard;
+-moz-border-radius-topright: $rwildcard;
+border-top-left-radius: $rwildcard;
+border-top-right-radius: $rwildcard;
+
+}
+
+@mixin font-rem($the_size) {
+font-size: #{$the_size/10}rem;
+font-size: #{$the_size};
+
+}

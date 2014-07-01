@@ -14,6 +14,8 @@
 // Or, you can import the "overrides" partial if
 // you want more control over individual mixins
 //@import "partials/overrides";
+@import "mixins";
+
 
 /* Jeet.gs */
 @import "jeet/index";
@@ -33,8 +35,6 @@
 
 // Media should come last
 @import "partials/media";
-
-//public style  >> moved to _variables.scss
 
 /* font for price_tag */
 @import url(http://fonts.googleapis.com/css?family=Dosis:600);
@@ -419,14 +419,6 @@ p {
             a {
                 display: inline;
             }
-            small {
-                display: block;
-                width: 50%;
-                min-width: 600px;
-                max-width: 1200px;
-                margin: 0 auto;
-                text-align: left;
-            }
         }
     }
 
@@ -497,33 +489,9 @@ p {
         margin-right: 1em;
     }
 
-    .fb_button {
-        position: relative;
-        vertical-align: top;
-        width: 100%;
-        height: 3em;
-        padding: 0;
-        font-size: 1.4rem;
-        color: rgba(20, 20, 20, 1);
-        text-align: center;
-        background: #fff;
-        border: 0;
-        border-bottom: 2px solid #eee;
-        cursor: pointer;
-        -webkit-box-shadow: inset 0 -2px #ddd;
-        box-shadow: inset 0 -2px #ddd;
-    }
-
-    .fb_button:active {
-        top: 1px;
-        outline: 0 none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
     .fb_success {
 
-    	width: 100%;
+    	width: 50%;
     	font-size: 1.6rem;
 
     }
@@ -536,6 +504,22 @@ p {
 
 
 }
+
+
+.crdt_icon {
+    @include use-sprite("crdt_icon");
+    height: 32px;
+    padding-top: 2.5em;
+    text-align: center;
+}
+
+.atm_icon {
+    @include use-sprite("atm_icon");
+    height: 32px;
+    padding-top: 2.5em;
+    text-align: center;
+}
+
 
 /* Adaptive Modal Content */
 @import "adaptive_modal_content";
@@ -551,11 +535,12 @@ p {
     z-index: 3;
     .modal-wrapper {
         @include border-radius(5px);
+        @include border-radius-wc(0);
         position: relative;
         width: 40%;
         min-width: 500px;
         max-width: 800px;
-        margin: 10% auto;
+        margin: 0 auto;
         padding: 10px 30px 30px;
         background: #333;
         h1 {
@@ -604,7 +589,7 @@ select {
     padding: 0 10px;
     background: transparent;
     cursor: pointer;
-    z-index: 1;
+    z-index: 10;
     + em {
         position: absolute;
         top: 40%;
@@ -708,7 +693,7 @@ form {
 
 input,
 textarea,
-select,
+// select,
 button {
     outline: 0 none;
     width: 80%;
@@ -723,6 +708,16 @@ form > label {
 .inline {
     display: inline-block;
 }
+
+.bank_selection {
+    display: inline-block;
+    width: 30%;
+
+    p {
+     @include font-rem(12); 
+    }
+}
+
 
 .field-title {
     display: block;
@@ -801,6 +796,7 @@ form > label {
 
 /* Form: Switcher */
 .switcher {
+    display: inline-block;
     margin: 0;
     padding: 0;
     .switch-button {
@@ -808,7 +804,7 @@ form > label {
         display: inline-block;
         position: relative;
         width: 150px;
-        height: 100px;
+        height: 120px; 
         padding: 0;
         margin: 0;
         white-space: nowrap;
@@ -828,7 +824,7 @@ form > label {
                     overflow: hidden;
                     display: block;
                     position: absolute;
-                    bottom: 0;
+                    bottom: 25%;
                     width: 30px;
                     height: 20px;
                     border: solid 1px $activeColor;
@@ -885,26 +881,71 @@ form > label {
     display: block;
     width: 100%;
     text-align: center;
-    button {
-        @include border-radius(3px);
-        @include box-shadow(inset 1px 1px 2px rgba(255,255,255,.5), inset 1px -1px 1px rgba(0,0,0,.7), 0 0 2px rgba(0,0,0,.5));
-        width: 100%;
-        margin: 0 auto;
-        padding: 15px;
+
+    .fb_button { 
+        vertical-align: top;
+        margin: 0;
+        display: inline-block;
+        width: 48%;
+        height: 3em;
+        padding: 0;
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background: #3b5998;
         border: 0;
-        background: #EEE;
-        color: #333;
-        font-size: 1.6rem;
-        &:hover {
-            background: #FFF;
+        border-bottom: 2px solid darken(#3b5998, 20%);
+        cursor: pointer;
+        -webkit-box-shadow: inset 0 -2px darken(#3b5998, 10%);
+
+        &:active {
+
+        top: 1px;
+        outline: 0 none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
         }
-        &.fb-button {
-            color: rgba(255,255,255,.8);
-            background: rgba(42,102,228,.8);
-            &:hover {
-                color: rgba(255,255,255,1);
-                background: rgba(42,102,228,1);
-            }
-        }
+
     }
+
+    .submit_button {
+        background: $cherryColor;
+        vertical-align: top;
+        width: 48%;
+        height: 3em;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        font-size: 1.4rem;
+        color: rgb(255, 255, 255);
+        border: 0;
+        border-bottom: 2px solid darken($cherryColor, 20%);
+        cursor: pointer;
+        -webkit-box-shadow: inset 0 -2px darken($cherryColor, 10%);
+        text-align: center;
+    }
+
+
+    // button {
+    //     @include border-radius(3px);
+    //     @include box-shadow(inset 1px 1px 2px rgba(255,255,255,.5), inset 1px -1px 1px rgba(0,0,0,.7), 0 0 2px rgba(0,0,0,.5));
+    //     width: 100%;
+    //     margin: 0 auto;
+    //     padding: 15px;
+    //     border: 0;
+    //    background: #EEE;
+    //     color: #333; 
+    //     font-size: 1.6rem;
+    //     &:hover {
+    //         background: #FFF;
+    //     }
+    //   &.fb-button {
+    //         color: rgba(255,255,255,.8);
+    //         background: rgba(42,102,228,.8);
+    //         &:hover {
+    //             color: rgba(255,255,255,1);
+    //             background: rgba(42,102,228,1); 
+    //         }
+    //     }
+    // }
 }
