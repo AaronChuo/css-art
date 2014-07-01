@@ -84,7 +84,6 @@ angular.module('socialNetworkApi', [])
       fbData = response;
       //console.log(response);
     });
-    console.log(fbData);
   };
 
   //Public

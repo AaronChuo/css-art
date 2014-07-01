@@ -29,14 +29,14 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   var promise = deferred.promise;
   var appId = '329424167209772';
 
-  facebookApi.initFbApi(appId);
+  //facebookApi.initFbApi(appId);
 
   var autoFillin = function(data) {
 
   };
 
   $scope.fbLogin = function() {
-    promise.then(facebookApi.getMe()).then(facebookApi.getFbData());
+    promise.then(facebookApi.initFbApi(appId)).then(facebookApi.getMe()).then(facebookApi.getFbData());
   };
 
   $scope.setTicketType = function(type) {
