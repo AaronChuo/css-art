@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'])
-.controller('paymentCtrl',['$scope', '$http', 'facebookApi', 'CONST', function($scope, $http, facebookApi, CONST) {
+.controller('paymentCtrl',['$scope', '$http', '$q', 'facebookApi', 'CONST', function($scope, $http, $q, facebookApi, CONST) {
 
   //payment API
   $scope.creditCardApi = 'http://fea.tw/credit';
@@ -25,6 +25,8 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
     $scope.showModal = ($scope.showModal) ? 0 : 1;
   };
 
+  var deferred = $q.defer();
+  var promise = deferred.promise;
   var appId = '329424167209772';
 
   facebookApi.initFbApi(appId);
@@ -34,7 +36,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   };
 
   $scope.fbLogin = function() {
-    facebookApi.getMe();
+    promise.then(facebookApi.getMe()).then(facebookApi.getFbData());
   };
 
   $scope.setTicketType = function(type) {
