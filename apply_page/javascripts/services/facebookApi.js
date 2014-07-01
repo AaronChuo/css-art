@@ -82,8 +82,6 @@ angular.module('socialNetworkApi', [])
   var getFbMe = function() {
     FB.api('/me', function(response) {
       fbData = response.id;
-      console.log('from API: '+response.id);
-      console.log('fbData: '+fbData);
     });
   };
 
