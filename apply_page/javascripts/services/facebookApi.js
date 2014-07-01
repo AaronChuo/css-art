@@ -109,7 +109,7 @@ angular.module('socialNetworkApi', [])
 
     getFbData: function() {
       if(!initialized) return;
-      console.log(fbData);
+      console.log('hi'+fbData);
     }
 
   };
