@@ -82,7 +82,7 @@ angular.module('socialNetworkApi', [])
   var getFbMe = function() {
     FB.api('/me', function(response) {
       //fbData = response;
-      console.log(response);
+      console.log(response.id);
     });
   };
 
@@ -110,7 +110,7 @@ angular.module('socialNetworkApi', [])
 
     getFbData: function() {
       if(!initialized) return;
-      console.log('hi'+fbData);
+      console.log('hi'+fbData.id);
     }
 
   };
