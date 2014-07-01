@@ -99,7 +99,6 @@ angular.module('socialNetworkApi', [])
         initialized = true;
       } catch(err) {
         initialized = false;
-        console.log(err.name + ': ' + err.message);
       }
     },
 
@@ -111,7 +110,7 @@ angular.module('socialNetworkApi', [])
 
     getFbData: function() {
       if(!initialized) return;
-      console.log('from public function: '+fbData.id);
+      console.log('from public function: '+this.fbData.id);
     }
 
   };
