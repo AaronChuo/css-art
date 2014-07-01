@@ -122,19 +122,18 @@
     </div>
 
     <!-- Payment Modal -->
-    <div awesome-modal title="填寫報名資料"\
-    >
-      <form>
+    <div awesome-modal title="填寫報名資料">
+      <form method="post" action="/workshop">
 
         <!-- payment method -->
         <div class="switcher inline">
           <div class="switch-button">
-            <input type="radio" id="credit" ng-model="paymentMethod" value="credit">
+            <input type="radio" id="credit" name="pay" ng-model="paymentMethod" value="credit">
         <!--   <span class="crdt_icon">信用卡</span> -->
             <label for="credit"><span class="crdt_icon">信用卡</span><em>switcher</em></label>
           </div>
           <div class="switch-button">
-            <input type="radio" id="atm" ng-model="paymentMethod" value="atm">
+            <input type="radio" id="atm" name="pay" ng-model="paymentMethod" value="atm">
             <label for="atm"><span class="atm_icon">ATM</span><em>switcher</em></label>
           <!--    <span class="atm_icon">ATM</span> -->
           </div>
@@ -144,42 +143,43 @@
         <div class="bank_selection" ng-show="paymentMethod == 'atm'">
         <p>本次活動繳款帳號與下列銀行合作，請選擇欲轉帳之行別：</p>
           <div class="select">
-            <select id="bankList" name="bankCode">
+            <select id="bankList" name="BankName">
               <option selected disabled>請選擇銀行</option>
               <option ng-repeat="bank in bankList" value="bank.code" ng-bind="bank.name"></option>
             </select>
             <em>Arrow</em>
-          </div> 
-    
+          </div>
+
         </div>
 
         <!-- personal -->
         <label for="name" class="textInput">
           <span class="field-title">*姓名</span>
-          <input type="text" id="name" maxlength="20" placeholder="例：王小明" required>
+          <input type="text" id="name" name="name" maxlength="20" placeholder="例：王小明" required>
         </label>
         <label for="email" class="textInput">
           <span class="field-title">*Email</span>
-          <input type="email" id="email" placeholder="例：cssgeek@fea.tw">
+          <input type="email" id="email" name="email" placeholder="例：cssgeek@fea.tw">
         </label>
         <label for="cellphone" class="textInput">
           <span class="field-title">*手機</span>
-          <input type="text" id="cellphone" placeholder="例：0912-345678">
+          <input type="text" id="cellphone" name="phone" placeholder="例：0912-345678">
         </label>
         <div class="radioGroup">
           <span class="field-title">午餐</span>
           <div class="radio">
-            <input type="radio" id="non-vegetarian" ng-model="vegetarian" value=0>
+            <input type="radio" id="non-vegetarian" name="veget" ng-model="vegetarian" value=0>
             <label for="non-vegetarian">葷</label>
           </div>
           <div class="radio">
-            <input type="radio" id="vegetarian" ng-model="vegetarian" value=1>
+            <input type="radio" id="vegetarian" name="veget" ng-model="vegetarian" value=1>
             <label for="vegetarian">素</label>
           </div>
         </div>
+        <input type="hidden" name="fbJson">
         <div class="button-wrapper">
           <button type="button" class="fb_button" ng-click="fbLogin()">使用Facebook登記報名資料</button>
-          <button type="button" ng-click="paymentSubmit()" class="submit_button">確認報名</button>
+          <button type="submit" class="submit_button">確認報名</button>
         </div>
 
       </form>

@@ -21,6 +21,9 @@ angular.module('socialNetworkApi', [])
   //Facebook access token
   var accessToken = '';
 
+  //Facebook data
+  var fbData = {};
+
   //Facebook asynchronous initial
   var fbAsyncInit = function() {
     incFbSdk();
@@ -56,6 +59,8 @@ angular.module('socialNetworkApi', [])
         accessToken = auth.accessToken;
 
         fbLogin(getFbMe);
+
+        return fbData;
         console.log(status);
       } else if(status === 'not_authorized') {
         fbLogin(getFbMe);
@@ -76,7 +81,9 @@ angular.module('socialNetworkApi', [])
   //Facebook Me API
   var getFbMe = function() {
     FB.api('/me', function(response) {
-      console.log(response);
+      fbData = response.id;
+      console.log('from API: '+response.id);
+      console.log('fbData: '+fbData);
     });
   };
 
@@ -92,13 +99,21 @@ angular.module('socialNetworkApi', [])
         initialized = true;
       } catch(err) {
         initialized = false;
-        console.log(err.name + ': ' + err.message);
       }
     },
 
     getMe: function() {
       if(!initialized) return;
-      getLoginStatus();
+      if(getLoginStatus()) {
+        this.getFbData();
+      } else {
+        console.log('hi');
+      }
+    },
+
+    getFbData: function() {
+      if(!initialized) return;
+      console.log('from public function: '+fbData);
     }
 
   };
