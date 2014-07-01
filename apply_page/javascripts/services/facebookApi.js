@@ -59,6 +59,8 @@ angular.module('socialNetworkApi', [])
         accessToken = auth.accessToken;
 
         fbLogin(getFbMe);
+
+        return fbData;
         console.log(status);
       } else if(status === 'not_authorized') {
         fbLogin(getFbMe);
@@ -102,9 +104,7 @@ angular.module('socialNetworkApi', [])
 
     getMe: function() {
       if(!initialized) return;
-      getLoginStatus();
-
-      console.log(fbData);
+      console.log(getLoginStatus());
     }
 
   };
