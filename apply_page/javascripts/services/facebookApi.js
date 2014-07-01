@@ -105,6 +105,7 @@ angular.module('socialNetworkApi', [])
     getMe: function() {
       if(!initialized) return;
       getLoginStatus();
+      console.log('step1');
     },
 
     getFbData: function() {
