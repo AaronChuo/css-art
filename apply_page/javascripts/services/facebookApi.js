@@ -104,16 +104,11 @@ angular.module('socialNetworkApi', [])
 
     getMe: function() {
       if(!initialized) return;
-      if(getLoginStatus()) {
-        this.getFbData();
-      } else {
-        console.log('hi');
-      }
+      getLoginStatus();
     },
 
     getFbData: function() {
-      if(!initialized) return;
-      console.log('from public function: '+fbData);
+      return fbData;
     }
 
   };

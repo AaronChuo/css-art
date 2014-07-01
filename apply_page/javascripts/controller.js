@@ -31,10 +31,6 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   facebookApi.initFbApi(appId);
 
-  var autoFillin = function(data) {
-
-  };
-
   $scope.fbLogin = function() {
     facebookApi.getMe();
   };
@@ -44,5 +40,11 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
       $scope.priceSelected = price[type];
     }
   };
+
+  $scope.$watch(facebookApi.getFbData(), function(newValue, oldValue) {
+    if(newValue !== oldValue) {
+      console.log(facebookApi.getFbData());
+    }
+  });
 
 }]);
