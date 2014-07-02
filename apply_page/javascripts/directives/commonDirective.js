@@ -13,12 +13,6 @@ angular.module('commonDirective', ['commonData'])
     templateUrl: CONST.baseDir + 'awesomeModal.tpl.html',
     link: function($scope, element, attr) {
 
-      // attributes binding
-      // type: default | alert | confirm | media
-      $scope.amType = attr.type || 'default';
-      // title: heading text
-      $scope.amTitle = attr.title;
-
     }
   };
 

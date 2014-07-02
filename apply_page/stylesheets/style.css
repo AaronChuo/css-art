@@ -1,346 +1,5 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Dosis:600);
-/* line 33, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/* line 40, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 48, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/* line 55, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-[hidden] {
-  display: none;
-}
-
-/* line 69, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-/* line 82, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-}
-
-/* line 88, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-body {
-  margin: 0;
-}
-
-/* line 103, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/* line 109, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* line 122, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* line 127, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-
-/* line 132, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-
-/* line 137, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-
-/* line 142, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-
-/* line 147, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-h6 {
-  font-size: 0.67em;
-  margin: 2.33em 0;
-}
-
-/* line 153, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/* line 159, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/* line 163, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-blockquote {
-  margin: 1em 40px;
-}
-
-/* line 168, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/* line 174, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/* line 181, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/* line 188, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-p,
-pre {
-  margin: 1em 0;
-}
-
-/* line 196, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-
-/* line 203, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/* line 210, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-q {
-  quotes: none;
-}
-
-/* line 216, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-/* line 222, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/* line 228, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 235, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 239, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* line 253, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-/* line 257, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/* line 264, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-/* line 270, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-/* line 283, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 289, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* line 300, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-figure {
-  margin: 0;
-}
-
-/* line 311, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-form {
-  margin: 0;
-}
-
-/* line 316, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/* line 325, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
-  *margin-left: -7px;
-}
-
-/* line 339, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-/* line 349, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-button,
-input {
-  line-height: normal;
-}
-
-/* line 358, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-button,
-select {
-  text-transform: none;
-}
-
-/* line 372, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-  *overflow: visible;
-}
-
-/* line 380, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/* line 389, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-  *height: 13px;
-  *width: 13px;
-}
-
-/* line 399, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-/* line 409, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* line 415, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 422, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-/* line 434, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_normalize.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* Jeet.gs */
 /*  Syntax Quick Reference
   --------------------------
@@ -373,67 +32,6 @@ body, select, input, textarea {
   color: #222222;
 }
 
-/* line 7, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-/* line 27, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-/* line 9, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* line 11, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-/* line 67, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/* line 13, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 93, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 98, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.clearfix:after {
-  clear: both;
-}
-/* line 104, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_helpers.scss */
-.clearfix {
-  *zoom: 1;
-}
-
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
 }
@@ -441,104 +39,32 @@ body, select, input, textarea {
   /* Style adjustments for viewports 768px and over go here */
 }
 @media print {
-  /* line 11, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  /* line 19, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 23, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 27, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 37, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  /* line 42, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 47, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* line 52, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 56, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  /* line 66, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 72, ../../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp-0.1.1/stylesheets/h5bp/_media.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-
   /* Style adjustments for print go here */
 }
 /* font for price_tag */
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 43, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .clearfix:before, .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 49, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 body {
   font-size: 1.2rem;
   font-family: Arial, 'Apple Lihei Pro', '微軟正黑體';
@@ -546,7 +72,7 @@ body {
   background: #333;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 h2 {
   width: 60%;
   font-size: 1.6rem;
@@ -556,24 +82,24 @@ h2 {
   font-size: 2rem;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 a {
   color: #DDD;
   text-decoration: none;
   transition: all ease .3s;
 }
-/* line 86, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 a:hover {
   color: #FFF;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 p {
   padding: 0 5%;
   font-size: 1.8rem;
@@ -582,32 +108,34 @@ p {
 
 /* 主要版面切割 - 桌機版 */
 @media only screen and (min-width: 768px) {
-  /* line 101, ../sass/style.scss */
+  /* line 90, ../sass/style.scss */
   #container {
     width: 100%;
     height: 100%;
   }
 
-  /* line 106, ../sass/style.scss */
+  /* line 95, ../sass/style.scss */
   .navi {
     width: 100%;
     margin: 0 auto;
     position: fixed;
+    top: 0;
+    left: 0;
     background: rgba(36, 36, 36, 0.8);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     font-size: 1.8rem;
     z-index: 2;
   }
-  /* line 115, ../sass/style.scss */
+  /* line 106, ../sass/style.scss */
   .navi h3 {
     font-size: 2em;
   }
-  /* line 118, ../sass/style.scss */
+  /* line 109, ../sass/style.scss */
   .navi ul {
     width: 60%;
     margin: 0 auto;
   }
-  /* line 121, ../sass/style.scss */
+  /* line 112, ../sass/style.scss */
   .navi ul li {
     *zoom: 1;
     float: left;
@@ -632,22 +160,22 @@ p {
   .navi ul li:after {
     clear: both;
   }
-  /* line 126, ../sass/style.scss */
+  /* line 117, ../sass/style.scss */
   .navi ul li a {
     display: block;
     height: 100%;
     padding: 20px 0;
   }
-  /* line 130, ../sass/style.scss */
+  /* line 121, ../sass/style.scss */
   .navi ul li a:hover {
     color: #333;
   }
-  /* line 136, ../sass/style.scss */
+  /* line 127, ../sass/style.scss */
   .navi ul li:hover {
     background: white;
   }
 
-  /* line 144, ../sass/style.scss */
+  /* line 135, ../sass/style.scss */
   .main {
     *zoom: 1;
     float: left;
@@ -673,7 +201,7 @@ p {
   .main:after {
     clear: both;
   }
-  /* line 150, ../sass/style.scss */
+  /* line 141, ../sass/style.scss */
   .main .continue-read {
     display: block;
     position: relative;
@@ -686,7 +214,7 @@ p {
     font-size: 2.2rem;
     line-height: 80px;
   }
-  /* line 162, ../sass/style.scss */
+  /* line 153, ../sass/style.scss */
   .main .continue-read:after {
     content: '';
     display: block;
@@ -696,7 +224,7 @@ p {
     border-right: 100px solid transparent;
   }
 
-  /* line 172, ../sass/style.scss */
+  /* line 163, ../sass/style.scss */
   .time_scale {
     *zoom: 1;
     float: left;
@@ -721,7 +249,7 @@ p {
   .time_scale:after {
     clear: both;
   }
-  /* line 177, ../sass/style.scss */
+  /* line 168, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -100px;
@@ -736,7 +264,7 @@ p {
     overflow: hidden;
     margin: 1em auto;
   }
-  /* line 186, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .time_scale h3 {
     color: #333;
     width: 100%;
@@ -745,7 +273,7 @@ p {
     text-align: center;
   }
 
-  /* line 195, ../sass/style.scss */
+  /* line 186, ../sass/style.scss */
   .ac_explain {
     *zoom: 1;
     float: left;
@@ -769,29 +297,29 @@ p {
   .ac_explain:after {
     clear: both;
   }
-  /* line 199, ../sass/style.scss */
+  /* line 190, ../sass/style.scss */
   .ac_explain > * {
     max-width: 700px;
   }
-  /* line 202, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .ac_explain p {
     width: 60%;
     margin: 20px auto;
   }
-  /* line 206, ../sass/style.scss */
+  /* line 197, ../sass/style.scss */
   .ac_explain ul {
     width: 60%;
     margin: 20px auto;
     padding-left: 40px;
   }
-  /* line 210, ../sass/style.scss */
+  /* line 201, ../sass/style.scss */
   .ac_explain ul li {
     padding: 10px;
     font-size: 1.8rem;
     list-style: square;
   }
 
-  /* line 220, ../sass/style.scss */
+  /* line 211, ../sass/style.scss */
   .required {
     *zoom: 1;
     float: left;
@@ -815,18 +343,18 @@ p {
   .required:after {
     clear: both;
   }
-  /* line 224, ../sass/style.scss */
+  /* line 215, ../sass/style.scss */
   .required > * {
     max-width: 1200px;
   }
-  /* line 227, ../sass/style.scss */
+  /* line 218, ../sass/style.scss */
   .required ul {
     width: 100%;
     margin: auto;
     padding: 0;
     text-align: center;
   }
-  /* line 233, ../sass/style.scss */
+  /* line 224, ../sass/style.scss */
   .required li {
     position: relative;
     display: inline-block;
@@ -834,7 +362,7 @@ p {
     width: 31%;
     height: 280px;
   }
-  /* line 240, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   .required h3 {
     top: 140px;
     width: 100%;
@@ -842,7 +370,7 @@ p {
     text-align: center;
     font-size: 1.6rem;
   }
-  /* line 247, ../sass/style.scss */
+  /* line 238, ../sass/style.scss */
   .required p {
     top: 180px;
     width: 80%;
@@ -851,15 +379,15 @@ p {
     font-size: 1.2rem;
     text-align: center;
   }
-  /* line 255, ../sass/style.scss */
+  /* line 246, ../sass/style.scss */
   .required p, .required h3 {
     position: absolute;
   }
-  /* line 258, ../sass/style.scss */
+  /* line 249, ../sass/style.scss */
   .required .icon {
     margin: 0 auto;
   }
-  /* line 261, ../sass/style.scss */
+  /* line 252, ../sass/style.scss */
   .required li:first-child .icon {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -816px;
@@ -868,7 +396,7 @@ p {
     height: 200px;
     width: 135px;
   }
-  /* line 264, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   .required li:last-child .icon {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -336px;
@@ -877,7 +405,7 @@ p {
     height: 200px;
     width: 135px;
   }
-  /* line 269, ../sass/style.scss */
+  /* line 260, ../sass/style.scss */
   .resource {
     *zoom: 1;
     float: left;
@@ -900,17 +428,17 @@ p {
   .resource:after {
     clear: both;
   }
-  /* line 272, ../sass/style.scss */
+  /* line 263, ../sass/style.scss */
   .resource > * {
     max-width: 1200px;
   }
-  /* line 275, ../sass/style.scss */
+  /* line 266, ../sass/style.scss */
   .resource ul {
     margin: 0 auto;
     padding: 0;
     text-align: center;
   }
-  /* line 280, ../sass/style.scss */
+  /* line 271, ../sass/style.scss */
   .resource li {
     position: relative;
     display: inline-block;
@@ -918,7 +446,7 @@ p {
     width: 20%;
     height: 180px;
   }
-  /* line 287, ../sass/style.scss */
+  /* line 278, ../sass/style.scss */
   .resource h3 {
     position: absolute;
     top: 100px;
@@ -927,11 +455,11 @@ p {
     font-size: 1.4rem;
     text-align: center;
   }
-  /* line 295, ../sass/style.scss */
+  /* line 286, ../sass/style.scss */
   .resource .icon {
     margin: 0 auto;
   }
-  /* line 298, ../sass/style.scss */
+  /* line 289, ../sass/style.scss */
   .resource li:first-child .icon {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -536px;
@@ -940,7 +468,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 301, ../sass/style.scss */
+  /* line 292, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -1016px;
@@ -949,7 +477,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 304, ../sass/style.scss */
+  /* line 295, ../sass/style.scss */
   .resource li:last-child .icon {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -676px;
@@ -958,7 +486,7 @@ p {
     height: 140px;
     width: 64px;
   }
-  /* line 309, ../sass/style.scss */
+  /* line 300, ../sass/style.scss */
   .ticket-list {
     *zoom: 1;
     float: left;
@@ -981,7 +509,7 @@ p {
   .ticket-list:after {
     clear: both;
   }
-  /* line 312, ../sass/style.scss */
+  /* line 303, ../sass/style.scss */
   .ticket-list > div {
     *zoom: 1;
     float: left;
@@ -1005,22 +533,69 @@ p {
   .ticket-list > div:after {
     clear: both;
   }
-  /* line 317, ../sass/style.scss */
+  /* line 308, ../sass/style.scss */
   .ticket-list h2 {
     margin: 20px auto;
   }
 
-  /* line 322, ../sass/style.scss */
-  .for_student > a, .for_earlybird > a, .for_almost > a {
+  /* line 313, ../sass/style.scss */
+  .for-student, .for-earlybird, .for-almost {
     margin: 1% auto 1em;
     box-sizing: border-box;
     width: 95%;
     height: 100px;
     padding-top: 1px;
     text-align: center;
+    cursor: pointer;
+  }
+  /* line 321, ../sass/style.scss */
+  .for-student.disabled, .for-earlybird.disabled, .for-almost.disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+    color: white;
+    cursor: default;
   }
 
-  /* line 331, ../sass/style.scss */
+  /* line 328, ../sass/style.scss */
+  .for-student {
+    display: block;
+    background: rgba(29, 133, 66, 0.8);
+  }
+  /* line 332, ../sass/style.scss */
+  .for-student:hover, .for-student.disabled {
+    background: #1d8542;
+    color: white;
+  }
+
+  /* line 338, ../sass/style.scss */
+  .for-earlybird {
+    display: block;
+    background: rgba(236, 128, 10, 0.8);
+  }
+  /* line 342, ../sass/style.scss */
+  .for-earlybird:hover, .for-earlybird.disabled {
+    background: #ec800a;
+    color: white;
+  }
+
+  /* line 348, ../sass/style.scss */
+  .for-almost {
+    /*  background: rgba(248, 202, 0, 0.7); */
+    display: block;
+    background: rgba(106, 50, 177, 0.8);
+  }
+  /* line 353, ../sass/style.scss */
+  .for-almost:hover, .for-almost.disabled {
+    background: #6a32b1;
+    color: white;
+  }
+
+  /* line 359, ../sass/style.scss */
+  .price_tag {
+    font: 600 1.5em/1.8rem 'Dosis', sans-serif;
+  }
+
+  /* line 363, ../sass/style.scss */
   footer {
     *zoom: 1;
     float: left;
@@ -1046,29 +621,29 @@ p {
   footer:after {
     clear: both;
   }
-  /* line 337, ../sass/style.scss */
+  /* line 369, ../sass/style.scss */
   footer > * {
     min-width: 400px;
     max-width: 800px;
   }
-  /* line 341, ../sass/style.scss */
+  /* line 373, ../sass/style.scss */
   footer a {
     display: block;
     opacity: .8;
     filter: alpha(opacity=80);
     transition: all ease .3s;
   }
-  /* line 346, ../sass/style.scss */
+  /* line 378, ../sass/style.scss */
   footer a:hover {
     opacity: 1;
     filter: alpha(opacity=100);
   }
-  /* line 351, ../sass/style.scss */
+  /* line 383, ../sass/style.scss */
   footer .about-curator {
     margin: 0 auto;
     text-align: center;
   }
-  /* line 354, ../sass/style.scss */
+  /* line 386, ../sass/style.scss */
   footer .about-curator h3 {
     position: absolute;
     display: block;
@@ -1078,17 +653,17 @@ p {
     line-height: 100px;
     font-size: 1.6rem;
   }
-  /* line 363, ../sass/style.scss */
+  /* line 395, ../sass/style.scss */
   footer .about-curator ul {
     display: inline;
     list-style: none;
   }
-  /* line 367, ../sass/style.scss */
+  /* line 399, ../sass/style.scss */
   footer .about-curator li {
     display: inline-block;
     padding: 0 0 0 50px;
   }
-  /* line 371, ../sass/style.scss */
+  /* line 403, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -188px;
@@ -1097,7 +672,7 @@ p {
     height: 100px;
     width: 144px;
   }
-  /* line 375, ../sass/style.scss */
+  /* line 407, ../sass/style.scss */
   footer .about-curator .cycu_logo {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 -288px;
@@ -1107,12 +682,12 @@ p {
     width: 200px;
     margin-bottom: 25px;
   }
-  /* line 380, ../sass/style.scss */
+  /* line 412, ../sass/style.scss */
   footer .about-photo {
     margin: 30px auto;
     text-align: center;
   }
-  /* line 383, ../sass/style.scss */
+  /* line 415, ../sass/style.scss */
   footer .about-photo h3 {
     position: absolute;
     display: block;
@@ -1122,16 +697,16 @@ p {
     line-height: 100px;
     font-size: 1.6rem;
   }
-  /* line 392, ../sass/style.scss */
+  /* line 424, ../sass/style.scss */
   footer .about-photo p {
     margin: 0;
     margin-left: 360px;
   }
-  /* line 396, ../sass/style.scss */
+  /* line 428, ../sass/style.scss */
   footer .about-photo a {
     display: inline;
   }
-  /* line 399, ../sass/style.scss */
+  /* line 431, ../sass/style.scss */
   footer .about-photo .food_mob {
     background-image: url('../assets/workshop-s29c34ede72.png');
     background-position: 0 0;
@@ -1143,7 +718,7 @@ p {
     text-indent: -9999px;
     margin-left: 225px;
   }
-  /* line 406, ../sass/style.scss */
+  /* line 438, ../sass/style.scss */
   footer .copyright {
     *zoom: 1;
     float: left;
@@ -1171,27 +746,26 @@ p {
   footer .copyright:after {
     clear: both;
   }
-  /* line 414, ../sass/style.scss */
+  /* line 446, ../sass/style.scss */
   footer .copyright p {
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-align: center;
   }
-  /* line 419, ../sass/style.scss */
+  /* line 451, ../sass/style.scss */
   footer .copyright a {
     display: inline;
   }
 
   /* 元件 */
-  /* line 427, ../sass/style.scss */
+  /* line 459, ../sass/style.scss */
   hr {
     margin-top: 1em;
     border: 1px solid #fff;
   }
 
-  /* line 432, ../sass/style.scss */
+  /* line 464, ../sass/style.scss */
   .site_name {
-    position: absolute;
     margin-top: 1em;
     width: 100%;
     color: white;
@@ -1199,74 +773,30 @@ p {
     font-size: 2rem;
   }
 
-  /* line 443, ../sass/style.scss */
-  .for_student a {
-    display: block;
-    background: rgba(29, 133, 66, 0.8);
-  }
-  /* line 446, ../sass/style.scss */
-  .for_student a:hover {
-    background: #1d8542;
-    color: white;
-  }
-
-  /* line 455, ../sass/style.scss */
-  .for_earlybird a {
-    display: block;
-    background: rgba(236, 128, 10, 0.8);
-  }
-  /* line 458, ../sass/style.scss */
-  .for_earlybird a:hover {
-    background: #ec800a;
-    color: white;
-  }
-
-  /* line 467, ../sass/style.scss */
-  .for_almost a {
-    /*	background: rgba(248, 202, 0, 0.7); */
-    display: block;
-    background: rgba(106, 50, 177, 0.8);
-  }
-  /* line 471, ../sass/style.scss */
-  .for_almost a:hover {
-    background: #6a32b1;
-    color: white;
-  }
-  /* line 476, ../sass/style.scss */
-  .for_almost.disabled {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-  }
-
-  /* line 483, ../sass/style.scss */
-  .price_tag {
-    font: 600 1.5em/1.8rem 'Dosis', sans-serif;
-  }
-
-  /* line 487, ../sass/style.scss */
+  /* line 472, ../sass/style.scss */
   .time_tag {
     color: white;
   }
 
-  /* line 491, ../sass/style.scss */
+  /* line 476, ../sass/style.scss */
   .sale_later {
     margin-right: 1em;
   }
 
-  /* line 495, ../sass/style.scss */
+  /* line 480, ../sass/style.scss */
   .fb_success {
     width: 50%;
     font-size: 1.6rem;
   }
 
   /* 特效 */
-  /* line 504, ../sass/style.scss */
+  /* line 489, ../sass/style.scss */
   .add_opacity {
     color: rgba 255, 255, 255, 0.6;
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 177, ../sass/style.scss */
+  /* line 168, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1276,7 +806,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 261, ../sass/style.scss */
+  /* line 252, ../sass/style.scss */
   .required li:first-child .icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1286,7 +816,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 264, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   .required li:last-child .icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1297,7 +827,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 298, ../sass/style.scss */
+  /* line 289, ../sass/style.scss */
   .resource li:first-child .icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1307,7 +837,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 301, ../sass/style.scss */
+  /* line 292, ../sass/style.scss */
   .resource li:nth-child(2) .icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1317,7 +847,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 304, ../sass/style.scss */
+  /* line 295, ../sass/style.scss */
   .resource li:last-child .icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1328,7 +858,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 371, ../sass/style.scss */
+  /* line 403, ../sass/style.scss */
   footer .about-curator .f2e_ty_logo {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1338,7 +868,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 375, ../sass/style.scss */
+  /* line 407, ../sass/style.scss */
   footer .about-curator .cycu_logo {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1348,7 +878,7 @@ p {
   }
 }
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 144dppx) {
-  /* line 399, ../sass/style.scss */
+  /* line 431, ../sass/style.scss */
   footer .about-photo .food_mob {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1357,7 +887,7 @@ p {
     width: 150px;
   }
 }
-/* line 512, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 .crdt_icon {
   background-image: url('../assets/workshop-s29c34ede72.png');
   background-position: 0 -1220px;
@@ -1370,7 +900,7 @@ p {
   text-align: center;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 512, ../sass/style.scss */
+  /* line 497, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1380,7 +910,7 @@ p {
   }
 }
 
-/* line 519, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 .atm_icon {
   background-image: url('../assets/workshop-s29c34ede72.png');
   background-position: 0 -1156px;
@@ -1393,7 +923,7 @@ p {
   text-align: center;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
-  /* line 519, ../sass/style.scss */
+  /* line 504, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-2x-s6415265cb0.png');
     background-size: 1088px 1284px;
@@ -1505,7 +1035,7 @@ p {
 }
 
 /* Awesome Modal */
-/* line 531, ../sass/style.scss */
+/* line 516, ../sass/style.scss */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1515,7 +1045,7 @@ p {
   background: rgba(0, 0, 0, 0.7);
   z-index: 3;
 }
-/* line 539, ../sass/style.scss */
+/* line 524, ../sass/style.scss */
 .modal-overlay .modal-wrapper {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1536,17 +1066,19 @@ p {
   padding: 10px 30px 30px;
   background: #333;
 }
-/* line 549, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 .modal-overlay .modal-wrapper h1 {
   text-align: center;
 }
-/* line 552, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 .modal-overlay .modal-wrapper i {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
   display: block;
   position: absolute;
   top: 15px;
@@ -1554,33 +1086,33 @@ p {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background: #E84E40;
-  color: rgba(255, 255, 255, 0.45);
+  background: #e00032;
   font-size: 2.8em;
   font-style: normal;
   text-align: center;
   cursor: pointer;
 }
-/* line 567, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 .modal-overlay .modal-wrapper i:hover, .modal-overlay .modal-wrapper i:active {
-  background: #f36c60;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
   color: white;
 }
-/* line 572, ../sass/style.scss */
-.modal-overlay .modal-wrapper.studentStyle {
+/* line 557, ../sass/style.scss */
+.modal-overlay .modal-wrapper.student-ticket {
   background: rgba(29, 133, 66, 0.8);
 }
-/* line 575, ../sass/style.scss */
-.modal-overlay .modal-wrapper.earlyBirdStyle {
+/* line 560, ../sass/style.scss */
+.modal-overlay .modal-wrapper.earlybird-ticket {
   background: #ec800a;
 }
-/* line 578, ../sass/style.scss */
-.modal-overlay .modal-wrapper.lastRushStyle {
+/* line 563, ../sass/style.scss */
+.modal-overlay .modal-wrapper.lastrush-ticket {
   background: #6a32b1;
 }
 
 /* 下拉選單 */
-/* line 585, ../sass/style.scss */
+/* line 570, ../sass/style.scss */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1597,7 +1129,7 @@ select {
   cursor: pointer;
   z-index: 10;
 }
-/* line 596, ../sass/style.scss */
+/* line 581, ../sass/style.scss */
 select + em {
   position: absolute;
   top: 40%;
@@ -1608,7 +1140,7 @@ select + em {
   border-color: #555555 transparent transparent transparent;
   text-indent: 100%;
 }
-/* line 606, ../sass/style.scss */
+/* line 591, ../sass/style.scss */
 select:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -1616,23 +1148,23 @@ select:focus {
   outline: 0 none;
   border: 0;
 }
-/* line 611, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 select:hover {
   color: #666;
 }
-/* line 613, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 select:hover + em {
   border-top-color: #999;
 }
 
-/* line 619, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 .select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
 
-/* line 624, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .select {
   overflow: hidden;
   cursor: pointer;
@@ -1645,7 +1177,7 @@ select:hover + em {
   margin-bottom: 40px;
 }
 
-/* line 635, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 .select-styled {
   background-color: white;
   -webkit-transition: all 0.2s ease-in;
@@ -1653,21 +1185,21 @@ select:hover + em {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 648, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 .select-styled:hover {
   background-color: #fafafa;
 }
-/* line 651, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 .select-styled:active, .select-styled.active {
   background-color: #f2f2f2;
 }
-/* line 653, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 .select-styled:active:after, .select-styled.active:after {
   top: 9px;
   border-color: transparent transparent #555555 transparent;
 }
 
-/* line 660, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 .select-options {
   display: none;
   position: absolute;
@@ -1680,7 +1212,7 @@ select:hover + em {
   list-style: none;
   background-color: #f2f2f2;
 }
-/* line 671, ../sass/style.scss */
+/* line 656, ../sass/style.scss */
 .select-options li {
   margin: 0;
   padding: 12px 0;
@@ -1691,24 +1223,28 @@ select:hover + em {
   -o-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
 }
-/* line 677, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 .select-options li:hover {
   color: white;
   background: #555555;
 }
-/* line 681, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .select-options li[rel="hide"] {
   display: none;
 }
 
 /* Form */
-/* line 688, ../sass/style.scss */
+/* line 673, ../sass/style.scss */
 form {
   padding: 0 10px;
+}
+
+/* line 677, ../sass/style.scss */
+form * {
   font-size: 1.6rem;
 }
 
-/* line 696, ../sass/style.scss */
+/* line 684, ../sass/style.scss */
 input,
 textarea,
 button {
@@ -1716,30 +1252,30 @@ button {
   width: 80%;
 }
 
-/* line 701, ../sass/style.scss */
+/* line 689, ../sass/style.scss */
 form > label {
   width: 100%;
   height: 40px;
   margin: 10px 0;
 }
 
-/* line 707, ../sass/style.scss */
+/* line 695, ../sass/style.scss */
 .inline {
   display: inline-block;
 }
 
-/* line 711, ../sass/style.scss */
+/* line 699, ../sass/style.scss */
 .bank_selection {
   display: inline-block;
   width: 30%;
 }
-/* line 715, ../sass/style.scss */
+/* line 703, ../sass/style.scss */
 .bank_selection p {
   font-size: 1.2rem;
   font-size: 12;
 }
 
-/* line 721, ../sass/style.scss */
+/* line 709, ../sass/style.scss */
 .field-title {
   display: block;
   float: left;
@@ -1751,13 +1287,13 @@ form > label {
 }
 
 /* Form: Text Input */
-/* line 732, ../sass/style.scss */
+/* line 720, ../sass/style.scss */
 .textInput {
   overflow: hidden;
   display: block;
   width: 100%;
 }
-/* line 736, ../sass/style.scss */
+/* line 724, ../sass/style.scss */
 .textInput input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1767,7 +1303,7 @@ form > label {
   border: 0;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 742, ../sass/style.scss */
+/* line 730, ../sass/style.scss */
 .textInput input:hover, .textInput input:active, .textInput input:focus {
   -webkit-box-shadow: inset 1px 1px 3px #666666;
   -moz-box-shadow: inset 1px 1px 3px #666666;
@@ -1776,12 +1312,12 @@ form > label {
 }
 
 /* Form: Radio */
-/* line 750, ../sass/style.scss */
+/* line 738, ../sass/style.scss */
 .radioGroup {
   display: block;
   height: 40px;
 }
-/* line 753, ../sass/style.scss */
+/* line 741, ../sass/style.scss */
 .radioGroup .radio {
   overflow: hidden;
   display: inline-block;
@@ -1790,13 +1326,13 @@ form > label {
   margin: 0;
   white-space: nowrap;
 }
-/* line 760, ../sass/style.scss */
+/* line 748, ../sass/style.scss */
 .radioGroup .radio input[type=radio] {
   position: absolute;
   top: -100%;
   left: 0;
 }
-/* line 764, ../sass/style.scss */
+/* line 752, ../sass/style.scss */
 .radioGroup .radio input[type=radio] ~ label {
   display: block;
   position: relative;
@@ -1807,7 +1343,7 @@ form > label {
   text-align: center;
   cursor: pointer;
 }
-/* line 773, ../sass/style.scss */
+/* line 761, ../sass/style.scss */
 .radioGroup .radio input[type=radio] ~ label:before {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1823,24 +1359,24 @@ form > label {
   border: 1px solid rgba(255, 255, 255, 0.45);
   background: none;
 }
-/* line 785, ../sass/style.scss */
+/* line 773, ../sass/style.scss */
 .radioGroup .radio input[type=radio]:checked ~ label {
   color: #FFF;
 }
-/* line 787, ../sass/style.scss */
+/* line 775, ../sass/style.scss */
 .radioGroup .radio input[type=radio]:checked ~ label:before {
   margin: 1px;
   background: white;
 }
 
 /* Form: Switcher */
-/* line 797, ../sass/style.scss */
+/* line 785, ../sass/style.scss */
 .switcher {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 801, ../sass/style.scss */
+/* line 789, ../sass/style.scss */
 .switcher .switch-button {
   overflow: hidden;
   display: inline-block;
@@ -1851,23 +1387,23 @@ form > label {
   margin: 0;
   white-space: nowrap;
 }
-/* line 810, ../sass/style.scss */
+/* line 798, ../sass/style.scss */
 .switcher .switch-button input[type=radio] {
   position: absolute;
   top: -100%;
   left: 0;
 }
-/* line 814, ../sass/style.scss */
+/* line 802, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label {
   display: block;
   position: relative;
   width: 100%;
   padding: 50% 0 0;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
   text-align: center;
   cursor: pointer;
 }
-/* line 822, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label em {
   overflow: hidden;
   display: block;
@@ -1878,7 +1414,7 @@ form > label {
   border: solid 1px white;
   text-indent: 100%;
 }
-/* line 831, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label em:after {
   -webkit-transition: all ease;
   -webkit-transition-delay: 0.5s;
@@ -1893,53 +1429,65 @@ form > label {
   height: calc(100% - 2px);
   margin: 1px;
 }
-/* line 845, ../sass/style.scss */
+/* line 834, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label em {
   right: 0;
   border-right: 0;
 }
-/* line 848, ../sass/style.scss */
+/* line 837, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label em:after {
   left: 100%;
 }
-/* line 852, ../sass/style.scss */
-.switcher .switch-button:first-child input[type=radio]:checked ~ label {
-  color: white;
+/* line 841, ../sass/style.scss */
+.switcher .switch-button:first-child input[type=radio] ~ label span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
-/* line 854, ../sass/style.scss */
+/* line 846, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio]:checked ~ label em:after {
   left: 0;
 }
-/* line 859, ../sass/style.scss */
+/* line 849, ../sass/style.scss */
+.switcher .switch-button:first-child input[type=radio]:checked ~ label span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 854, ../sass/style.scss */
 .switcher .switch-button:last-child {
   margin-left: -4px;
 }
-/* line 861, ../sass/style.scss */
+/* line 857, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label em {
   left: 0;
   border-left: 0;
 }
-/* line 864, ../sass/style.scss */
+/* line 860, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label em:after {
   left: -100%;
 }
-/* line 868, ../sass/style.scss */
-.switcher .switch-button:last-child input[type=radio]:checked ~ label {
-  color: white;
+/* line 864, ../sass/style.scss */
+.switcher .switch-button:last-child input[type=radio] ~ label span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
-/* line 870, ../sass/style.scss */
+/* line 869, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio]:checked ~ label em:after {
   left: 0;
 }
+/* line 872, ../sass/style.scss */
+.switcher .switch-button:last-child input[type=radio]:checked ~ label span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
 
 /* Form: Button */
-/* line 879, ../sass/style.scss */
+/* line 881, ../sass/style.scss */
 .button-wrapper {
   display: block;
   width: 100%;
   text-align: center;
 }
-/* line 884, ../sass/style.scss */
+/* line 886, ../sass/style.scss */
 .button-wrapper .fb_button {
   vertical-align: top;
   margin: 0;
@@ -1947,7 +1495,7 @@ form > label {
   width: 48%;
   height: 3em;
   padding: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: white;
   text-align: center;
   background: #3b5998;
@@ -1956,14 +1504,15 @@ form > label {
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px #2d4373;
 }
-/* line 900, ../sass/style.scss */
-.button-wrapper .fb_button:active {
+/* line 901, ../sass/style.scss */
+.button-wrapper .fb_button:hover, .button-wrapper .fb_button:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   top: 1px;
   outline: 0 none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
-/* line 910, ../sass/style.scss */
+/* line 908, ../sass/style.scss */
 .button-wrapper .submit_button {
   background: #bd1550;
   vertical-align: top;
@@ -1972,11 +1521,19 @@ form > label {
   padding: 0;
   border: 0;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: white;
   border: 0;
   border-bottom: 2px solid #610b29;
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px #8f103d;
   text-align: center;
+}
+/* line 923, ../sass/style.scss */
+.button-wrapper .submit_button:hover, .button-wrapper .submit_button:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  top: 1px;
+  outline: 0 none;
 }

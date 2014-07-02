@@ -39,6 +39,9 @@
         <span class="site_name">
           <h1>熊大與喬巴的CSS3 Workshop</h1>
         </span>
+        <div>
+          <h2>這是一個什麼樣的活動？</h2>
+        </div>
         <a class="continue-read anchor" href="#time">繼續了解</a>
       </div>
 
@@ -100,25 +103,15 @@
     <!-- Tickets -->
     <div id="ticket" class="ticket-list">
 
-    <div class="for_student"> <!-- 學生限定票 -->
-      <a href="?" ng-click="modalToggle('studentStyle', '學生限定票')">
-        <h2>學生限定票</h2>
-        <span class="price_tag">NT$ 600</span>
-      </a>
-    </div>
+      <div ng-repeat="ticket in ticketList">
+        <a ng-click="modalToggle(ticket)" ng-class="ticket.style">
+          <h2 ng-bind="ticket.name"></h2>
+          <span ng-class="'price_tag'" ng-bind="ticket.price"></span>
+        </a>
+      </div>
 
-    <div class="for_earlybird" ng-class="earlyBird"> <!-- 早鳥優惠票 -->
-      <a href="?" ng-click="modalToggle('earlyBirdStyle', '早鳥搶先票')">
-        <h2>早鳥搶先票</h2>
-        <span class="price_tag">NT$ 900</span>
-      </a>
-    </div>
 
-    <div class="for_almost" ng-class="lastRush"> <!-- 最後卡位票 -->
-      <a href="?" ng-click="modalToggle('lastRushStyle', '最後卡位票')">
-        <h2>最後卡位票</h2>
-        <span class="price_tag">NT$ 1,200</span>
-      </a>
+
     </div>
 
     <!-- Payment Modal -->
@@ -142,9 +135,9 @@
         <!-- bank selector -->
         <div class="bank_selection" ng-show="paymentMethod == 'atm'">
           <div class="select">
-            <select id="bankList" name="BankName">
+            <select id="bankList" name="BankName" required>
               <option selected disabled>請選擇轉帳銀行</option>
-              <option ng-repeat="bank in bankList" value="bank.code" ng-bind="bank.name"></option>
+              <option ng-repeat="bank in bankList" ng-value="bank.code" ng-bind="bank.name"></option>
             </select>
             <em>Arrow</em>
           </div>

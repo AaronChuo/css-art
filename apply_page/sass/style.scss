@@ -3,14 +3,6 @@
 // Here's where we define some default constants
 @import "partials/base";
 
-// Then we'll import the compass extension
-@import "h5bp";
-
-
-// Now, you can simply include everything
-// (except print and helpers) by uncommeting this line
-@include h5bp-normalize;
-
 // Or, you can import the "overrides" partial if
 // you want more control over individual mixins
 //@import "partials/overrides";
@@ -29,9 +21,6 @@
 @import "partials/page";
 @import "compass/css3";
 @import "variables";
-
-// Helpers classes should come second-to-last
-@include h5bp-helpers;
 
 // Media should come last
 @import "partials/media";
@@ -108,6 +97,8 @@ p {
         width: 100%;
         margin: 0 auto;
         position: fixed;
+        top: 0;
+        left: 0;
         background: $coalColorAlpha;
         box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
         font-size: 1.8rem;
@@ -319,13 +310,54 @@ p {
         }
     }
 
-    .for_student > a, .for_earlybird > a, .for_almost > a {
+    .for-student, .for-earlybird, .for-almost {
         margin: 1% auto 1em;
         box-sizing: border-box;
         width: 95%;
         height: 100px;
         padding-top: 1px;
         text-align: center;
+        cursor: pointer;
+        &.disabled {
+            @include opacity(0.3);
+            color: white;
+            cursor: default;
+        }
+    }
+
+    .for-student {
+        //background-image: url("../assets/slice-01.jpg");
+        display: block;
+        background: $leafColorAlpha;
+        &:hover, &.disabled {
+            background: $leafColor;
+            color: white;
+        }
+    }
+
+    .for-earlybird {
+        //background-image: url("../assets/slice-02.jpg");
+        display: block;
+        background: $orangeColorAlpha;
+        &:hover, &.disabled {
+            background: $orangeColor;
+            color: white;
+        }
+    }
+
+    .for-almost {
+        //background-image: url("../assets/slice-03.jpg");
+            /*  background: rgba(248, 202, 0, 0.7); */
+        display: block;
+        background: $skyColorAlpha;
+        &:hover, &.disabled {
+            background: $skyColor;
+            color: white;
+        }
+    }
+
+    .price_tag {
+        font: 600 1.5em/1.8rem 'Dosis', sans-serif;
     }
 
     footer {
@@ -430,58 +462,11 @@ p {
     }
 
     .site_name {
-        position: absolute;
         margin-top: 1em;
         width: 100%;
         color: white;
         text-align: center;
         font-size: 2rem;
-    }
-
-    .for_student {
-        //background-image: url("../assets/slice-01.jpg");
-        a {
-            display: block;
-            background: $leafColorAlpha;
-            &:hover {
-                background: $leafColor;
-                color: white;
-            }
-        }
-    }
-
-    .for_earlybird {
-        //background-image: url("../assets/slice-02.jpg");
-        a {
-            display: block;
-            background: $orangeColorAlpha;
-            &:hover {
-                background: $orangeColor;
-                color: white;
-            }
-        }
-    }
-
-    .for_almost {
-        //background-image: url("../assets/slice-03.jpg");
-        a {
-            /*	background: rgba(248, 202, 0, 0.7); */
-            display: block;
-            background: $skyColorAlpha;
-            &:hover {
-                background: $skyColor;
-                color: white;
-            }
-        }
-        &.disabled {
-            @include opacity(0.5);
-        }
-    }
-
-
-
-    .price_tag {
-        font: 600 1.5em/1.8rem 'Dosis', sans-serif;
     }
 
     .time_tag {
@@ -551,6 +536,7 @@ p {
         }
         i {
             @include border-radius(50%);
+            @include opacity(0.8);
             display: block;
             position: absolute;
             top: 15px;
@@ -558,24 +544,23 @@ p {
             width: 30px;
             height: 30px;
             line-height: 30px;
-            background: #E84E40;
-            color: $deactivateColor;
+            background: #e00032;
             font-size: 2.8em;
             font-style: normal;
             text-align: center;
             cursor: pointer;
             &:hover, &:active {
-                background: #f36c60;
+                @include opacity(1);
                 color: $activeColor;
             }
         }
-        &.studentStyle {
+        &.student-ticket {
             background: rgba(29, 133, 66, .8);
         }
-        &.earlyBirdStyle {
+        &.earlybird-ticket {
             background: #ec800a;
         }
-        &.lastRushStyle {
+        &.lastrush-ticket    {
             background: #6a32b1;
         }
     }
@@ -687,6 +672,9 @@ select {
 /* Form */
 form {
     padding: 0 10px;
+}
+
+form * {
     font-size: 1.6rem;
 }
 
@@ -816,7 +804,7 @@ form > label {
                 position: relative;
                 width: 100%;
                 padding: 50% 0 0;
-                color: $deactivateColor;
+                color: $activeColor;
                 text-align: center;
                 cursor: pointer;
                 em {
@@ -842,33 +830,47 @@ form > label {
             }
         }
         &:first-child {
-            input[type=radio] ~ label em {
-                right: 0;
-                border-right: 0;
-                &:after {
-                    left: 100%;
+            input[type=radio] ~ label {
+                em {
+                    right: 0;
+                    border-right: 0;
+                    &:after {
+                        left: 100%;
+                    }
+                }
+                span {
+                    @include opacity(0.5);
                 }
             }
             input[type=radio]:checked ~ label {
-                color: $activeColor;
                 em:after {
                     left: 0;
+                }
+                span {
+                    @include opacity(1);
                 }
             }
         }
         &:last-child {
             margin-left: -4px;
-            input[type=radio] ~ label em {
-                left: 0;
-                border-left: 0;
-                &:after {
-                    left: -100%;
+            input[type=radio] ~ label {
+                em {
+                    left: 0;
+                    border-left: 0;
+                    &:after {
+                        left: -100%;
+                    }
+                }
+                span {
+                    @include opacity(0.5);
                 }
             }
             input[type=radio]:checked ~ label {
-                color: $activeColor;
                 em:after {
                     left: 0;
+                }
+                span {
+                    @include opacity(1);
                 }
             }
         }
@@ -888,7 +890,7 @@ form > label {
         width: 48%;
         height: 3em;
         padding: 0;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: rgb(255, 255, 255);
         text-align: center;
         background: #3b5998;
@@ -896,15 +898,11 @@ form > label {
         border-bottom: 2px solid darken(#3b5998, 20%);
         cursor: pointer;
         -webkit-box-shadow: inset 0 -2px darken(#3b5998, 10%);
-
-        &:active {
-
-        top: 1px;
-        outline: 0 none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
+        &:hover, &:active {
+            @include box-shadow(none);
+            top: 1px;
+            outline: 0 none;
         }
-
     }
 
     .submit_button {
@@ -915,13 +913,18 @@ form > label {
         padding: 0;
         border: 0;
         margin: 0;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: rgb(255, 255, 255);
         border: 0;
         border-bottom: 2px solid darken($cherryColor, 20%);
         cursor: pointer;
         -webkit-box-shadow: inset 0 -2px darken($cherryColor, 10%);
         text-align: center;
+        &:hover, &:active {
+            @include box-shadow(none);
+            top: 1px;
+            outline: 0 none;
+        }
     }
 
 

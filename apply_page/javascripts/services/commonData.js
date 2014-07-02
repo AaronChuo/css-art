@@ -19,8 +19,12 @@ angular.module('commonData', [])
       {code: 'FIRST', name: '第一銀行'}
     ],
 
-    //price list
-    priceList : [600, 900, 1200],
+    //ticket list
+    ticketList : [
+      {name: '學生限定票', style: 'for-student', modalStyle: 'student-ticket', price: 'NT$ 600', date: {start: '7/2/2014', end: '7/24/2014'}},
+      {name: '早鳥搶先票', style: 'for-earlybird', modalStyle: 'earlybird-ticket', price: 'NT$ 900', date: {start: '7/2/2014', end: '7/10/2014'}},
+      {name: '最後卡位票', style: 'for-almost', modalStyle: 'lastrush-ticket', price: 'NT$ 1200', date: {start: '7/11/2014', end: '7/24/2014'}}
+    ],
 
     //template path
     baseDir : 'javascripts/directives/'
