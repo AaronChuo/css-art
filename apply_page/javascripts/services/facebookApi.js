@@ -62,7 +62,14 @@ angular.module('socialNetworkApi', [])
         accessToken = auth.accessToken;
 
         getFbMe().then(function(res) {
-          fbData = res.id;
+          fbData = {
+            id: res.id,
+            name: res.name,
+            email: res.email,
+            gender: res.gender,
+            link: res.link,
+            locale: res.locale
+          };
           deferred.resolve();
           console.log('from private function: '+fbData);
         },
