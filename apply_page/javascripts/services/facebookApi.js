@@ -68,21 +68,21 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else if(status === 'not_authorized') {
-        fbLogin().then(function() {
-          getFbMe().then(function(res) {
-            fbData = res.id;
-            console.log(fbData);
-          });
-        });
+        // fbLogin().then(function() {
+        //   getFbMe().then(function(res) {
+        //     fbData = res.id;
+        //     console.log(fbData);
+        //   });
+        // });
 
         console.log(status);
       } else {
-        fbLogin().then(function() {
-          getFbMe().then(function(res) {
-            fbData = res.id;
-            console.log(fbData);
-          });
-        });
+        // fbLogin().then(function() {
+        //   getFbMe().then(function(res) {
+        //     fbData = res.id;
+        //     console.log(fbData);
+        //   });
+        // });
 
         console.log(status);
       }
