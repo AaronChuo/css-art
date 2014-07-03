@@ -31,7 +31,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   $scope.cellphone = '';
   $scope.vegetarian = 0;
   $scope.price = 1200;
-  $fbdata = '';
+  $scope.fbdata = '';
 
   //ticket
   $scope.ticketList = CONST.ticketList;
