@@ -68,26 +68,30 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else if(status === 'not_authorized') {
-        fbLogin().then(getFbMe())
-        .then(function(res) {
-          fbData = res.id;
-          console.log(fbData);
+        fbLogin().then(function() {
+          getFbMe().then(function(res) {
+            fbData = res.id;
+            console.log(fbData);
+          });
         });
+
         console.log(status);
       } else {
-        fbLogin().then(getFbMe())
-        .then(function(res) {
-          fbData = res.id;
-          console.log(fbData);
+        fbLogin().then(function() {
+          getFbMe().then(function(res) {
+            fbData = res.id;
+            console.log(fbData);
+          });
         });
+
         console.log(status);
       }
     });
   };
 
   //Facebook Login API
-  var fbLogin = function(scope) {
-    var scope = scope || 'public_profile, email';
+  var fbLogin = function() {
+    var scope = 'public_profile, email';
     var deferred = $q.defer();
     var promise = deferred.promise;
 
