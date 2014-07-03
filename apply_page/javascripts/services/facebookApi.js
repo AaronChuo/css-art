@@ -4,7 +4,7 @@
 // Service: Facebook API
 //--------------------------------
 angular.module('socialNetworkApi', [])
-.factory('facebookApi', ['$window', function($window) {
+.factory('facebookApi', ['$window', '$q', function($window, $q) {
 
   //Facebook app config
   var APP_ID = '',
@@ -51,6 +51,9 @@ angular.module('socialNetworkApi', [])
 
   //Get login status
   var getLoginStatus = function() {
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+
     FB.getLoginStatus(function(response) {
       var status = response.status,
           auth = response.authResponse;
@@ -58,32 +61,86 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        fbLogin(getFbMe);
+        getFbMe().then(function(res) {
+          fbData = {
+            id: res.id,
+            name: res.name,
+            email: res.email,
+            gender: res.gender,
+            link: res.link,
+            locale: res.locale
+          };
+          deferred.resolve();
+          console.log('from private function: '+fbData);
+        },
+        function(error) {
+          deferred.reject();
+          console.log(error);
+        });
 
-        return fbData;
         console.log(status);
       } else if(status === 'not_authorized') {
-        fbLogin(getFbMe);
+        // fbLogin().then(function() {
+        //   getFbMe().then(function(res) {
+        //     fbData = res.id;
+        //     console.log(fbData);
+        //   });
+        // });
+
         console.log(status);
       } else {
-        fbLogin(getFbMe);
+        // fbLogin().then(function() {
+        //   getFbMe().then(function(res) {
+        //     fbData = res.id;
+        //     console.log(fbData);
+        //   });
+        // });
+
         console.log(status);
       }
     });
+
+    return deferred.promise;
   };
 
   //Facebook Login API
-  var fbLogin = function(fbApi, scope) {
-    var scope = scope || 'public_profile, email';
-    FB.login(fbApi, {scope: scope});
+  var fbLogin = function() {
+    var scope = 'public_profile, email';
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+
+    FB.login(function(response) {
+      if(response.authResponse) {
+        deferred.resolve();
+      } else {
+        deferred.reject();
+      }
+    }, {scope: scope});
+
+    return deferred.promise;
+    //FB.login(fbApi, {scope: scope});
   };
 
   //Facebook Me API
   var getFbMe = function() {
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+
     FB.api('/me', function(response) {
-      fbData = response.id;
+      if(!response.error) {
+        deferred.resolve(response);
+      } else {
+        deferred.reject(response.error);
+      }
     });
+
+    return deferred.promise;
   };
+
+  // //Facebook Me API Callback
+  // var callback = function(res) {
+  //   this.getFbData();
+  // };
 
   //Public
   return {
@@ -106,7 +163,14 @@ angular.module('socialNetworkApi', [])
     },
 
     getFbData: function() {
-      return fbData;
+      var deferred = $q.defer();
+      var promise = deferred.promise;
+
+      getLoginStatus().then(function() {
+        deferred.resolve(fbData);
+      });
+
+      return deferred.promise;
     }
 
   };
