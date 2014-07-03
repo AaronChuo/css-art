@@ -75,7 +75,10 @@ angular.module('socialNetworkApi', [])
   //Facebook Login API
   var fbLogin = function(fbApi, scope) {
     var scope = scope || 'public_profile, email';
-    FB.login(fbApi, {scope: scope});
+    FB.login(fbApi.then(function(res) {
+      fbData = res.id;
+      console.log(fbData);
+    }), {scope: scope});
   };
 
   //Facebook Me API
@@ -89,11 +92,9 @@ angular.module('socialNetworkApi', [])
       } else {
         deferred.reject(response);
       }
-      return deferred.promise;
-    }).then(function(res) {
-      fbData = res.id;
-      console.log(fbData);
+
     });
+    return deferred.promise;
   };
 
   // //Facebook Me API Callback
