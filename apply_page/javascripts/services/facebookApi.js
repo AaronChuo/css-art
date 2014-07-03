@@ -58,14 +58,14 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        getFbMe().then(function(res) {
+        getFbMe.then(function(res) {
           fbData = res.id;
           console.log(fbData);
         },
         function(error) {
           console.log(error);
         });
-        //return fbData;
+
         console.log(status);
       } else if(status === 'not_authorized') {
         fbLogin(getFbMe);
@@ -85,17 +85,17 @@ angular.module('socialNetworkApi', [])
 
   //Facebook Me API
   var getFbMe = function() {
-    //FB.api('/me', function(res){});
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+
     FB.api('/me', function(response) {
-      var deferred = $q.defer();
-      var promise = deferred.promise;
       if(!response.error) {
         deferred.resolve(response);
       } else {
-        deferred.reject(response);
+        deferred.reject(response.error);
       }
-
     });
+
     return deferred.promise;
   };
 
