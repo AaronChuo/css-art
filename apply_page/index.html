@@ -147,15 +147,15 @@
         <!-- personal -->
         <label for="name" class="textInput">
           <span class="field-title">*姓名</span>
-          <input type="text" id="name" name="name" maxlength="20" placeholder="例：王小明" required>
+          <input type="text" id="name" name="name" maxlength="20" placeholder="例：王小明" ng-model="name" required>
         </label>
         <label for="email" class="textInput">
           <span class="field-title">*Email</span>
-          <input type="email" id="email" name="email" placeholder="例：cssgeek@fea.tw">
+          <input type="email" id="email" name="email" placeholder="例：cssgeek@fea.tw" ng-model="email" required>
         </label>
         <label for="cellphone" class="textInput">
           <span class="field-title">*手機</span>
-          <input type="text" id="cellphone" name="phone" placeholder="例：0912-345678">
+          <input type="text" id="cellphone" name="phone" placeholder="例：0912-345678" ng-model="cellphone" required>
         </label>
         <div class="radioGroup">
           <span class="field-title">午餐</span>
@@ -168,7 +168,7 @@
             <label for="vegetarian">素</label>
           </div>
         </div>
-        <input type="hidden" name="fbJson" ng-value="">
+        <input type="hidden" name="fbJson" ng-value="fbdata">
         <input type="hidden" name="note" ng-value="">
         <input type="hidden" name="price" ng-value="price">
         <div class="button-wrapper">

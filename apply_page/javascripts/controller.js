@@ -31,6 +31,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   $scope.cellphone = '';
   $scope.vegetarian = 0;
   $scope.price = 1200;
+  $fbdata = '';
 
   //ticket
   $scope.ticketList = CONST.ticketList;
@@ -109,13 +110,9 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   //facebook login and get api
   $scope.fbLogin = function() {
-    facebookApi.getMe();
-  };
-
-  $scope.$watch(facebookApi.getFbData(), function(newValue, oldValue) {
-    if(newValue !== oldValue) {
+    if(facebookApi.getMe()) {
       console.log(facebookApi.getFbData());
     }
-  });
+  };
 
 }]);

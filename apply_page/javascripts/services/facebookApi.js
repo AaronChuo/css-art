@@ -80,10 +80,16 @@ angular.module('socialNetworkApi', [])
 
   //Facebook Me API
   var getFbMe = function() {
+    //FB.api('/me', function(res){});
     FB.api('/me', function(response) {
       fbData = response.id;
     });
   };
+
+  // //Facebook Me API Callback
+  // var callback = function(res) {
+  //   this.getFbData();
+  // };
 
   //Public
   return {
@@ -103,6 +109,7 @@ angular.module('socialNetworkApi', [])
     getMe: function() {
       if(!initialized) return;
       getLoginStatus();
+      return true;
     },
 
     getFbData: function() {
