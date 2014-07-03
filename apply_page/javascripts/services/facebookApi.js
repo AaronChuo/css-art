@@ -146,10 +146,16 @@ angular.module('socialNetworkApi', [])
     getMe: function() {
       if(!initialized) return;
       getLoginStatus();
-      return true;
     },
 
     getFbData: function() {
+      getFbMe().then(function(response) {
+        fbData = response.name;
+      },
+      function(error) {
+        console.log(error);
+      });
+
       return fbData;
     }
 
