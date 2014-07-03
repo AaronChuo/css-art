@@ -58,7 +58,7 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        getFbMe.then(function(res) {
+        getFbMe().then(function(res) {
           fbData = res.id;
           console.log(fbData);
         },
