@@ -51,6 +51,9 @@ angular.module('socialNetworkApi', [])
 
   //Get login status
   var getLoginStatus = function() {
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+
     FB.getLoginStatus(function(response) {
       var status = response.status,
           auth = response.authResponse;
@@ -60,9 +63,11 @@ angular.module('socialNetworkApi', [])
 
         getFbMe().then(function(res) {
           fbData = res.id;
+          deferred.resolve();
           console.log(fbData);
         },
         function(error) {
+          deferred.reject();
           console.log(error);
         });
 
@@ -87,6 +92,8 @@ angular.module('socialNetworkApi', [])
         console.log(status);
       }
     });
+
+    return deferred.promise;
   };
 
   //Facebook Login API
@@ -149,14 +156,9 @@ angular.module('socialNetworkApi', [])
     },
 
     getFbData: function() {
-      getFbMe().then(function(response) {
-        fbData = response.name;
-      },
-      function(error) {
-        console.log(error);
+      getLoginStatus().then(function() {
+        return fbData;
       });
-
-      return fbData;
     }
 
   };
