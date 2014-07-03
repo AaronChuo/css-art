@@ -156,7 +156,7 @@ angular.module('socialNetworkApi', [])
     },
 
     getFbData: function() {
-      getLoginStatus().then(function() {
+      return getLoginStatus().then(function() {
         return fbData;
       });
     }
