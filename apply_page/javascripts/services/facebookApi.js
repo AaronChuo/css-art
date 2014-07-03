@@ -64,7 +64,7 @@ angular.module('socialNetworkApi', [])
         getFbMe().then(function(res) {
           fbData = res.id;
           deferred.resolve();
-          console.log(fbData);
+          console.log('from private function: '+fbData);
         },
         function(error) {
           deferred.reject();
@@ -156,9 +156,14 @@ angular.module('socialNetworkApi', [])
     },
 
     getFbData: function() {
-      return getLoginStatus().then(function() {
-        return fbData;
+      var deferred = $q.defer();
+      var promise = deferred.promise;
+
+      getLoginStatus().then(function() {
+        deferred.resolve(fbData);
       });
+
+      return deferred.promise;
     }
 
   };
