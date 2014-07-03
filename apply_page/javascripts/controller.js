@@ -80,7 +80,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
     var i = ticketIndex, r = disableReason;
     $scope.ticketList[i].disable = 1;
     $scope.ticketList[i].style += ' disabled';
-    $scope.ticketList[i].price += ' 《' + r + '》';
+    $scope.ticketList[i].r = ' 《' + r + '》';
   };
 
   calcTime();

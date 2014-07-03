@@ -106,7 +106,7 @@
       <div ng-repeat="ticket in ticketList">
         <a ng-click="modalToggle(ticket)" ng-class="ticket.style">
           <h2 ng-bind="ticket.name"></h2>
-          <span ng-class="'price_tag'" ng-bind="ticket.price"></span>
+          <span ng-class="'price_tag'">NT$ <span ng-bind="ticket.price"></span><span ng-bind="ticket.r"></span>
         </a>
       </div>
 
