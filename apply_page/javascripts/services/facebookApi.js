@@ -58,8 +58,13 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        //fbLogin(getFbMe);
-
+        getFbMe().then(function(res) {
+          fbData = res.id;
+          console.log(fbData);
+        },
+        function(error) {
+          console.log(error);
+        });
         //return fbData;
         console.log(status);
       } else if(status === 'not_authorized') {
@@ -75,10 +80,7 @@ angular.module('socialNetworkApi', [])
   //Facebook Login API
   var fbLogin = function(fbApi, scope) {
     var scope = scope || 'public_profile, email';
-    FB.login(fbApi.then(function(res) {
-      fbData = res.id;
-      console.log(fbData);
-    }), {scope: scope});
+    FB.login(fbApi, {scope: scope});
   };
 
   //Facebook Me API
