@@ -110,9 +110,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   //facebook login and get api
   $scope.fbLogin = function() {
-    if(facebookApi.getMe()) {
-      console.log(facebookApi.getFbData());
-    }
+    facebookApi.getMe();
   };
 
 }]);

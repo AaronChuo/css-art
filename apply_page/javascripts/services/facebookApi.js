@@ -4,7 +4,7 @@
 // Service: Facebook API
 //--------------------------------
 angular.module('socialNetworkApi', [])
-.factory('facebookApi', ['$window', function($window) {
+.factory('facebookApi', ['$window', '$q', function($window, $q) {
 
   //Facebook app config
   var APP_ID = '',
@@ -58,9 +58,9 @@ angular.module('socialNetworkApi', [])
       if(status === 'connected') {
         accessToken = auth.accessToken;
 
-        fbLogin(getFbMe);
+        //fbLogin(getFbMe);
 
-        return fbData;
+        //return fbData;
         console.log(status);
       } else if(status === 'not_authorized') {
         fbLogin(getFbMe);
@@ -82,7 +82,17 @@ angular.module('socialNetworkApi', [])
   var getFbMe = function() {
     //FB.api('/me', function(res){});
     FB.api('/me', function(response) {
-      fbData = response.id;
+      var deferred = $q.defer();
+      var promise = deferred.promise;
+      if(!response.error) {
+        deferred.resolve(response);
+      } else {
+        deferred.reject(response);
+      }
+      return deferred.promise;
+    }).then(function(res) {
+      fbData = res.id;
+      console.log(fbData);
     });
   };
 
