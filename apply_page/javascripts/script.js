@@ -51,7 +51,4 @@ $(document).ready(function() {
             scrollTop: $($(this).attr('href')).offset().top - $('.navi li').height()
         }, 800);
     });
-    // $('.continue-read').css({
-    //     left: ($('body').width() - $('.continue-read').width()) / 2,
-    // });
 });
