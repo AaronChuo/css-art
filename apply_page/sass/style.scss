@@ -135,11 +135,12 @@ p {
     .main {
         @include span(1);
         position: relative;
-        width: 100%;
         height: auto;
+        min-height: 100%;
+
         padding-top: 30px;
-        background: url(../assets/cover-bg-01.jpg) top center no-repeat;
-        background-size: 100% auto;
+        background: url(../assets/cover-bg-01.jpg) center center no-repeat;
+        background-size: auto 100%;
 
         h1 {
             color: white;
@@ -1002,9 +1003,28 @@ form > label {
     // }
 
 
+ 
 @media only screen and (min-width: 1025px) {
     .main {
         background: url(../assets/cover-bg-01.jpg) top center no-repeat;
         background-size: 100% auto;
+
     }
+
+    .time_scale {
+        @include span(1);
+        background: #fff;
+        width: 100%;
+        overflow: hidden;
+        span {
+            @include use-sprite("time_scale");
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 1em auto;
+        }
+    }
+
 }
