@@ -8,6 +8,7 @@
 //@import "partials/overrides";
 @import "mixins";
 
+@import "susy";
 
 /* Jeet.gs */
 @import "jeet/index";
@@ -84,8 +85,7 @@ p {
     text-align: justify;
 }
 
-/* 主要版面切割 - 桌機版 */
-@media only screen and (min-width: 768px) {
+/* 主要版面切割 */
 
     #container {
         width: 100%;
@@ -134,14 +134,49 @@ p {
 
     .main {
         @include span(1);
+        position: relative;
+        width: 100%;
         height: 100%;
         padding-top: 30px;
-        background: url(../assets/cover-bg.png) top center no-repeat;
+        background: url(../assets/workshop-cover.png) top center no-repeat;
         background-size: auto 100%;
-        .continue-read {
+        h1 {
+            color: #333;
+        }
+        h2 {
             display: block;
-            position: relative;
-            top: 75%;
+            width: 300px;
+            height: auto;
+            color: white;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+        }
+        .r, .g, .b {
+            @include border-radius(10px);
+            width: 60%;
+            max-width: 500px;
+            margin: 10px 5%;
+            padding: 10px;
+            font-size: 1.6rem;
+        }
+        .r {
+            background: $cherryColorAlpha;
+        }
+        .g {
+            background: $leafColorAlpha;
+        }
+        .b {
+            background: $skyColorAlpha;
+        }
+        .fullwidth {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+        }
+        .continue-read {
+            @include transition(all .5s ease);
+            display: block;
             width: 200px;
             height: 80px;
             margin: 0 auto;
@@ -149,20 +184,24 @@ p {
             text-align: center;
             font-size: 2.2rem;
             line-height: 80px;
-        }
-        .continue-read:after {
-            content: '';
-            display: block;
-            width: 0;
-            border-top: 50px solid $coalColorAlpha;
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
+            color: #EEE;
+            &:after {
+                content: '';
+                display: block;
+                width: 0;
+                border-top: 50px solid $coalColorAlpha;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+            }
+            &:hover {
+                color: #FFF;
+            }
         }
     }
 
     .time_scale {
         @include span(1);
-        background: white;
+        background: #DDD;
         width: 100%;
         overflow: hidden;
         span {
@@ -180,6 +219,18 @@ p {
             margin-top: 1em;
             font-size: 2rem;
             text-align: center;
+        }
+        .map {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            img {
+                width: auto;
+                height: 60%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border: 2px solid #CCC;
+            }
         }
     }
 
@@ -363,7 +414,7 @@ p {
     footer {
         @include span(1);
         margin: 0;
-        padding-top: 30px;
+        padding-top: 50px;
         background: #333;
         color: #CCC;
         > * {
@@ -489,9 +540,6 @@ p {
     .add_opacity {
         color: rgba (255, 255, 255, 0.6);
     }
-
-
-}
 
 
 .crdt_icon {
@@ -927,6 +975,7 @@ form > label {
         }
     }
 
+}
 
     // button {
     //     @include border-radius(3px);
@@ -950,4 +999,11 @@ form > label {
     //         }
     //     }
     // }
+
+
+@media only screen and (min-width: 1025px) {
+    .main {
+        background: url(../assets/workshop-cover.png) top center no-repeat;
+        background-size: 100% 100%;
+    }
 }
