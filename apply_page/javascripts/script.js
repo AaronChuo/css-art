@@ -47,7 +47,7 @@
 $(document).ready(function() {
     $('a.anchor').on('click', function(e) {
         e.preventDefault;
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - $('.navi li').height()
         }, 800);
     });

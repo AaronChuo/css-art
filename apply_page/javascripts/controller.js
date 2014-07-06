@@ -92,7 +92,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   //modal toggling
   $scope.modalToggle = function(ticket) {
-    event.preventDefault();
+    //event.preventDefault();
 
     if(ticket) {
       if(!ticket.disable) {
