@@ -107,8 +107,8 @@ angular.module('socialNetworkApi', [])
           function(res) {
             console.log('got data: '+res);
           },
-          function(msg) {
-            console.log(msg);
+          function(err) {
+            console.log(err);
           }
         );
 
