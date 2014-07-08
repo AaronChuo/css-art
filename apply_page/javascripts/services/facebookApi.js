@@ -127,9 +127,9 @@ angular.module('socialNetworkApi', [])
 
     FB.login(function(response) {
       if(response.authResponse) {
-        deferred.resolve();
+        deferred.resolve('login success');
       } else {
-        deferred.reject();
+        deferred.reject('not login');
       }
     }, {scope: scope});
 
