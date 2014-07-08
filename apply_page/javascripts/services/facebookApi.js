@@ -103,24 +103,7 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else {
-        fbLogin().then(getFbMe().then(function(res) {
-          fbData = {
-            id: res.id,
-            name: res.name,
-            email: res.email,
-            gender: res.gender,
-            link: res.link,
-            locale: res.locale
-          };
-          var msg = 'gotData';
-          deferred.resolve(msg);
-          console.log('from private function: '+res);
-          console.log('login > authorized > getMe');
-        },
-        function(error) {
-          deferred.reject();
-          console.log(error);
-        }));
+        fbLogin().then();
 
         console.log(status);
       }
