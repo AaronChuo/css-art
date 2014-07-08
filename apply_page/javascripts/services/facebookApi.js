@@ -52,11 +52,11 @@ angular.module('socialNetworkApi', [])
 
   //Get login status
   var getLoginStatus = function() {
+    var deferred = $q.defer();
 
     FB.getLoginStatus(function(response) {
       var status = response.status,
           auth = response.authResponse;
-      var deferred = $q.defer();
 
       if(status === 'connected') {
         deferred.resolve(status);
