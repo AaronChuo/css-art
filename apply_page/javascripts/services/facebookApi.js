@@ -56,9 +56,9 @@ angular.module('socialNetworkApi', [])
     FB.getLoginStatus(function(response) {
       var status = response.status,
           auth = response.authResponse;
-      var deferred = $q.defer();
 
       if(status === 'connected') {
+        var deferred = $q.defer();
         accessToken = auth.accessToken;
 
         getFbMe().then(function(res) {
@@ -100,6 +100,7 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else {
+        var deferred = $q.defer();
         fbLogin().then(getFbMe).then(
           function(res) {
             console.log('got data: '+res);
