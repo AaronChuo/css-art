@@ -103,15 +103,7 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else {
-        fbLogin().then(
-          //login success
-          getFbMe(),
-          //cancel login
-          function() {
-            console.log('cancel login');
-            return 'not logged';
-          }
-        ).then(
+        fbLogin().then(getFbMe).then(
           function(res) {
             console.log('got data: '+res);
           },
@@ -148,7 +140,6 @@ angular.module('socialNetworkApi', [])
   //Facebook Me API
   var getFbMe = function() {
     var deferred = $q.defer();
-    var promise = deferred.promise;
 
     FB.api('/me', function(response) {
       if(!response.error) {
