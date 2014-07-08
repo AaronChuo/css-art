@@ -109,14 +109,14 @@ angular.module('socialNetworkApi', [])
           //cancel login
           function() {
             console.log('cancel login');
-
+            return 'not logged';
           }
         ).then(
-          function(msg) {
-            console.log('got data'+msg);
+          function(res) {
+            console.log('got data: '+res);
           },
-          function() {
-            console.log('cannot get data');
+          function(msg) {
+            console.log(msg);
           }
         );
 
