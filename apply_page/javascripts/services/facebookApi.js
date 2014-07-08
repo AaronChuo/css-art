@@ -106,14 +106,13 @@ angular.module('socialNetworkApi', [])
         fbLogin().then(
           //login success
           function() {
-            getFbMe();
             console.log('logged');
-            deferred.resolve();
+
+            return getFbMe();
           },
           //cancel login
           function() {
             console.log('cancel login');
-            deffered.reject();
           }
         ).then(
           function() {
