@@ -1010,14 +1010,12 @@ form > label {
                     display: block;
                     height: 100%;
                     padding: 20px 0;
-                 &:hover {
-                    color: #333;
                 }
-
-                }
-                &:hover {
+                &:hover, &:active, &.active {
                     background: rgb(255, 255, 255);
-
+                    a {
+                        color: #333;
+                    }
                 }
             }
         }

@@ -46,10 +46,12 @@
 
 $(document).ready(function() {
     $('a.anchor').on('click', function(e) {
-        e.preventDefault;
+        e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - $('.navi li').height()
-        }, 800);
+        }, 1200);
+        $('.navi li').removeClass('active');
+        $(this).parent('li').addClass('active');
     });
     // $('.continue-read').css({
     //     left: ($('body').width() - $('.continue-read').width()) / 2,

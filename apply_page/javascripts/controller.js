@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'])
-.controller('paymentCtrl',['$scope', '$q', 'facebookApi', 'CONST', function($scope, $q, facebookApi, CONST) {
+.controller('paymentCtrl',['$scope', '$q', '$http', 'facebookApi', 'CONST', function($scope, $q, $http, facebookApi, CONST) {
 
 //-------------------------
 // private variable & init
@@ -48,17 +48,31 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 // private function
 //-------------------------
 
-  // //judge mobile device
-  // function isAppleDevice() {
-  //   var linkUrl, mapUrl = 'www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff';
-  //   if((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1)) {
-  //     linkUrl = 'https://' + mapUrl;
-  //   } else {
-  //     linkUrl = 'https://' + mapUrl;
-  //   }
+  //get ticket remain
+  var getTicketRemain = function() {
+    var api = 'http://fea.tw/workshop/';
+    var data = {method: 'get_remain'};
+    var deferred = $q.defer();
 
-  //   return linkUrl;
-  // }
+    $http.post(api, data)
+    .success(function(data, status, headers, config) {
+      deferred.resolve(data);
+    })
+    .error(function(data, status, headers, config) {
+      deferred.reject(status);
+    });
+
+    deferred.promise.then(
+      function(data) {
+        console.log(data);
+      },
+      function(err) {
+        console.log(err);
+      }
+    );
+  };
+
+  //set ticket
 
   //time calculation
   var calcTime = function() {
@@ -100,6 +114,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   };
 
   calcTime();
+  getTicketRemain();
 
 //-------------------------
 // public function
