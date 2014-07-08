@@ -104,31 +104,21 @@ angular.module('socialNetworkApi', [])
         console.log(status);
       } else {
         fbLogin().then(
+          //login success
           function() {
-            accessToken = auth.accessToken;
-
-            getFbMe().then(function(res) {
-              fbData = {
-                id: res.id,
-                name: res.name,
-                email: res.email,
-                gender: res.gender,
-                link: res.link,
-                locale: res.locale
-              };
-              deferred.resolve();
-              console.log('got data');
-              //console.log('from private function: '+fbData);
-            },
-            function(error) {
-              deferred.reject();
-              //console.log(error);
-            });
-
+            getFbMe();
             console.log('logged');
           },
+          //cancel login
           function() {
-            console.log('cancel auth');
+            console.log('cancel login');
+          }
+        ).then(
+          function() {
+            console.log('got data');
+          },
+          function() {
+            console.log('cannot get data');
           }
         );
 
