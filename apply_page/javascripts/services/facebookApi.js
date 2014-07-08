@@ -105,11 +105,7 @@ angular.module('socialNetworkApi', [])
       } else {
         fbLogin().then(
           //login success
-          function() {
-            console.log('logged');
-
-            return 'test';
-          },
+          getFbMe(),
           //cancel login
           function() {
             console.log('cancel login');
