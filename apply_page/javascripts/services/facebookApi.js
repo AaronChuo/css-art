@@ -108,10 +108,12 @@ angular.module('socialNetworkApi', [])
           function() {
             getFbMe();
             console.log('logged');
+            deferred.resolve();
           },
           //cancel login
           function() {
             console.log('cancel login');
+            deffered.reject();
           }
         ).then(
           function() {
