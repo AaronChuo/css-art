@@ -1464,11 +1464,11 @@ form > label {
   outline: 0 none;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
   /* line 946, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
-    background-size: auto 25%;
+    background-size: auto 30%;
   }
 }
 @media screen and (min-width: 601px) {

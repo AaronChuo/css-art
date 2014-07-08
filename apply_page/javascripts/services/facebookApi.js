@@ -58,7 +58,7 @@ angular.module('socialNetworkApi', [])
       var status = response.status,
           auth = response.authResponse;
 
-      if(status === 'connected') {
+      if(status === 'connected' || status === 'not_authorized') {
         accessToken = auth.accessToken;
 
         getFbMe().then(function(res) {
@@ -70,7 +70,8 @@ angular.module('socialNetworkApi', [])
             link: res.link,
             locale: res.locale
           };
-          deferred.resolve();
+          var msg = 'gotData';
+          deferred.resolve(msg);
           console.log('from private function: '+fbData);
         },
         function(error) {
@@ -79,7 +80,8 @@ angular.module('socialNetworkApi', [])
         });
 
         console.log(status);
-      } else if(status === 'not_authorized') {
+      //} else if() {
+
         // fbLogin().then(function() {
         //   getFbMe().then(function(res) {
         //     fbData = res.id;
@@ -87,14 +89,25 @@ angular.module('socialNetworkApi', [])
         //   });
         // });
 
-        console.log(status);
+        //console.log(status);
       } else {
-        // fbLogin().then(function() {
-        //   getFbMe().then(function(res) {
-        //     fbData = res.id;
-        //     console.log(fbData);
-        //   });
-        // });
+        fbLogin().then(getFbMe().then(function(res) {
+          fbData = {
+            id: res.id,
+            name: res.name,
+            email: res.email,
+            gender: res.gender,
+            link: res.link,
+            locale: res.locale
+          };
+          var msg = 'gotData';
+          deferred.resolve(msg);
+          console.log('from private function: '+fbData);
+        },
+        function(error) {
+          deferred.reject();
+          console.log(error);
+        }));
 
         console.log(status);
       }
@@ -166,8 +179,12 @@ angular.module('socialNetworkApi', [])
       var deferred = $q.defer();
       var promise = deferred.promise;
 
-      getLoginStatus().then(function() {
-        deferred.resolve(fbData);
+      getLoginStatus().then(function(msg) {
+        if(msg === 'loginSuccess') {
+          deffered.resolve();
+        } else if(msg === 'gotData') {
+          deferred.resolve(fbData);
+        }
       });
 
       return deferred.promise;
