@@ -67,7 +67,7 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else {
-        deferred.reject(status);
+        deferred.resolve(status);
 
         console.log(status);
       }
