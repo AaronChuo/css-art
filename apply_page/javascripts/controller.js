@@ -130,6 +130,9 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
       $scope.name = data.name;
       $scope.email = data.email;
       $scope.fbdata = JSON.stringify(data);
+    },
+    function(err) {
+      console.log(err);
     });
   };
 

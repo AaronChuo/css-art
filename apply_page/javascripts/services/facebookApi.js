@@ -56,69 +56,18 @@ angular.module('socialNetworkApi', [])
     FB.getLoginStatus(function(response) {
       var status = response.status,
           auth = response.authResponse;
+      var deferred = $q.defer();
 
       if(status === 'connected') {
-        var deferred = $q.defer();
-        accessToken = auth.accessToken;
-
-        getFbMe().then(function(res) {
-          fbData = {
-            id: res.id,
-            name: res.name,
-            email: res.email,
-            gender: res.gender,
-            link: res.link,
-            locale: res.locale
-          };
-
-          deferred.resolve();
-        },
-        function(error) {
-          deferred.reject();
-        });
+        deferred.resolve(status);
 
         console.log(status);
       } else if(status === 'not_authorized') {
-
-        getFbMe().then(function(res) {
-          fbData = {
-            id: res.id,
-            name: res.name,
-            email: res.email,
-            gender: res.gender,
-            link: res.link,
-            locale: res.locale
-          };
-          var msg = 'gotData';
-          deferred.resolve(msg);
-          console.log('from private function: '+fbData);
-        },
-        function(error) {
-          deferred.reject();
-          console.log(error);
-        });
+        deferred.resolve(status);
 
         console.log(status);
       } else {
-        var deferred = $q.defer();
-        fbLogin().then(getFbMe).then(
-          function(res) {
-            console.log('got data: '+res);
-            fbData = {
-              id: res.id,
-              name: res.name,
-              email: res.email,
-              gender: res.gender,
-              link: res.link,
-              locale: res.locale
-            };
-            deffered.resolve();
-          },
-          function(err) {
-            console.log(err);
-            deferred.reject(err);
-          }
-        );
+        deferred.reject(status);
 
         console.log(status);
       }
@@ -188,8 +137,13 @@ angular.module('socialNetworkApi', [])
     getFbData: function() {
       var deferred = $q.defer();
 
-      getLoginStatus().then(function(res) {
-        deferred.resolve(fbData);
+      getLoginStatus()
+      .then(getFbMe, fbLogin)
+      .then(function(res) {
+        deferred.resolve(res);
+      },
+      function(err) {
+        deferred.reject(err);
       });
 
       return deferred.promise;
