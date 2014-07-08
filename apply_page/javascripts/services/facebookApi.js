@@ -108,15 +108,16 @@ angular.module('socialNetworkApi', [])
           function() {
             console.log('logged');
 
-            return getFbMe();
+            return 'test';
           },
           //cancel login
           function() {
             console.log('cancel login');
+
           }
         ).then(
-          function() {
-            console.log('got data');
+          function(msg) {
+            console.log('got data'+msg);
           },
           function() {
             console.log('cannot get data');
