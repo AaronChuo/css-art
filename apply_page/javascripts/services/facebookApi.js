@@ -103,7 +103,14 @@ angular.module('socialNetworkApi', [])
 
         console.log(status);
       } else {
-        fbLogin().then();
+        fbLogin().then(
+          function() {
+            console.log('logged');
+          },
+          function() {
+            console.log('wrong?');
+          }
+        );
 
         console.log(status);
       }
