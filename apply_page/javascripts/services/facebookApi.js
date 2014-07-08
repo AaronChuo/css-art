@@ -3,6 +3,7 @@
 // Module: Social Network API
 // Service: Facebook API
 //--------------------------------
+//TODO: need to refactor
 angular.module('socialNetworkApi', [])
 .factory('facebookApi', ['$window', '$q', function($window, $q) {
 
@@ -58,7 +59,7 @@ angular.module('socialNetworkApi', [])
       var status = response.status,
           auth = response.authResponse;
 
-      if(status === 'connected' || status === 'not_authorized') {
+      if(status === 'connected') {
         accessToken = auth.accessToken;
 
         getFbMe().then(function(res) {
@@ -80,16 +81,27 @@ angular.module('socialNetworkApi', [])
         });
 
         console.log(status);
-      //} else if() {
+      } else if(status === 'not_authorized') {
 
-        // fbLogin().then(function() {
-        //   getFbMe().then(function(res) {
-        //     fbData = res.id;
-        //     console.log(fbData);
-        //   });
-        // });
+        getFbMe().then(function(res) {
+          fbData = {
+            id: res.id,
+            name: res.name,
+            email: res.email,
+            gender: res.gender,
+            link: res.link,
+            locale: res.locale
+          };
+          var msg = 'gotData';
+          deferred.resolve(msg);
+          console.log('from private function: '+fbData);
+        },
+        function(error) {
+          deferred.reject();
+          console.log(error);
+        });
 
-        //console.log(status);
+        console.log(status);
       } else {
         fbLogin().then(getFbMe().then(function(res) {
           fbData = {
@@ -102,7 +114,8 @@ angular.module('socialNetworkApi', [])
           };
           var msg = 'gotData';
           deferred.resolve(msg);
-          console.log('from private function: '+fbData);
+          console.log('from private function: '+res);
+          console.log('login > authorized > getMe');
         },
         function(error) {
           deferred.reject();
