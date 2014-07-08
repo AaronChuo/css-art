@@ -80,7 +80,6 @@ angular.module('socialNetworkApi', [])
   var fbLogin = function() {
     var scope = 'public_profile, email';
     var deferred = $q.defer();
-    var promise = deferred.promise;
 
     FB.login(function(response) {
       if(response.authResponse) {
@@ -138,7 +137,8 @@ angular.module('socialNetworkApi', [])
       var deferred = $q.defer();
 
       getLoginStatus()
-      .then(getFbMe, fbLogin)
+      .then(fbLogin)
+      .then(getFbMe)
       .then(function(res) {
         deferred.resolve(res);
       },
