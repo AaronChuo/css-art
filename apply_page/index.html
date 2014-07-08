@@ -17,6 +17,7 @@
     <link rel='stylesheet' href='stylesheets/adaptive-modal.css'>
     <link rel="stylesheet" href="stylesheets/animate.css">
 
+    <script src="http://172.20.10.8:35729/livereload.js?snipver=1"></script>
     <script src='javascripts/modernizr-2.0.6.min.js'></script>
     <script src="javascripts/libs/angular.min.js"></script>
 
@@ -59,7 +60,9 @@
       <!-- Time & Location -->
       <div id="time" class="time_scale">
         <span>時間</span>
-        <h3>中原大學資管樓104教室(桃園縣中壢市中北路200號)</h3>
+        <h3>中原大學資管樓104教室</h3>
+        <h3>(桃園縣中壢市中北路200號)</h3>
+        <p class="open-map"><a ng-href="{{mapLink}}">打開Google地圖</a></p>
         <div class="map">
           <img src="http://maps.google.com/maps/api/staticmap?size=800x400&markers=%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8&zoom=14"></img>
         </div>
@@ -138,8 +141,8 @@
             <input type="radio" id="credit" name="pay" ng-model="paymentMethod" value="credit">
         <!--   <span class="crdt_icon">信用卡</span> -->
             <label for="credit"><span class="crdt_icon">信用卡</span><em>switcher</em></label>
-          </div>
-          <div class="switch-button">
+          </div><!--
+          --><div class="switch-button">
             <input type="radio" id="atm" name="pay" ng-model="paymentMethod" value="atm">
             <label for="atm"><span class="atm_icon">ATM</span><em>switcher</em></label>
           <!--    <span class="atm_icon">ATM</span> -->

@@ -41,9 +41,24 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
     show: 0
   };
 
+  //the link of google map on mobile device
+  $scope.mapLink = 'https://www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff';
+
 //-------------------------
 // private function
 //-------------------------
+
+  // //judge mobile device
+  // function isAppleDevice() {
+  //   var linkUrl, mapUrl = 'www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff';
+  //   if((navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1)) {
+  //     linkUrl = 'https://' + mapUrl;
+  //   } else {
+  //     linkUrl = 'https://' + mapUrl;
+  //   }
+
+  //   return linkUrl;
+  // }
 
   //time calculation
   var calcTime = function() {
