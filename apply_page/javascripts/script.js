@@ -53,7 +53,4 @@ $(document).ready(function() {
         $('.navi li').removeClass('active');
         $(this).parent('li').addClass('active');
     });
-    // $('.continue-read').css({
-    //     left: ($('body').width() - $('.continue-read').width()) / 2,
-    // });
 });

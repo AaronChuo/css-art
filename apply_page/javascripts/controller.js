@@ -42,7 +42,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   };
 
   //the link of google map on mobile device
-  $scope.mapLink = 'https://www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff';
+  //$scope.mapLink = 'https://www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff';
 
 //-------------------------
 // private function
@@ -50,7 +50,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   //get ticket remain
   var getTicketRemain = function() {
-    var api = 'http://fea.tw/workshop/';
+    var api = 'http://fea.tw/workshop/api';
     var data = {method: 'get_remain'};
     var deferred = $q.defer();
 
@@ -64,6 +64,21 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
     deferred.promise.then(
       function(data) {
+        var index = 0;
+        for(var i in data) {
+          switch(data[i].amount) {
+            case '600':
+              index = 0;
+              break;
+            case '900':
+              index = 1;
+              break;
+            case '1200':
+              index = 2;
+              break;
+          }
+          $scope.ticketList[index].remain = data[i].counter;
+        }
         console.log(data);
       },
       function(err) {
@@ -71,8 +86,6 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
       }
     );
   };
-
-  //set ticket
 
   //time calculation
   var calcTime = function() {
@@ -114,7 +127,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   };
 
   calcTime();
-  getTicketRemain();
+  //getTicketRemain();
 
 //-------------------------
 // public function
@@ -136,6 +149,10 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
     } else {
       $scope.modal.show = 0;
     }
+
+    $(!'.modal-wrapper').on('click', function() {
+      console.warn('hi');
+    });
   };
 
   //facebook login and get api

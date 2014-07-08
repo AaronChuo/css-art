@@ -1666,17 +1666,21 @@ form > label {
     margin: 15px auto;
     font-size: 1.4rem;
   }
+  /* line 1088, ../sass/style.scss */
+  .ticket-list .ticket-remain {
+    float: right;
+  }
 
-  /* line 1089, ../sass/style.scss */
+  /* line 1092, ../sass/style.scss */
   .for-student, .for-earlybird, .for-almost {
     height: 100px;
   }
 
-  /* line 1092, ../sass/style.scss */
+  /* line 1095, ../sass/style.scss */
   .modal-overlay {
     overflow: hidden;
   }
-  /* line 1094, ../sass/style.scss */
+  /* line 1097, ../sass/style.scss */
   .modal-overlay .modal-wrapper {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1685,30 +1689,30 @@ form > label {
     padding: 10px 0 30px;
   }
 
-  /* line 1100, ../sass/style.scss */
+  /* line 1103, ../sass/style.scss */
   form * {
     font-size: 1.2rem;
   }
 
-  /* line 1103, ../sass/style.scss */
+  /* line 1106, ../sass/style.scss */
   form > label {
     height: 40px;
     margin: 10px 0;
   }
 
-  /* line 1107, ../sass/style.scss */
+  /* line 1110, ../sass/style.scss */
   input,
   textarea,
   button {
     width: 80%;
   }
 
-  /* line 1112, ../sass/style.scss */
+  /* line 1115, ../sass/style.scss */
   .field-title {
     width: 10%;
   }
 
-  /* line 1116, ../sass/style.scss */
+  /* line 1119, ../sass/style.scss */
   .switcher .switch-button {
     overflow: hidden;
     display: inline-block;
@@ -1720,7 +1724,7 @@ form > label {
     white-space: nowrap;
   }
 
-  /* line 1127, ../sass/style.scss */
+  /* line 1130, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -64px;
@@ -1735,7 +1739,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1127, ../sass/style.scss */
+  /* line 1130, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1746,7 +1750,7 @@ form > label {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 1134, ../sass/style.scss */
+  /* line 1137, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 0;
@@ -1761,7 +1765,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1134, ../sass/style.scss */
+  /* line 1137, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1772,47 +1776,47 @@ form > label {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 1141, ../sass/style.scss */
+  /* line 1144, ../sass/style.scss */
   .bank_selection {
     display: inline-block;
     width: 30%;
     margin: 0;
   }
 
-  /* line 1146, ../sass/style.scss */
+  /* line 1149, ../sass/style.scss */
   .select {
     margin-bottom: 40px;
   }
 
-  /* line 1149, ../sass/style.scss */
+  /* line 1152, ../sass/style.scss */
   .radioGroup {
     margin: 15px 0;
   }
 
-  /* line 1153, ../sass/style.scss */
+  /* line 1156, ../sass/style.scss */
   footer > * {
     width: 100%;
   }
-  /* line 1157, ../sass/style.scss */
+  /* line 1160, ../sass/style.scss */
   footer .about-curator h3 {
     position: absolute;
     padding-left: 20px;
     height: 100px;
     line-height: 100px;
   }
-  /* line 1163, ../sass/style.scss */
+  /* line 1166, ../sass/style.scss */
   footer .about-curator li {
     padding: 0 0 0 50px;
   }
 }
-@media only screen and (min-width: 1025px) {
-  /* line 1172, ../sass/style.scss */
+@media screen and (min-width: 1025px) {
+  /* line 1175, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
     background-size: 100% auto;
   }
 
-  /* line 1177, ../sass/style.scss */
+  /* line 1180, ../sass/style.scss */
   .time_scale {
     *zoom: 1;
     float: left;
@@ -1837,7 +1841,7 @@ form > label {
   .time_scale:after {
     clear: both;
   }
-  /* line 1182, ../sass/style.scss */
+  /* line 1185, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -1056px;
@@ -1853,8 +1857,8 @@ form > label {
     margin: 1em auto;
   }
 }
-@media only screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1025px) and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-width: 1025px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1025px) and (min-resolution: 144dppx) {
-  /* line 1182, ../sass/style.scss */
+@media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 1025px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 144dppx) {
+  /* line 1185, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;

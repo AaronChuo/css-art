@@ -1085,6 +1085,9 @@ form > label {
             margin: 15px auto;
             font-size: 1.4rem;
         }
+        .ticket-remain {
+            float: right;
+        }
     }
     .for-student, .for-earlybird, .for-almost {
         height: 100px;
@@ -1168,7 +1171,7 @@ form > label {
 }
 
 //wid desktop
-@media only screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     .main {
         background: url(../assets/workshop-cover.png) top center no-repeat fixed;
         background-size: 100% auto;
