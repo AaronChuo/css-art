@@ -3,7 +3,7 @@
 // Module: Social Network API
 // Service: Facebook API
 //--------------------------------
-//TODO: need to refactor
+//TODO: need to refactor, it's too dirty..orz
 angular.module('socialNetworkApi', [])
 .factory('facebookApi', ['$window', '$q', function($window, $q) {
 
@@ -60,17 +60,13 @@ angular.module('socialNetworkApi', [])
 
       if(status === 'connected') {
         deferred.resolve(status);
-
-        console.log(status);
       } else if(status === 'not_authorized') {
         deferred.resolve(status);
-
-        console.log(status);
       } else {
         deferred.resolve(status);
-
-        console.log(status);
       }
+
+      //console.log(status);
     });
 
     return deferred.promise;
@@ -83,9 +79,9 @@ angular.module('socialNetworkApi', [])
 
     FB.login(function(response) {
       if(response.authResponse) {
-        deferred.resolve('login success');
+        deferred.resolve();
       } else {
-        deferred.reject('not login');
+        deferred.reject('未登入或未授權');
       }
     }, {scope: scope});
 
