@@ -71,13 +71,11 @@ angular.module('socialNetworkApi', [])
             link: res.link,
             locale: res.locale
           };
-          var msg = 'gotData';
-          deferred.resolve(msg);
-          console.log('from private function: '+fbData);
+
+          deferred.resolve();
         },
         function(error) {
           deferred.reject();
-          console.log(error);
         });
 
         console.log(status);
@@ -106,9 +104,19 @@ angular.module('socialNetworkApi', [])
         fbLogin().then(getFbMe).then(
           function(res) {
             console.log('got data: '+res);
+            fbData = {
+              id: res.id,
+              name: res.name,
+              email: res.email,
+              gender: res.gender,
+              link: res.link,
+              locale: res.locale
+            };
+            deffered.resolve();
           },
           function(err) {
             console.log(err);
+            deferred.reject(err);
           }
         );
 
@@ -179,14 +187,9 @@ angular.module('socialNetworkApi', [])
 
     getFbData: function() {
       var deferred = $q.defer();
-      var promise = deferred.promise;
 
-      getLoginStatus().then(function(msg) {
-        if(msg === 'loginSuccess') {
-          deffered.resolve();
-        } else if(msg === 'gotData') {
-          deferred.resolve(fbData);
-        }
+      getLoginStatus().then(function(res) {
+        deferred.resolve(fbData);
       });
 
       return deferred.promise;
