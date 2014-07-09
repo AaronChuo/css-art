@@ -1573,8 +1573,14 @@ form > label {
   .navi ul li:hover a, .navi ul li:active a, .navi ul li.active a {
     color: #333;
   }
+  /* line 1020, ../sass/style.scss */
+  .navi ul li .ticket-remain {
+    padding: 0 10px;
+    color: #ec800a;
+    font-size: 1rem;
+  }
 
-  /* line 1024, ../sass/style.scss */
+  /* line 1029, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -1056px;
@@ -1585,7 +1591,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1024, ../sass/style.scss */
+  /* line 1029, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1595,18 +1601,18 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) {
-  /* line 1027, ../sass/style.scss */
+  /* line 1032, ../sass/style.scss */
   .time_scale h3 {
     font-size: 1.5rem;
   }
-  /* line 1030, ../sass/style.scss */
+  /* line 1035, ../sass/style.scss */
   .time_scale .map {
     display: block;
     width: 100%;
     height: auto;
     text-align: center;
   }
-  /* line 1035, ../sass/style.scss */
+  /* line 1040, ../sass/style.scss */
   .time_scale .map img {
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -1618,69 +1624,69 @@ form > label {
     margin-bottom: 20px;
     border: 2px solid #CCC;
   }
-  /* line 1045, ../sass/style.scss */
+  /* line 1050, ../sass/style.scss */
   .time_scale .open-map {
     display: none;
   }
 
-  /* line 1050, ../sass/style.scss */
+  /* line 1055, ../sass/style.scss */
   .ac_explain p {
     width: 100%;
     max-width: 700px;
     font-size: 1.3rem;
   }
-  /* line 1055, ../sass/style.scss */
+  /* line 1060, ../sass/style.scss */
   .ac_explain ul {
     width: 100%;
     max-width: 700px;
   }
-  /* line 1058, ../sass/style.scss */
+  /* line 1063, ../sass/style.scss */
   .ac_explain ul li {
     font-size: 1.3rem;
   }
 
-  /* line 1064, ../sass/style.scss */
+  /* line 1069, ../sass/style.scss */
   .required li {
     width: 31%;
     display: inline-block;
     height: 280px;
   }
-  /* line 1069, ../sass/style.scss */
+  /* line 1074, ../sass/style.scss */
   .required h3 {
     font-size: 1.3rem;
   }
-  /* line 1072, ../sass/style.scss */
+  /* line 1077, ../sass/style.scss */
   .required p {
     text-align: left;
   }
 
-  /* line 1077, ../sass/style.scss */
+  /* line 1082, ../sass/style.scss */
   .resource li {
     display: inline-block;
     width: 30%;
     height: 180px;
   }
 
-  /* line 1084, ../sass/style.scss */
+  /* line 1089, ../sass/style.scss */
   .ticket-list h2 {
     margin: 15px auto;
     font-size: 1.4rem;
   }
-  /* line 1088, ../sass/style.scss */
+  /* line 1093, ../sass/style.scss */
   .ticket-list .ticket-remain {
     float: right;
   }
 
-  /* line 1092, ../sass/style.scss */
+  /* line 1097, ../sass/style.scss */
   .for-student, .for-earlybird, .for-almost {
     height: 100px;
   }
 
-  /* line 1095, ../sass/style.scss */
+  /* line 1100, ../sass/style.scss */
   .modal-overlay {
     overflow: hidden;
   }
-  /* line 1097, ../sass/style.scss */
+  /* line 1102, ../sass/style.scss */
   .modal-overlay .modal-wrapper {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1689,30 +1695,30 @@ form > label {
     padding: 10px 0 30px;
   }
 
-  /* line 1103, ../sass/style.scss */
+  /* line 1108, ../sass/style.scss */
   form * {
     font-size: 1.2rem;
   }
 
-  /* line 1106, ../sass/style.scss */
+  /* line 1111, ../sass/style.scss */
   form > label {
     height: 40px;
     margin: 10px 0;
   }
 
-  /* line 1110, ../sass/style.scss */
+  /* line 1115, ../sass/style.scss */
   input,
   textarea,
   button {
     width: 80%;
   }
 
-  /* line 1115, ../sass/style.scss */
+  /* line 1120, ../sass/style.scss */
   .field-title {
     width: 10%;
   }
 
-  /* line 1119, ../sass/style.scss */
+  /* line 1124, ../sass/style.scss */
   .switcher .switch-button {
     overflow: hidden;
     display: inline-block;
@@ -1724,7 +1730,7 @@ form > label {
     white-space: nowrap;
   }
 
-  /* line 1130, ../sass/style.scss */
+  /* line 1135, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -64px;
@@ -1739,7 +1745,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1130, ../sass/style.scss */
+  /* line 1135, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1750,7 +1756,7 @@ form > label {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 1137, ../sass/style.scss */
+  /* line 1142, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 0;
@@ -1765,7 +1771,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1137, ../sass/style.scss */
+  /* line 1142, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1776,47 +1782,47 @@ form > label {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 1144, ../sass/style.scss */
+  /* line 1149, ../sass/style.scss */
   .bank_selection {
     display: inline-block;
     width: 30%;
     margin: 0;
   }
 
-  /* line 1149, ../sass/style.scss */
+  /* line 1154, ../sass/style.scss */
   .select {
     margin-bottom: 40px;
   }
 
-  /* line 1152, ../sass/style.scss */
+  /* line 1157, ../sass/style.scss */
   .radioGroup {
     margin: 15px 0;
   }
 
-  /* line 1156, ../sass/style.scss */
+  /* line 1161, ../sass/style.scss */
   footer > * {
     width: 100%;
   }
-  /* line 1160, ../sass/style.scss */
+  /* line 1165, ../sass/style.scss */
   footer .about-curator h3 {
     position: absolute;
     padding-left: 20px;
     height: 100px;
     line-height: 100px;
   }
-  /* line 1166, ../sass/style.scss */
+  /* line 1171, ../sass/style.scss */
   footer .about-curator li {
     padding: 0 0 0 50px;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 1175, ../sass/style.scss */
+  /* line 1180, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
     background-size: 100% auto;
   }
 
-  /* line 1180, ../sass/style.scss */
+  /* line 1185, ../sass/style.scss */
   .time_scale {
     *zoom: 1;
     float: left;
@@ -1841,7 +1847,7 @@ form > label {
   .time_scale:after {
     clear: both;
   }
-  /* line 1185, ../sass/style.scss */
+  /* line 1190, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -1056px;
@@ -1858,7 +1864,7 @@ form > label {
   }
 }
 @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 1025px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 144dppx) {
-  /* line 1185, ../sass/style.scss */
+  /* line 1190, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;

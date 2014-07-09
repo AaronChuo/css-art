@@ -30,7 +30,7 @@
           <li class="active"><a class="anchor" href="#main">活動封面</a></li>
           <li><a class="anchor" href="#time">時間地點</a></li>
           <li><a class="anchor" href="#keypoint">詳細資訊</a></li>
-          <li><a class="anchor" href="#ticket">我要報名</a></li>
+          <li><a class="anchor" href="#ticket">我要報名<span class="ticket-remain">剩餘<%{totalRemain}%>張</span></a></li>
         </ul>
       </nav>
 
@@ -229,6 +229,7 @@
     <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
     <script src='javascripts/script.js'></script>
 
+    <script src="javascripts/config/app.conf.js"></script>
     <script src="javascripts/controller.js"></script>
     <script src="javascripts/services/facebookApi.js"></script>
     <script src="javascripts/directives/commonDirective.js"></script>

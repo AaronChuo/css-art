@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'])
+angular.module('feaPayment',['config','socialNetworkApi', 'commonDirective', 'commonData'])
 .controller('paymentCtrl',['$scope', '$q', '$http', 'facebookApi', 'CONST', function($scope, $q, $http, facebookApi, CONST) {
 
 //-------------------------
@@ -35,6 +35,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
 
   //ticket
   $scope.ticketList = CONST.ticketList;
+  $scope.totalRemain = 0;
   $scope.modal = {
     wrapperStyle: 'lastrush-ticket',
     amTitle: '最後卡位票',
@@ -76,8 +77,15 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
             case '1200':
               index = 2;
               break;
+            default:
+              index = '';
+              break;
           }
-          $scope.ticketList[index].remain = data[i].counter;
+          if(typeof(index) === Number) {
+            $scope.ticketList[index].remain = data[i].counter;
+          } else {
+            $scope.totalRemain = data[i].counter;
+          }
         }
         console.log(data);
       },
@@ -127,7 +135,7 @@ angular.module('feaPayment',['socialNetworkApi', 'commonDirective', 'commonData'
   };
 
   calcTime();
-  //getTicketRemain();
+  getTicketRemain();
 
 //-------------------------
 // public function
