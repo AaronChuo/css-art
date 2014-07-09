@@ -36,6 +36,7 @@ angular.module('feaPayment',['config','socialNetworkApi', 'commonDirective', 'co
   //ticket
   $scope.ticketList = CONST.ticketList;
   $scope.totalRemain = 40;
+  $scope.ticketRemain = '';
   $scope.modal = {
     wrapperStyle: 'lastrush-ticket',
     amTitle: '最後卡位票',
@@ -81,6 +82,7 @@ angular.module('feaPayment',['config','socialNetworkApi', 'commonDirective', 'co
           $scope.ticketList[index].remain = data[i].counter;
           $scope.totalRemain -= data[i].counter;
         }
+        $scope.ticketRemain = '剩餘' + $scope.totalRemain + '張';
         console.log(data);
       },
       function(err) {
