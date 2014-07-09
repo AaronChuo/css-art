@@ -327,6 +327,9 @@ p {
         h2 {
             margin: 10px auto;
         }
+        .ticket-remain {
+            display: none;
+        }
     }
 
     .for-student, .for-earlybird, .for-almost {
@@ -1089,9 +1092,6 @@ form > label {
         h2 {
             margin: 15px auto;
             font-size: 1.4rem;
-        }
-        .ticket-remain {
-            float: right;
         }
     }
     .for-student, .for-earlybird, .for-almost {
