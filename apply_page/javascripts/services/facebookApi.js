@@ -28,6 +28,7 @@ angular.module('socialNetworkApi', [])
   //Facebook asynchronous initial
   var fbAsyncInit = function() {
     incFbSdk();
+    //incFbRoot();
     $window.fbAsyncInit = function() {
       FB.init({
         appId: APP_ID,
@@ -48,6 +49,18 @@ angular.module('socialNetworkApi', [])
     js = d.createElement(s); js.id = id;
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
+  };
+
+  //Create fb-root tag
+  var incFbRoot = function() {
+    var d = document;
+    var b = 'body';
+    var id = 'fb-root';
+    var fbroot, body = d.getElementsByTagName(b);
+    if(d.getElementById(id)) {return;}
+    fbroot = d.createElement('div');
+    fbroot.id = id;
+    body.insertBefore(fbroot, body);
   };
 
   //Get login status

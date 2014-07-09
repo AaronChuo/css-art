@@ -2,5 +2,5 @@
 
 angular.module('config', [])
 .config(function($interpolateProvider) {
-  $interpolateProvider.startSymbol('<%{').endSymbol('}%>');
+  $interpolateProvider.startSymbol('<%').endSymbol('%>');
 });
