@@ -21,9 +21,9 @@ angular.module('commonData', [])
 
     //ticket list
     ticketList : [
-      {name: '學生限定票', style: 'for-student', modalStyle: 'student-ticket', price: 600, date: {start: '7/9/2014', end: '7/13/2014'}},
-      {name: '早鳥搶先票', style: 'for-earlybird', modalStyle: 'earlybird-ticket', price: 900, date: {start: '7/9/2014', end: '7/13/2014'}},
-      {name: '最後卡位票', style: 'for-almost', modalStyle: 'lastrush-ticket', price: 1200, date: {start: '7/14/2014', end: '7/24/2014'}}
+      {name: '學生限定票', style: 'for-student', modalStyle: 'student-ticket', price: 600, date: {start: '7/9/2014 00:00:00', end: '7/13/2014 23:59:59'}},
+      {name: '早鳥搶先票', style: 'for-earlybird', modalStyle: 'earlybird-ticket', price: 900, date: {start: '7/9/2014 00:00:00', end: '7/13/2014 23:59:59'}},
+      {name: '最後卡位票', style: 'for-almost', modalStyle: 'lastrush-ticket', price: 1200, date: {start: '7/14/2014 00:00:00', end: '7/24/2014 23:59:59'}}
     ],
 
     //template path

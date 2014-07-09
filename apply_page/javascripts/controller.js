@@ -106,10 +106,10 @@ angular.module('feaPayment',['config','socialNetworkApi', 'commonDirective', 'co
 
       //out of sell time
       if(now < startDate) {
-        formatDate = (startDate.getMonth()+1) + '/' + (startDate.getDate()+1);
+        formatDate = (startDate.getMonth()+1) + '/' + (startDate.getDate());
         disableReason = ' ' + formatDate + ' 開放';
       } else if(now >= endDate) {
-        formatDate = (startDate.getMonth()+1) + '/' + (startDate.getDate()+1);
+        formatDate = (startDate.getMonth()+1) + '/' + (startDate.getDate());
         disableReason = '已結束';
       }
 
