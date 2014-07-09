@@ -148,13 +148,10 @@ angular.module('feaPayment',['config','socialNetworkApi', 'commonDirective', 'co
       } else {
         $scope.modal.show = 0;
       }
+      $scope.isStudent = (ticket.name === '學生限定票') ? true : false;
     } else {
       $scope.modal.show = 0;
     }
-
-    $(!'.modal-wrapper').on('click', function() {
-      console.warn('hi');
-    });
   };
 
   //facebook login and get api
