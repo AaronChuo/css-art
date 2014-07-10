@@ -83,7 +83,7 @@ angular.module('feaPayment',['config','socialNetworkApi', 'commonDirective', 'co
           $scope.totalRemain -= data[i].counter;
         }
         $scope.ticketRemain = '剩餘' + $scope.totalRemain + '張';
-        console.log(data);
+        // console.log(data);
       },
       function(err) {
         console.log(err);
