@@ -50,7 +50,23 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - $('.navi li').height()
         }, 1200);
-        $('.navi li').removeClass('active');
-        $(this).parent('li').addClass('active');
+        highlight($(this));
     });
+    // $(window).on('mousewheel', function(e) {
+    //     var y = $(this).scrollTop() + 100;
+    //     if(y >= $('#time').offset().top) {
+    //         highlight($('.navi a[href="#time"]'));
+    //     } else if(y >= $('#keypoint').offset().top) {
+    //         highlight($('.navi a[href="#keyoint"]'));
+    //     } else if(y >= $('#ticket').offset().top) {
+    //         highlight($('.navi a[href="#ticket"]'));
+    //     } else if(y >= $('#example').offset().top) {
+    //         highlight($('.navi a[href="#example"]'));
+    //     }
+    //     //console.log('clientY='+e.clientY+', pageY='+e.pageY+', screenY='+e.screenY);
+    // });
+    function highlight(ele) {
+        $('.navi li').removeClass('active');
+        ele.parent('li').addClass('active');
+    }
 });

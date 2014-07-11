@@ -25,9 +25,6 @@
     <link rel='stylesheet' href='stylesheets/adaptive-modal.css'>
     <link rel="stylesheet" href="stylesheets/animate.css">
 
-    <script src='javascripts/modernizr-2.0.6.min.js'></script>
-    <script src="javascripts/libs/angular.min.js"></script>
-
   </head>
   <body ng-controller="paymentCtrl">
     <div id='container'>
@@ -35,7 +32,7 @@
       <!-- Navigation -->
       <nav class="navi">
         <ul>
-          <li class="active"><a class="anchor" href="#main">活動封面</a></li>
+          <li><a class="anchor" href="#example">範例展示</a></li>
           <li><a class="anchor" href="#time">時間地點</a></li>
           <li><a class="anchor" href="#keypoint">詳細資訊</a></li>
           <li><a class="anchor" href="#ticket">我要報名<span class="ticket-remain" ng-bind="ticketRemain"></span></a></li>
@@ -64,6 +61,36 @@
         </div>
       </div>
 
+      <!-- Example -->
+      <div id="example" class="example">
+        <h2>什麼是CSS手刻圖？</h2>
+        <p>這是一門CSS技術展現的藝術，使用純CSS來繪製完整的圖形，甚至具有互動性的動畫效果。從幾何圖形、動畫人物到互動效果，不使用圖片、Canvas、SVG或JavaScript去製作，完全使用CSS各種技巧去克服。有人會納悶「為什麼要這麼費功？」因為透過這樣的開發過程，不但可以充分展現自己的CSS技術深度，還可以獲得極大的成就感，這些將有待您親自參與後細細地品嚐嘍！</p>
+        <h2>網路知名作品範例</h2>
+        <ul>
+          <li class="chopper">
+            <a href="http://aaronchuo.cc/open-project/cia/onepiece-chopper/" target="_blank">喬巴</a>
+          </li>
+          <li class="brown">
+            <a href="http://aaronchuo.cc/open-project/cia/line-brown/" target="_blank">熊大</a>
+          </li>
+          <li class="simpsons">
+            <a href="http://pattle.github.io/simpsons-in-css/" target="_blank">辛普森家族</a>
+          </li>
+          <li class="doraemon">
+            <a href="http://purecss3.net/doraemon/doraemon_css3.html" target="_blank">哆拉A夢</a>
+          </li>
+          <li class="minion">
+            <a href="http://cssdeck.com/labs/pure-css-minion" target="_blank">Minion</a>
+          </li>
+          <li class="konata">
+            <a href="http://rei.idv.tw/sample/konata.html" target="_blank">Konata</a>
+          </li>
+          <li class="pixels">
+            <a href="http://codepen.io/jordanwade/pen/sanol" target="_blank">Pixels</a>
+          </li>
+        </ul>
+      </div>
+
       <!-- Time & Location -->
       <div id="time" class="time_scale">
         <span>時間</span>
@@ -71,7 +98,7 @@
         <h3>(桃園縣中壢市中北路200號)</h3>
         <p class="open-map"><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff">打開Google地圖</a></p>
         <div class="map">
-          <img src="http://maps.google.com/maps/api/staticmap?size=800x400&markers=%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8&zoom=14"></img>
+          <img src="http://maps.google.com/maps/api/staticmap?size=800x400&markers=%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8&zoom=14" width="640" height="400"></img>
         </div>
       </div>
 
@@ -239,6 +266,8 @@
     <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
     <script src='javascripts/script.js'></script>
 
+    <script src='javascripts/modernizr-2.0.6.min.js'></script>
+    <script src="javascripts/libs/angular.min.js"></script>
     <script src="javascripts/config/app.conf.js"></script>
     <script src="javascripts/controller.js"></script>
     <script src="javascripts/services/facebookApi.js"></script>
