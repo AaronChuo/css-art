@@ -1587,7 +1587,6 @@ form > label {
   /* line 1025, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
-    background-size: auto 30%;
   }
 }
 @media screen and (min-width: 601px) {
