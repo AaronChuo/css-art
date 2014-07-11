@@ -643,7 +643,7 @@ select {
     @include appearance(none);
     @include box-shadow(none);
     position: relative;
-    width: 100%;
+    width: 110%;
     height: 100%;
     border: 0;
     padding: 0 10px;
@@ -789,6 +789,7 @@ form > label {
     margin: 20px 0;
     input {
         @include appearance(none);
+        @include box-shadow(none);
         height: 40px;
         padding: 0 10px;
         border: 0;
@@ -848,6 +849,9 @@ form > label {
 }
 
 /* Form: Switcher */
+.field-title.switcher-title {
+    width: 80px;
+}
 .switcher {
     display: inline-block;
     margin: 0;
@@ -1192,6 +1196,11 @@ form > label {
     }
     .field-title {
         width: 10%;
+    }
+    .field-title.switcher-title {
+        width: 80px;
+        height: 120px;
+        line-height: 120px;
     }
     .switcher {
         .switch-button {

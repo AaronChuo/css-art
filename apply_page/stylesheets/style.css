@@ -1175,7 +1175,7 @@ select {
   -webkit-box-shadow: none;
   box-shadow: none;
   position: relative;
-  width: 100%;
+  width: 110%;
   height: 100%;
   border: 0;
   padding: 0 10px;
@@ -1342,12 +1342,15 @@ form > label {
 .textInput input {
   -moz-appearance: none;
   -webkit-appearance: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   height: 40px;
   padding: 0 10px;
   border: 0;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 796, ../sass/style.scss */
+/* line 797, ../sass/style.scss */
 .textInput input:hover, .textInput input:active, .textInput input:focus {
   -moz-box-shadow: inset 1px 1px 3px #666666;
   -webkit-box-shadow: inset 1px 1px 3px #666666;
@@ -1356,12 +1359,12 @@ form > label {
 }
 
 /* Form: Radio */
-/* line 804, ../sass/style.scss */
+/* line 805, ../sass/style.scss */
 .radioGroup {
   display: block;
   height: 40px;
 }
-/* line 807, ../sass/style.scss */
+/* line 808, ../sass/style.scss */
 .radioGroup .radio {
   overflow: hidden;
   display: inline-block;
@@ -1370,13 +1373,13 @@ form > label {
   margin: 0;
   white-space: nowrap;
 }
-/* line 814, ../sass/style.scss */
+/* line 815, ../sass/style.scss */
 .radioGroup .radio input[type=radio] {
   position: absolute;
   top: -100%;
   left: 0;
 }
-/* line 818, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 .radioGroup .radio input[type=radio] ~ label {
   display: block;
   position: relative;
@@ -1387,7 +1390,7 @@ form > label {
   text-align: center;
   cursor: pointer;
 }
-/* line 827, ../sass/style.scss */
+/* line 828, ../sass/style.scss */
 .radioGroup .radio input[type=radio] ~ label:before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1401,24 +1404,29 @@ form > label {
   border: 1px solid rgba(255, 255, 255, 0.45);
   background: none;
 }
-/* line 839, ../sass/style.scss */
+/* line 840, ../sass/style.scss */
 .radioGroup .radio input[type=radio]:checked ~ label {
   color: #FFF;
 }
-/* line 841, ../sass/style.scss */
+/* line 842, ../sass/style.scss */
 .radioGroup .radio input[type=radio]:checked ~ label:before {
   margin: 1px;
   background: white;
 }
 
 /* Form: Switcher */
-/* line 851, ../sass/style.scss */
+/* line 852, ../sass/style.scss */
+.field-title.switcher-title {
+  width: 80px;
+}
+
+/* line 855, ../sass/style.scss */
 .switcher {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 855, ../sass/style.scss */
+/* line 859, ../sass/style.scss */
 .switcher .switch-button {
   overflow: hidden;
   display: inline-block;
@@ -1428,13 +1436,13 @@ form > label {
   margin: 0;
   white-space: nowrap;
 }
-/* line 863, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 .switcher .switch-button input[type=radio] {
   position: absolute;
   top: -100%;
   left: 0;
 }
-/* line 867, ../sass/style.scss */
+/* line 871, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label {
   display: block;
   position: relative;
@@ -1444,7 +1452,7 @@ form > label {
   text-align: center;
   cursor: pointer;
 }
-/* line 875, ../sass/style.scss */
+/* line 879, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label em {
   overflow: hidden;
   display: block;
@@ -1455,7 +1463,7 @@ form > label {
   border: solid 1px white;
   text-indent: 100%;
 }
-/* line 884, ../sass/style.scss */
+/* line 888, ../sass/style.scss */
 .switcher .switch-button input[type=radio] ~ label em:after {
   -moz-transition: all ease 0.5s;
   -webkit-transition: all ease;
@@ -1470,61 +1478,61 @@ form > label {
   height: calc(100% - 2px);
   margin: 1px;
 }
-/* line 900, ../sass/style.scss */
+/* line 904, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label em {
   right: 0;
   border-right: 0;
 }
-/* line 903, ../sass/style.scss */
+/* line 907, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label em:after {
   left: 100%;
 }
-/* line 907, ../sass/style.scss */
+/* line 911, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio] ~ label span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 912, ../sass/style.scss */
+/* line 916, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio]:checked ~ label em:after {
   left: 0;
 }
-/* line 915, ../sass/style.scss */
+/* line 919, ../sass/style.scss */
 .switcher .switch-button:first-child input[type=radio]:checked ~ label span {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 922, ../sass/style.scss */
+/* line 926, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label em {
   left: 0;
   border-left: 0;
 }
-/* line 925, ../sass/style.scss */
+/* line 929, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label em:after {
   left: -100%;
 }
-/* line 929, ../sass/style.scss */
+/* line 933, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio] ~ label span {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 934, ../sass/style.scss */
+/* line 938, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio]:checked ~ label em:after {
   left: 0;
 }
-/* line 937, ../sass/style.scss */
+/* line 941, ../sass/style.scss */
 .switcher .switch-button:last-child input[type=radio]:checked ~ label span {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 
 /* Form: Button */
-/* line 946, ../sass/style.scss */
+/* line 950, ../sass/style.scss */
 .button-wrapper {
   display: block;
   width: 100%;
   text-align: center;
 }
-/* line 950, ../sass/style.scss */
+/* line 954, ../sass/style.scss */
 .button-wrapper .fb_button {
   vertical-align: top;
   margin: 0;
@@ -1541,7 +1549,7 @@ form > label {
   cursor: pointer;
   -webkit-box-shadow: inset 0 -2px #2d4373;
 }
-/* line 965, ../sass/style.scss */
+/* line 969, ../sass/style.scss */
 .button-wrapper .fb_button:hover, .button-wrapper .fb_button:active {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -1549,7 +1557,7 @@ form > label {
   top: 1px;
   outline: 0 none;
 }
-/* line 972, ../sass/style.scss */
+/* line 976, ../sass/style.scss */
 .button-wrapper .submit_button {
   background: #bd1550;
   vertical-align: top;
@@ -1566,7 +1574,7 @@ form > label {
   -webkit-box-shadow: inset 0 -2px #8f103d;
   text-align: center;
 }
-/* line 987, ../sass/style.scss */
+/* line 991, ../sass/style.scss */
 .button-wrapper .submit_button:hover, .button-wrapper .submit_button:active {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -1576,24 +1584,24 @@ form > label {
 }
 
 @media only screen and (max-device-width: 480px) {
-  /* line 1021, ../sass/style.scss */
+  /* line 1025, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
     background-size: auto 30%;
   }
 }
 @media screen and (min-width: 601px) {
-  /* line 1029, ../sass/style.scss */
+  /* line 1033, ../sass/style.scss */
   html {
     font-size: 14px;
   }
 
-  /* line 1033, ../sass/style.scss */
+  /* line 1037, ../sass/style.scss */
   .main h1 {
     margin-top: 100px;
     font-size: 2.6rem;
   }
-  /* line 1037, ../sass/style.scss */
+  /* line 1041, ../sass/style.scss */
   .main .continue-read {
     -moz-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -1608,7 +1616,7 @@ form > label {
     line-height: 80px;
     color: #EEE;
   }
-  /* line 1048, ../sass/style.scss */
+  /* line 1052, ../sass/style.scss */
   .main .continue-read:after {
     content: '';
     display: block;
@@ -1617,12 +1625,12 @@ form > label {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
   }
-  /* line 1056, ../sass/style.scss */
+  /* line 1060, ../sass/style.scss */
   .main .continue-read:hover {
     color: #FFF;
   }
 
-  /* line 1061, ../sass/style.scss */
+  /* line 1065, ../sass/style.scss */
   .navi {
     display: block;
     width: 100%;
@@ -1634,17 +1642,17 @@ form > label {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     z-index: 2;
   }
-  /* line 1071, ../sass/style.scss */
+  /* line 1075, ../sass/style.scss */
   .navi h3 {
     font-size: 2rem;
   }
-  /* line 1074, ../sass/style.scss */
+  /* line 1078, ../sass/style.scss */
   .navi ul {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
   }
-  /* line 1078, ../sass/style.scss */
+  /* line 1082, ../sass/style.scss */
   .navi ul li {
     *zoom: 1;
     float: left;
@@ -1670,21 +1678,21 @@ form > label {
   .navi ul li:after {
     clear: both;
   }
-  /* line 1084, ../sass/style.scss */
+  /* line 1088, ../sass/style.scss */
   .navi ul li a {
     display: block;
     height: 100%;
     padding: 20px 0;
   }
-  /* line 1089, ../sass/style.scss */
+  /* line 1093, ../sass/style.scss */
   .navi ul li:hover, .navi ul li:active, .navi ul li.active {
     background: white;
   }
-  /* line 1091, ../sass/style.scss */
+  /* line 1095, ../sass/style.scss */
   .navi ul li:hover a, .navi ul li:active a, .navi ul li.active a {
     color: #333;
   }
-  /* line 1095, ../sass/style.scss */
+  /* line 1099, ../sass/style.scss */
   .navi ul li .ticket-remain {
     display: inline;
     padding: 0 10px;
@@ -1692,7 +1700,7 @@ form > label {
     font-size: 1rem;
   }
 
-  /* line 1105, ../sass/style.scss */
+  /* line 1109, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -1056px;
@@ -1703,7 +1711,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1105, ../sass/style.scss */
+  /* line 1109, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1713,18 +1721,18 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) {
-  /* line 1108, ../sass/style.scss */
+  /* line 1112, ../sass/style.scss */
   .time_scale h3 {
     font-size: 1.5rem;
   }
-  /* line 1111, ../sass/style.scss */
+  /* line 1115, ../sass/style.scss */
   .time_scale .map {
     display: block;
     width: 100%;
     height: auto;
     text-align: center;
   }
-  /* line 1116, ../sass/style.scss */
+  /* line 1120, ../sass/style.scss */
   .time_scale .map img {
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -1736,65 +1744,65 @@ form > label {
     margin-bottom: 20px;
     border: 2px solid #CCC;
   }
-  /* line 1126, ../sass/style.scss */
+  /* line 1130, ../sass/style.scss */
   .time_scale .open-map {
     display: none;
   }
 
-  /* line 1131, ../sass/style.scss */
+  /* line 1135, ../sass/style.scss */
   .ac_explain p {
     width: 100%;
     max-width: 700px;
     font-size: 1.3rem;
   }
-  /* line 1136, ../sass/style.scss */
+  /* line 1140, ../sass/style.scss */
   .ac_explain ul {
     width: 100%;
     max-width: 700px;
   }
-  /* line 1139, ../sass/style.scss */
+  /* line 1143, ../sass/style.scss */
   .ac_explain ul li {
     font-size: 1.3rem;
   }
 
-  /* line 1145, ../sass/style.scss */
+  /* line 1149, ../sass/style.scss */
   .required li {
     width: 31%;
     display: inline-block;
     height: 280px;
   }
-  /* line 1150, ../sass/style.scss */
+  /* line 1154, ../sass/style.scss */
   .required h3 {
     font-size: 1.3rem;
   }
-  /* line 1153, ../sass/style.scss */
+  /* line 1157, ../sass/style.scss */
   .required p {
     text-align: left;
   }
 
-  /* line 1158, ../sass/style.scss */
+  /* line 1162, ../sass/style.scss */
   .resource li {
     display: inline-block;
     width: 30%;
     height: 180px;
   }
 
-  /* line 1165, ../sass/style.scss */
+  /* line 1169, ../sass/style.scss */
   .ticket-list h2 {
     margin: 15px auto;
     font-size: 1.4rem;
   }
 
-  /* line 1170, ../sass/style.scss */
+  /* line 1174, ../sass/style.scss */
   .for-student, .for-earlybird, .for-almost {
     height: 100px;
   }
 
-  /* line 1173, ../sass/style.scss */
+  /* line 1177, ../sass/style.scss */
   .modal-overlay {
     overflow: hidden;
   }
-  /* line 1175, ../sass/style.scss */
+  /* line 1179, ../sass/style.scss */
   .modal-overlay .modal-wrapper {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1803,30 +1811,37 @@ form > label {
     padding: 10px 0 30px;
   }
 
-  /* line 1181, ../sass/style.scss */
+  /* line 1185, ../sass/style.scss */
   form * {
     font-size: 1.2rem;
   }
 
-  /* line 1184, ../sass/style.scss */
+  /* line 1188, ../sass/style.scss */
   form > label {
     height: 40px;
     margin: 10px 0;
   }
 
-  /* line 1188, ../sass/style.scss */
+  /* line 1192, ../sass/style.scss */
   input,
   textarea,
   button {
     width: 80%;
   }
 
-  /* line 1193, ../sass/style.scss */
+  /* line 1197, ../sass/style.scss */
   .field-title {
     width: 10%;
   }
 
-  /* line 1197, ../sass/style.scss */
+  /* line 1200, ../sass/style.scss */
+  .field-title.switcher-title {
+    width: 80px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  /* line 1206, ../sass/style.scss */
   .switcher .switch-button {
     overflow: hidden;
     display: inline-block;
@@ -1838,7 +1853,7 @@ form > label {
     white-space: nowrap;
   }
 
-  /* line 1208, ../sass/style.scss */
+  /* line 1217, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -64px;
@@ -1853,7 +1868,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1208, ../sass/style.scss */
+  /* line 1217, ../sass/style.scss */
   .crdt_icon {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1864,7 +1879,7 @@ form > label {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 1215, ../sass/style.scss */
+  /* line 1224, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 0;
@@ -1879,7 +1894,7 @@ form > label {
   }
 }
 @media screen and (min-width: 601px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 601px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 601px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-device-pixel-ratio: 2), screen and (min-width: 601px) and (min-resolution: 144dppx) {
-  /* line 1215, ../sass/style.scss */
+  /* line 1224, ../sass/style.scss */
   .atm_icon {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
@@ -1890,47 +1905,47 @@ form > label {
 }
 
 @media screen and (min-width: 601px) {
-  /* line 1222, ../sass/style.scss */
+  /* line 1231, ../sass/style.scss */
   .bank_selection {
     display: inline-block;
     width: 30%;
     margin: 0;
   }
 
-  /* line 1227, ../sass/style.scss */
+  /* line 1236, ../sass/style.scss */
   .select {
     margin-bottom: 40px;
   }
 
-  /* line 1230, ../sass/style.scss */
+  /* line 1239, ../sass/style.scss */
   .radioGroup {
     margin: 15px 0;
   }
 
-  /* line 1234, ../sass/style.scss */
+  /* line 1243, ../sass/style.scss */
   footer > * {
     width: 100%;
   }
-  /* line 1238, ../sass/style.scss */
+  /* line 1247, ../sass/style.scss */
   footer .about-curator h3 {
     position: absolute;
     padding-left: 20px;
     height: 100px;
     line-height: 100px;
   }
-  /* line 1244, ../sass/style.scss */
+  /* line 1253, ../sass/style.scss */
   footer .about-curator li {
     padding: 0 0 0 50px;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 1253, ../sass/style.scss */
+  /* line 1262, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
     background-size: 100% auto;
   }
 
-  /* line 1258, ../sass/style.scss */
+  /* line 1267, ../sass/style.scss */
   .time_scale {
     *zoom: 1;
     float: left;
@@ -1955,7 +1970,7 @@ form > label {
   .time_scale:after {
     clear: both;
   }
-  /* line 1263, ../sass/style.scss */
+  /* line 1272, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-s59379f5992.png');
     background-position: 0 -1056px;
@@ -1972,7 +1987,7 @@ form > label {
   }
 }
 @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-o-min-device-pixel-ratio: 3 / 2), screen and (min-width: 1025px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (min-resolution: 144dppx) {
-  /* line 1263, ../sass/style.scss */
+  /* line 1272, ../sass/style.scss */
   .time_scale span {
     background-image: url('../assets/workshop-2x-s67677640e4.png');
     background-size: 1088px 1372px;
