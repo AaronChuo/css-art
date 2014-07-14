@@ -2068,7 +2068,7 @@ form > label {
     clear: none;
     padding-left: 0;
     padding-right: 0;
-    text-align: inherit;
+    /*text-align: inherit;*/
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
