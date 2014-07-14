@@ -32,10 +32,10 @@
       <!-- Navigation -->
       <nav class="navi">
         <ul>
-          <li><a class="anchor" href="#example">範例展示</a></li>
-          <li><a class="anchor" href="#time">時間地點</a></li>
+          <li><a class="anchor" href="#example">活動簡介</a></li>
           <li><a class="anchor" href="#keypoint">詳細資訊</a></li>
-          <li><a class="anchor" href="#ticket">我要報名<span class="ticket-remain" ng-bind="ticketRemain"></span></a></li>
+          <li><a class="anchor" href="#lesson">課程大鋼</a></li>
+          <li><a class="anchor" href="#time">我要報名<span class="ticket-remain" ng-bind="ticketRemain"></span></a></li>
         </ul>
       </nav>
 
@@ -64,9 +64,15 @@
       <!-- Example -->
       <div id="example" class="example">
         <h2>什麼是CSS手刻圖？</h2>
-        <p>這是一門CSS技術展現的藝術，使用純CSS來繪製完整的圖形，甚至具有互動性的動畫效果。從幾何圖形、動畫人物到互動效果，不使用圖片、Canvas、SVG或JavaScript去製作，完全使用CSS各種技巧去克服。有人會納悶「為什麼要這麼費功？」因為透過這樣的開發過程，不但可以充分展現自己的CSS技術深度，還可以獲得極大的成就感，這些將有待您親自參與後細細地品嚐嘍！</p>
-        <h2>網路知名作品範例</h2>
         <ul>
+          <li>這是一門展現 CSS技術活用的藝術，使用純 CSS來繪製完整的圖形。</li>
+          <li>從幾何圖形、角色人物到互動效果，CSS code ONLY!</li>
+          <li>完全無須使用圖片、Canvas、SVG或JavaScript等其它技術。</li>
+          <li>有人會納悶為什麼要這麼費功？因為透過本活動可以充分學習如何「玩活CSS」。</li>
+          <li>亦可從中獲得不小的成就感，這些將有待您親自參與後細細地品嚐嘍！</li>
+        </ul>
+        <h2>網路知名作品範例</h2>
+        <ul class="demo">
           <li class="chopper">
             <a href="http://aaronchuo.cc/open-project/cia/onepiece-chopper/" target="_blank">喬巴</a>
           </li>
@@ -91,25 +97,18 @@
         </ul>
       </div>
 
-      <!-- Time & Location -->
-      <div id="time" class="time_scale">
-        <span>時間</span>
-        <h3>中原大學資管樓104教室</h3>
-        <h3>(桃園縣中壢市中北路200號)</h3>
-        <p class="open-map"><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff">打開Google地圖</a></p>
-        <div class="map">
-          <img src="http://maps.google.com/maps/api/staticmap?size=800x400&markers=%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8&zoom=14" width="640" height="400"></img>
-        </div>
-      </div>
-
       <!-- Information - Keypoint -->
       <div id="keypoint" class="ac_explain">
-        <p>CSS是一項非常重要的前端技術之一，主要用來處理內容呈現的形式、排版、視覺呈現，由於近年來 CSS3的普及，許多複雜驚豔的效果與設計已更容易實現，讓許多人見識到 CSS的強大之處。</p>
+        <h2>CSS很重要嗎？</h2>
+        <p>CSS是一項非常重要的前端技術之一，主要用來處理內容的視覺呈現、排版、互動、視覺呈現，由於近年來 CSS3的普及，許多複雜驚豔的效果與設計已更容易實現，讓許多人見識到 CSS的強大之處。</p>
+        <h2>關於本課程...</h2>
         <ul>
-          <li>透過使用 CSS繪製圖形來熟悉 CSS進階用法及 CSS3的屬性。</li>
+          <li>學習透過使用 CSS繪製圖形來熟悉 CSS進階用法及 CSS3的屬性。</li>
+          <li>實作純 CSS的使用者互動效果。</li>
+          <li>用純 CSS完成有趣的手刻圖作品。</li>
           <li>了解跨瀏覽器相容問題的處理、前綴詞用法。</li>
           <li>手把手教學，於實作時針對每個學員的素材提供即時教學服務。</li>
-          <li>參加本活動可獲得社群結業證明，可在日後隨著本社團的發展，換發協會證明書。</li>
+          <li>參加本活動可獲得社群結業證明，待協會成立後可換發協會課程證明書。</li>
           <li>學生限定票於活動當日請攜帶蓋有當年度註冊章之學生証。</li>
         </ul>
       </div>
@@ -150,6 +149,59 @@
         </ul>
       </div>
 
+      <!-- Table of Contents-->
+      <div id="lesson" class="lesson">
+        <h2>課程大綱</h2>
+        <ul>
+          <li>CSS基本觀念</li>
+          <ul>
+            <li>工具與開發環境</li>
+            <li>初識CSS</li>
+            <li>選擇器</li>
+            <li>繼承</li>
+            <li>偽元素</li>
+            <li>建議規範</li>
+          </ul>
+          <li>手刻圖常用屬性</li>
+          <ul>
+            <li>準備知識</li>
+            <ul>
+              <li>單位: px, %, em, rem</li>
+              <li>顏色: 16進制, 3碼簡寫, rgb(a), hsl(a)</li>
+            </ul>
+            <li>元素定位與顯示</li>
+            <li>Box Model</li>
+            <li>Content</li>
+          </ul>
+          <li>手刻圖進階技巧</li>
+          <ul>
+            <li>質感！box-shadow</li>
+            <li>變形！transform</li>
+            <li>互動！part I: transition</li>
+            <li>互動！part II: animation</li>
+            <li>忍術！:before & :after</li>
+            <li>鏡像！transform trick</li>
+            <li>三角形！border trick</li>
+            <li>進撃の圓角！horizontal radius & vertical radius</li>
+            <li>進撃の陰影！multi-shadow</li>
+          </ul>
+          <li>實作時間 - Let's do it!</li>
+          <ul>
+            <li>HTML結構規劃</li>
+            <li>畫布與裝飾者: container, wrapper, inner</li>
+          </ul>
+          <li>Demo</li>
+        </ul>
+      </div>
+
+      <!-- Time & Location -->
+      <div id="time" class="time_scale">
+        <span>時間</span>
+        <h3>中原大學資管樓104教室</h3>
+        <h3>(桃園縣中壢市中北路200號)</h3>
+        <p class="open-map"><a href="https://www.google.com.tw/maps/place/%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8/@24.956901,121.242803,17z/data=!3m1!4b1!4m2!3m1!1s0x3468221447a0f021:0x2b86d2650bb8bcff">打開Google地圖</a></p>
+      </div>
+
     </div>
 
     <!-- Tickets -->
@@ -166,8 +218,10 @@
         </a>
       </div>
 
+    </div>
 
-
+    <div class="map">
+      <img src="http://maps.google.com/maps/api/staticmap?size=800x400&markers=%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8&zoom=14" width="640" height="400"></img>
     </div>
 
     <!-- Payment Modal -->
