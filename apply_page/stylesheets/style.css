@@ -2057,7 +2057,7 @@ form > label {
   /* line 1348, ../sass/style.scss */
   .main {
     background: url(../assets/workshop-cover.png) top center no-repeat fixed;
-    background-size: 100% auto;
+    background-size: 100% 100%;
   }
 
   /* line 1353, ../sass/style.scss */
@@ -2068,7 +2068,7 @@ form > label {
     clear: none;
     padding-left: 0;
     padding-right: 0;
-    /*text-align: inherit;*/
+    text-align: inherit;
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
